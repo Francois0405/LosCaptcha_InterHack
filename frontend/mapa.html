@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Damm Smart Truck | Route</title>
+
+  <link rel="icon" type="image/png" href="img/flaticon.png" />
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <div class="app-shell">
+    <nav class="navbar navbar-expand-lg app-navbar sticky-top">
+      <div class="container-fluid px-4">
+        <a class="navbar-brand d-flex align-items-center gap-3" href="dashboard.html">
+          <img src="img/flaticon.png" class="brand-icon" alt="Damm icon">
+          <img src="img/damm-logo.png" class="brand-logo-full" alt="Damm logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="mapa.html">Ruta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="distribucion_camion.html">Carga</a>
+            </li>
+            <li class="nav-item ms-lg-2">
+              <button class="btn btn-soft btn-sm" data-theme-toggle type="button">Dark mode</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container-fluid px-4 py-4 py-lg-5">
+      <section class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+        <div>
+          <span class="section-label">Route planning</span>
+          <h1 class="fw-bold mt-2 mb-2">Optimized delivery sequence</h1>
+          <p class="text-muted mb-0">
+            Stop grouping, time-window prioritization and operational routing for the driver.
+          </p>
+        </div>
+
+        <div class="d-flex gap-2">
+          <a href="dashboard.html#assistant-section" class="btn btn-soft">Ask Gemini</a>
+          <a href="distribucion_camion.html" class="btn btn-damm">Load plan</a>
+        </div>
+      </section>
+
+      <section class="row g-4">
+        <div class="col-xl-4">
+          <div class="app-card p-4 mb-4">
+            <span class="section-label">Route DR-042</span>
+            <h3 class="fw-bold mt-2 mb-1">15 stops · 22 clients</h3>
+            <p class="text-muted mb-4">
+              The system groups nearby clients when delivery windows, distance and unloading complexity are compatible.
+            </p>
+
+            <div class="route-stop">
+              <div class="d-flex justify-content-between gap-2">
+                <h6 class="fw-bold mb-1">Stop 1 · Plaça Real</h6>
+                <span class="status-pill status-success">08:15</span>
+              </div>
+              <p class="text-muted small mb-2">3 clients grouped · early access required</p>
+              <ul class="small mb-0">
+                <li>Bar Sol · 8 crates</li>
+                <li>Café Centre · 4 crates</li>
+                <li>Restaurant Mar · 2 kegs</li>
+              </ul>
+            </div>
+
+            <div class="route-stop">
+              <div class="d-flex justify-content-between gap-2">
+                <h6 class="fw-bold mb-1">Stop 2 · Eixample</h6>
+                <span class="status-pill status-success">09:05</span>
+              </div>
+              <p class="text-muted small mb-2">2 clients grouped · compatible time window</p>
+              <ul class="small mb-0">
+                <li>Hotel Nord · 6 crates</li>
+                <li>Bar Provença · 5 crates</li>
+              </ul>
+            </div>
+
+            <div class="route-stop">
+              <div class="d-flex justify-content-between gap-2">
+                <h6 class="fw-bold mb-1">Stop 3 · Gràcia</h6>
+                <span class="status-pill status-warning">10:10</span>
+              </div>
+              <p class="text-muted small mb-2">Strict time window · priority stop</p>
+              <ul class="small mb-0">
+                <li>Restaurant Vila · 10 crates</li>
+              </ul>
+            </div>
+
+            <div class="route-stop">
+              <div class="d-flex justify-content-between gap-2">
+                <h6 class="fw-bold mb-1">Stop 4 · Sant Antoni</h6>
+                <span class="status-pill">11:00</span>
+              </div>
+              <p class="text-muted small mb-2">Expected returnable collection</p>
+              <ul class="small mb-0">
+                <li>Bar Mercat · 7 crates</li>
+                <li>Cafeteria Ronda · 3 crates</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="app-card p-4">
+            <span class="section-label">AI explanation</span>
+            <h4 class="fw-bold mt-2 mb-3">Why this route?</h4>
+
+            <div class="border rounded-4 p-3 mb-3">
+              <strong>Grouped delivery stops</strong>
+              <p class="text-muted mb-0">
+                Several nearby customers can be served from a single parking point.
+              </p>
+            </div>
+
+            <div class="border rounded-4 p-3 mb-3">
+              <strong>Priority by schedule</strong>
+              <p class="text-muted mb-0">
+                Early or strict time windows are moved up in the sequence.
+              </p>
+            </div>
+
+            <div class="border rounded-4 p-3 mb-3">
+              <strong>Linked to truck load</strong>
+              <p class="text-muted mb-0">
+                The route is coordinated with the load distribution to improve unloading efficiency.
+              </p>
+            </div>
+
+            <a href="dashboard.html#assistant-section" class="btn btn-damm w-100 mt-2">
+              Ask Gemini about this route
+            </a>
+          </div>
+        </div>
+
+        <div class="col-xl-8">
+          <div class="map-board mb-4">
+            <div class="map-grid"></div>
+
+            <div class="map-path path-1"></div>
+            <div class="map-path path-2"></div>
+            <div class="map-path path-3"></div>
+            <div class="map-path path-4"></div>
+
+            <div class="map-node node-warehouse">Warehouse</div>
+            <div class="map-node node-1">1</div>
+            <div class="map-node node-2">2</div>
+            <div class="map-node node-3">3</div>
+            <div class="map-node node-4">4</div>
+            <div class="map-node node-5">5</div>
+
+            <div class="position-absolute bottom-0 start-0 end-0 p-4">
+              <div class="hero-overlay position-static">
+                <div class="row g-3 align-items-center">
+                  <div class="col-md-8">
+                    <span class="section-label">Route insight</span>
+                    <h5 class="fw-bold mb-1">Grouped stops reduce operational friction</h5>
+                    <p class="text-muted mb-0">
+                      This plan is optimized not only by distance, but also by time windows, parking logic and unloading efficiency.
+                    </p>
+                  </div>
+                  <div class="col-md-4 text-md-end">
+                    <span class="status-pill status-success">94% time-window compliance</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-3">
+              <div class="metric-card">
+                <div class="metric-label">Distance</div>
+                <div class="metric-value">24.5</div>
+                <span class="status-pill">km</span>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="metric-card">
+                <div class="metric-label">Route time</div>
+                <div class="metric-value">3h</div>
+                <span class="status-pill">30m</span>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="metric-card">
+                <div class="metric-label">Stops</div>
+                <div class="metric-value">15</div>
+                <span class="status-pill status-success">optimized</span>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="metric-card">
+                <div class="metric-label">Clients</div>
+                <div class="metric-value">22</div>
+                <span class="status-pill">served</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="app-card p-4 mt-4">
+            <div class="row g-4 align-items-center">
+              <div class="col-lg-7">
+                <span class="section-label">Operational photo</span>
+                <h4 class="fw-bold mt-2">Real distribution environment</h4>
+                <p class="text-muted mb-0">
+                  The route plan must be realistic: limited urban parking, grouped stops and coordinated unloading from the truck side access.
+                </p>
+              </div>
+              <div class="col-lg-5">
+                <img src="img/truck-route.jpeg" alt="Damm truck route context" class="img-fluid rounded-4 border">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

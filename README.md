@@ -19,17 +19,27 @@ To be defined during the hackathon.
 
 ## Technologies
 
-- GitHub
-- MongoDB Atlas
-- Gemini API
-- React / Node.js
-- ElevenLabs, if needed
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
 
 ## Project structure
 
 ```txt
 interhack-2026/
-├── frontend/          # React + Vite frontend
-├── .env.example       # Example environment variables
+├── frontend/
+│   ├── index.html                  # Redirects to dashboard.html
+│   ├── dashboard.html              # Main dashboard screen
+│   ├── mapa.html                   # Map screen
+│   ├── distribucion_camion.html    # Truck distribution screen
+│   ├── assets/                     # Images and static assets
+│   ├── css/
+│   │   └── styles.css              # Shared styles
+│   ├── js/
+│   │   └── main.js                 # Shared JavaScript
+│   └── vendor/
+│       └── bootstrap/              # Local Bootstrap files
 ├── .gitignore         # Files ignored by Git
 └── README.md
+```
