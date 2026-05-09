@@ -4,7 +4,7 @@
 <html lang="es" data-bs-theme="light">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="{% static '../img/flaticon.png' %}" />
+  <link rel="icon" type="image/png" href="{% static 'img/flaticon.png' %}" />
   <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" />
   <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
   <title>Damm Smart Truck | Dashboard</title>
@@ -15,8 +15,8 @@
     <nav class="navbar navbar-expand-lg app-navbar sticky-top">
       <div class="container-fluid px-4">
         <a class="navbar-brand d-flex align-items-center gap-3" href="dashboard.html">
-          <img src="img/flaticon.png" class="brand-icon" alt="Damm icon">
-          <img src="img/damm-logo.png" class="brand-logo-full" alt="Damm logo">
+          <img src="{% static 'img/flaticon.png' %}" class="brand-icon" alt="Damm icon">
+          <img src="{% static 'img/flaticon.png' %}" class="brand-logo-full" alt="Damm logo">
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
@@ -101,7 +101,7 @@
             <div class="chat-header">
               <div class="d-flex align-items-center gap-3">
                 <div class="chatbot-avatar-wrap">
-                  <img src="img/flaticon.png" alt="Gemini assistant" class="chatbot-avatar">
+                  <img src="{% static 'img/flaticon.png' %}" alt="Gemini assistant" class="chatbot-avatar">
                 </div>
                 <div>
                   <h4 class="mb-1 fw-bold">Gemini Operations Assistant</h4>
@@ -273,7 +273,7 @@
           </div>
 
           <div class="image-card">
-            <img src="img/warehouse-overview.jpeg" alt="Warehouse overview">
+            <img src="{% static 'img/flaticon.png' %}" alt="Warehouse overview">
             <div class="image-card-overlay">
               <span class="section-label">Operational context</span>
               <h5 class="fw-bold mb-1">Real warehouse conditions</h5>
