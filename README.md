@@ -1,35 +1,28 @@
-# INTERHACK BCN 2026
+# Django MongoDB Backend - Project Template
 
-Project developed during INTERHACK BCN 2026.
+This is a Django project starter template for the Django MongoDB Backend.
+In order to use it with your version of Django: 
 
-Repository: https://github.com/itsCarlosDev/interhack-2026
+- Find your Django version. To do so from the command line, make sure you
+  have Django installed and run:
 
-## Team
+```bash
+django-admin --version
+>> 6.0
+```
 
-- Carlos Morales Artés
-- To be defined during the hackathon.
+## Create the Django project
 
-## Problem
+From your shell, run the following command to create a new Django project
+replacing the `{{ project_name }}` and `{{ version }}` sections. 
 
-To be defined during the hackathon.
+```bash
+django-admin startproject {{ project_name }} --template https://github.com/mongodb-labs/django-mongodb-project/archive/refs/heads/{{ version }}.x.zip
+```
 
-## Solution
+For a project named `example` that runs on `django==6.0.*`
+the command would look like this:
 
-To be defined during the hackathon.
-
-## Technologies
-
-- GitHub
-- MongoDB Atlas
-- Gemini API
-- React / Node.js
-- ElevenLabs, if needed
-
-## Project structure
-
-```txt
-interhack-2026/
-├── frontend/          # React + Vite frontend
-├── .env.example       # Example environment variables
-├── .gitignore         # Files ignored by Git
-└── README.md
+```bash
+django-admin startproject example --template https://github.com/mongodb-labs/django-mongodb-project/archive/refs/heads/6.0.x.zip
+```
