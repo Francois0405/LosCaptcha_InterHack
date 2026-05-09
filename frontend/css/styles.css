@@ -576,3 +576,123 @@ html[data-bs-theme="dark"] .pallet-zone {
 .text-muted {
   color: var(--muted) !important;
 }
+
+.brand-logo-full {
+  height: 46px;
+  width: auto;
+  max-width: 240px;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 576px) {
+  .brand-logo-full {
+    height: 34px;
+    max-width: 170px;
+  }
+}
+
+.truck-side-label {
+  text-align: center;
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: .5rem 0 1rem;
+}
+
+.truck-side-label.bottom {
+  margin: 1rem 0 .5rem;
+}
+
+.chat-floating-button {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1100;
+  border: none;
+  background: var(--damm);
+  color: #fff;
+  border-radius: 999px;
+  padding: .9rem 1.25rem;
+  font-weight: 800;
+  box-shadow: 0 18px 40px rgba(216, 20, 28, .28);
+}
+
+.chat-drawer {
+  position: fixed;
+  right: 24px;
+  bottom: 86px;
+  width: min(420px, calc(100vw - 32px));
+  height: 580px;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  z-index: 1200;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chat-drawer.open {
+  display: flex;
+}
+
+.chat-drawer-header {
+  padding: 1rem;
+  border-bottom: 1px solid var(--card-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+}
+
+.chat-form-drawer {
+  padding: 1rem;
+  border-top: 1px solid var(--card-border);
+  display: flex;
+  gap: .75rem;
+}
+
+.chat-form-drawer .form-control {
+  border-radius: 999px;
+  background: var(--soft);
+  border: 1px solid var(--card-border);
+  color: var(--text);
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.chat-message {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.chat-message.user {
+  justify-content: flex-end;
+}
+
+.chat-bubble {
+  max-width: 86%;
+  padding: .85rem 1rem;
+  border-radius: 18px;
+  background: var(--soft);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.chat-message.user .chat-bubble {
+  background: var(--damm);
+  color: #fff;
+}
+
+.drag-over {
+  outline: 2px dashed var(--damm);
+  outline-offset: 4px;
+}
