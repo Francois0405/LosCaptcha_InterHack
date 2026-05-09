@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Damm Smart Truck | Load Plan</title>
+
+  <link rel="icon" type="image/png" href="img/flaticon.png" />
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <div class="app-shell">
+    <nav class="navbar navbar-expand-lg app-navbar sticky-top">
+      <div class="container-fluid px-4">
+        <a class="navbar-brand d-flex align-items-center gap-3" href="dashboard.html">
+          <img src="img/flaticon.png" class="brand-icon" alt="Damm icon">
+          <img src="img/damm-logo.png" class="brand-logo-full" alt="Damm logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mapa.html">Ruta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="distribucion_camion.html">Carga</a>
+            </li>
+            <li class="nav-item ms-lg-2">
+              <button class="btn btn-soft btn-sm" data-theme-toggle type="button">Dark mode</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container-fluid px-4 py-4 py-lg-5">
+      <section class="row g-4 align-items-stretch mb-4">
+        <div class="col-xl-7">
+          <div class="app-card h-100 p-4 p-lg-5">
+            <span class="section-label">Load planning</span>
+            <h1 class="page-title mt-3 mb-4">
+              Hybrid truck loading model.
+            </h1>
+            <p class="page-subtitle mb-4">
+              A recommended physical distribution of crates, kegs and returnables based on route order, accessibility and basic load balance.
+            </p>
+
+            <div class="d-flex flex-wrap gap-2">
+              <button class="btn btn-damm">Recalculate load</button>
+              <button class="btn btn-soft">Validate driver changes</button>
+              <button class="btn btn-soft">Export load sheet</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-5">
+          <div class="image-card h-100">
+            <img src="img/truck-loaded.jpeg" alt="Loaded Damm truck">
+            <div class="image-card-overlay">
+              <span class="section-label">Truck context</span>
+              <h5 class="fw-bold mb-1">Side-access vehicle loading</h5>
+              <p class="text-muted mb-0">
+                Products for early stops remain closer to side access and returnables are assigned a flexible reserve area.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="row g-4">
+        <div class="col-xl-8">
+          <div class="truck-board mb-4">
+            <div class="d-flex flex-wrap justify-content-between align-items-start gap-3 mb-4">
+              <div>
+                <span class="section-label">Truck layout</span>
+                <h3 class="fw-bold mt-2 mb-1">6-pallet vehicle · lateral access</h3>
+                <p class="text-muted mb-0">
+                  Drag packages between zones to simulate warehouse or driver adjustments.
+                </p>
+              </div>
+              <span class="status-pill status-success">Optimized load</span>
+            </div>
+
+            <div class="truck-frame">
+              <div class="truck-grid">
+                <div class="pallet-zone zone-early" data-zone="P1">
+                  <div class="pallet-title">
+                    <div>
+                      <strong>Pallet 1</strong>
+                      <div class="text-muted small">Stops 1-2</div>
+                    </div>
+                    <span class="status-pill status-success">early</span>
+                  </div>
+
+                  <div class="package-card" draggable="true">
+                    <strong>Bar Sol</strong><br>
+                    <small>8 Estrella crates</small>
+                  </div>
+
+                  <div class="package-card" draggable="true">
+                    <strong>Café Centre</strong><br>
+                    <small>4 Veri crates</small>
+                  </div>
+                </div>
+
+                <div class="pallet-zone zone-early" data-zone="P2">
+                  <div class="pallet-title">
+                    <div>
+                      <strong>Pallet 2</strong>
+                      <div class="text-muted small">Stops 2-3</div>
+                    </div>
+                    <span class="status-pill status-success">early</span>
+                  </div>
+
+                  <div class="package-card" draggable="true">
+                    <strong>Hotel Nord</strong><br>
+                    <small>6 Damm crates</small>
+                  </div>
+
+                  <div class="package-card" draggable="true">
+                    <strong>Restaurant Vila</strong><br>
+                    <small>2 kegs · heavy</small>
+                  </div>
+                </div>
+
+                <div class="pallet-zone zone-mid" data-zone="P3">
+                  <div class="pallet-title">
+                    <div>
+                      <strong>Pallet 3</strong>
+                      <div class="text-muted small">Stops 4-5</div>
+                    </div>
+                    <span class="status-pill status-warning">mid</span>
+                  </div>
+
+                  <div class="package-card" draggable="true">
+                    <strong>Bar Mercat</strong><br>
+                    <small>7 returnable crates</small>
+                  </div>
+
+                  <div class="package-card" draggable="true">
+                    <strong>Restaurant Port</strong><br>
+                    <small>12 mixed crates</small>
+                  </div>
+                </div>
+
+                <div class="pallet-zone zone-reference" data-zone="P4">
+                  <div class="pallet-title">
+                    <div>
+                      <strong>Pallet 4</strong>
+                      <div class="text-muted small">Grouped by reference</div>
+                    </div>
+                    <span class="status-pill">reference</span>
+                  </div>
+
+                  <div class="package-card" draggable="true">
+                    <strong>High rotation</strong><br>
+                    <small>Damm crates</small>
+                  </div>
+
+                  <div class="package-card" draggable="true">
+                    <strong>Veri</strong><br>
+                    <small>Grouped crates</small>
+                  </div>
+                </div>
+
+                <div class="pallet-zone zone-returns" data-zone="P5">
+                  <div class="pallet-title">
+                    <div>
+                      <strong>Pallet 5</strong>
+                      <div class="text-muted small">Returnable reserve</div>
+                    </div>
+                    <span class="status-pill">return</span>
+                  </div>
+
+                  <div class="package-card" draggable="true">
+                    <strong>Empty crates area</strong><br>
+                    <small>Reserved capacity</small>
+                  </div>
+
+                  <div class="package-card" draggable="true">
+                    <strong>Empty kegs</strong><br>
+                    <small>Expected returns</small>
+                  </div>
+                </div>
+
+                <div class="pallet-zone zone-late" data-zone="P6">
+                  <div class="pallet-title">
+                    <div>
+                      <strong>Pallet 6</strong>
+                      <div class="text-muted small">Late stops</div>
+                    </div>
+                    <span class="status-pill">late</span>
+                  </div>
+
+                  <div class="package-card" draggable="true">
+                    <strong>Final customers</strong><br>
+                    <small>Lower urgency</small>
+                  </div>
+
+                  <div class="package-card" draggable="true">
+                    <strong>Secondary references</strong><br>
+                    <small>Mixed products</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="border rounded-4 p-3 mt-4">
+              <strong>Warehouse instruction:</strong>
+              <span class="text-muted">
+                Load late-stop products first, keep early-stop pallets accessible from the side, and preserve flexible reserve space for returnables.
+              </span>
+            </div>
+          </div>
+
+          <div class="app-card p-4">
+            <div class="d-flex flex-wrap justify-content-between align-items-start gap-3 mb-4">
+              <div>
+                <span class="section-label">Driver view</span>
+                <h3 class="fw-bold mt-2 mb-1">Next stop instructions</h3>
+              </div>
+              <a href="dashboard.html#assistant-section" class="btn btn-soft btn-sm">Ask Gemini</a>
+            </div>
+
+            <div class="row g-3 mb-4">
+              <div class="col-md-4">
+                <div class="driver-panel h-100">
+                  <div class="text-uppercase small opacity-75">Next stop</div>
+                  <h3 class="fw-bold mb-1">Plaça Real</h3>
+                  <div class="opacity-75">08:15 · 3 clients</div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="metric-card">
+                  <div class="metric-label">Unload from</div>
+                  <div class="metric-value">P1</div>
+                  <span class="status-pill">left side</span>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="metric-card">
+                  <div class="metric-label">Returns</div>
+                  <div class="metric-value">6</div>
+                  <span class="status-pill">crates to P5</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="table-responsive">
+              <table class="table align-middle">
+                <thead>
+                  <tr>
+                    <th>Client</th>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Location</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Bar Sol</td>
+                    <td>Estrella Damm</td>
+                    <td>8 crates</td>
+                    <td>Pallet 1</td>
+                    <td><span class="status-pill status-success">Accessible</span></td>
+                  </tr>
+                  <tr>
+                    <td>Café Centre</td>
+                    <td>Veri</td>
+                    <td>4 crates</td>
+                    <td>Pallet 1</td>
+                    <td><span class="status-pill status-success">Accessible</span></td>
+                  </tr>
+                  <tr>
+                    <td>Restaurant Mar</td>
+                    <td>Keg</td>
+                    <td>2 units</td>
+                    <td>Pallet 2</td>
+                    <td><span class="status-pill status-warning">Heavy</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4">
+          <div class="app-card p-4 mb-4">
+            <span class="section-label">Load score</span>
+            <h4 class="fw-bold mt-2 mb-4">Operational quality</h4>
+
+            <div class="mb-4">
+              <div class="d-flex justify-content-between mb-2">
+                <span>Accessibility</span>
+                <strong>91%</strong>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-success" style="width: 91%"></div>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <div class="d-flex justify-content-between mb-2">
+                <span>Balance</span>
+                <strong>84%</strong>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-warning" style="width: 84%"></div>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <div class="d-flex justify-content-between mb-2">
+                <span>Occupation</span>
+                <strong>82%</strong>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-danger" style="width: 82%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Returnable capacity</span>
+                <strong>76%</strong>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-info" style="width: 76%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="app-card p-4 mb-4">
+            <span class="section-label">AI-supported rules</span>
+            <h4 class="fw-bold mt-2 mb-3">Loading constraints</h4>
+
+            <div class="border rounded-4 p-3 mb-3">
+              <strong>Early-stop access</strong>
+              <p class="text-muted mb-0">Products delivered first must remain close to lateral access.</p>
+            </div>
+
+            <div class="border rounded-4 p-3 mb-3">
+              <strong>Weight distribution</strong>
+              <p class="text-muted mb-0">Kegs and heavy products are placed low and balanced across zones.</p>
+            </div>
+
+            <div class="border rounded-4 p-3">
+              <strong>Hybrid model</strong>
+              <p class="text-muted mb-0">Combines client-based grouping and reference-based loading.</p>
+            </div>
+          </div>
+
+          <div class="image-card">
+            <img src="img/warehouse-racks.jpeg" alt="Warehouse racks">
+            <div class="image-card-overlay">
+              <span class="section-label">Storage context</span>
+              <h5 class="fw-bold mb-1">Warehouse product zones</h5>
+              <p class="text-muted mb-0">
+                The loading proposal should reflect product type, picking logic and pallet availability.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
