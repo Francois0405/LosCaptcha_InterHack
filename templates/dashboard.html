@@ -1,0 +1,293 @@
+{% load static %}
+
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="{% static 'img/flaticon.png' %}" />
+  <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+  <title>Damm Smart Truck | Dashboard</title>
+</head>
+ 
+<body>
+  <div class="app-shell">
+    <nav class="navbar navbar-expand-lg app-navbar sticky-top">
+      <div class="container-fluid px-4">
+        <a class="navbar-brand d-flex align-items-center gap-3" href="dashboard.html">
+          <img src="{% static 'img/flaticon.png' %}" class="brand-icon" alt="Damm icon">
+          <img src="{% static 'img/flaticon.png' %}" class="brand-logo-full" alt="Damm logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link active" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mapa.html">Ruta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="distribucion_camion.html">Carga</a>
+            </li>
+            <li class="nav-item ms-lg-2">
+              <button class="btn btn-soft btn-sm" data-theme-toggle type="button">Dark mode</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container-fluid px-4 py-4 py-lg-5">
+      <section class="row g-4 align-items-stretch mb-4">
+        <div class="col-xl-7">
+          <div class="app-card h-100 p-4 p-lg-5 hero-dashboard">
+            <span class="section-label">Damm Smart Truck</span>
+            <h1 class="page-title mt-3 mb-4">
+              Route and load planning for urban distribution.
+            </h1>
+            <p class="page-subtitle mb-4">
+              A decision-support platform for planning truck routes, grouping clients into efficient stops, and optimizing how products are loaded before leaving the warehouse.
+            </p>
+
+            <div class="d-flex flex-wrap gap-2 mb-4">
+              <button class="btn btn-damm">Optimize scenario</button>
+              <a href="mapa.html" class="btn btn-soft">Open route module</a>
+              <a href="distribucion_camion.html" class="btn btn-soft">Open load module</a>
+            </div>
+
+            <div class="row g-3">
+              <div class="col-sm-6 col-xl-3">
+                <div class="metric-card">
+                  <div class="metric-label">Clients</div>
+                  <div class="metric-value">22</div>
+                  <span class="status-pill">DR-042</span>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-xl-3">
+                <div class="metric-card">
+                  <div class="metric-label">Optimized stops</div>
+                  <div class="metric-value">15</div>
+                  <span class="status-pill status-success">-32%</span>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-xl-3">
+                <div class="metric-card">
+                  <div class="metric-label">Load usage</div>
+                  <div class="metric-value">82%</div>
+                  <span class="status-pill">6 pallets</span>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-xl-3">
+                <div class="metric-card">
+                  <div class="metric-label">Returnables</div>
+                  <div class="metric-value">58%</div>
+                  <span class="status-pill status-warning">reserved area</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-5">
+          <div class="app-card p-0 chat-card h-100" id="assistant-section">
+            <div class="chat-header">
+              <div class="d-flex align-items-center gap-3">
+                <div class="chatbot-avatar-wrap">
+                  <img src="{% static 'img/flaticon.png' %}" alt="Gemini assistant" class="chatbot-avatar">
+                </div>
+                <div>
+                  <h4 class="mb-1 fw-bold">Gemini Operations Assistant</h4>
+                  <p class="mb-0 text-muted">
+                    Ask about routes, load plan, clients, stops, time windows or operational KPIs.
+                  </p>
+                </div>
+              </div>
+              <span class="status-pill status-success">Gemini API</span>
+            </div>
+
+            <div class="chat-suggestions px-4 pt-3">
+              <button class="suggestion-chip" data-prompt="Summarize the optimized route for DR-042">
+                Route summary
+              </button>
+              <button class="suggestion-chip" data-prompt="Which pallets should be most accessible for the first stops?">
+                Load advice
+              </button>
+              <button class="suggestion-chip" data-prompt="What is the main improvement of the MVP compared to current operations?">
+                MVP impact
+              </button>
+              <button class="suggestion-chip" data-prompt="Explain the logic behind grouping multiple clients into one stop">
+                Stop grouping
+              </button>
+            </div>
+
+            <div class="chat-messages px-4" id="chatMessages">
+              <div class="chat-message assistant">
+                <div class="chat-bubble">
+                  Hello! I’m the Gemini assistant for the Damm logistics MVP. I can explain the route plan, truck loading recommendation and estimated operational impact.
+                </div>
+              </div>
+            </div>
+
+            <div class="chat-input-area">
+              <div class="small text-muted mb-2">
+                Example: “Which stop has the strictest time window?” or “How does the truck loading support the route?”
+              </div>
+              <form id="chatForm" class="chat-form">
+                <input
+                  type="text"
+                  id="chatInput"
+                  class="form-control"
+                  placeholder="Ask Gemini about routes, products, pallets, clients or metrics..."
+                  autocomplete="off"
+                />
+                <button type="submit" class="btn btn-damm chat-send-btn">Send</button>
+              </form>
+              <div class="small text-muted mt-2">
+                If Gemini is not connected yet, the assistant will answer using demo project context.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="row g-4">
+        <div class="col-xl-8">
+          <div class="app-card p-4">
+            <div class="d-flex flex-wrap justify-content-between align-items-start gap-3 mb-4">
+              <div>
+                <span class="section-label">Impact simulation</span>
+                <h3 class="fw-bold mb-1 mt-2">Current operation vs optimized proposal</h3>
+                <p class="text-muted mb-0">
+                  Estimated gains based on route grouping, load accessibility and delivery sequence.
+                </p>
+              </div>
+              <span class="status-pill status-success">Optimized scenario</span>
+            </div>
+
+            <div class="table-responsive">
+              <table class="table align-middle">
+                <thead>
+                  <tr>
+                    <th>Metric</th>
+                    <th>Current</th>
+                    <th>Proposal</th>
+                    <th>Impact</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Truck stops</td>
+                    <td>22</td>
+                    <td>15</td>
+                    <td><span class="status-pill status-success">-32%</span></td>
+                  </tr>
+                  <tr>
+                    <td>Estimated search time</td>
+                    <td>70 min</td>
+                    <td>42 min</td>
+                    <td><span class="status-pill status-success">-40%</span></td>
+                  </tr>
+                  <tr>
+                    <td>Time-window compliance</td>
+                    <td>82%</td>
+                    <td>94%</td>
+                    <td><span class="status-pill status-success">+12 pp</span></td>
+                  </tr>
+                  <tr>
+                    <td>Early-stop accessibility</td>
+                    <td>Medium</td>
+                    <td>High</td>
+                    <td><span class="status-pill status-success">Improved</span></td>
+                  </tr>
+                  <tr>
+                    <td>Truck occupation</td>
+                    <td>84%</td>
+                    <td>82%</td>
+                    <td><span class="status-pill status-warning">Accepted trade-off</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="row g-4 mt-1">
+            <div class="col-md-6">
+              <a href="mapa.html" class="text-decoration-none">
+                <div class="app-card p-4 h-100">
+                  <span class="section-label">Route module</span>
+                  <h4 class="fw-bold mt-2 text-body">Stop grouping and route order</h4>
+                  <p class="text-muted mb-0">
+                    Groups nearby clients into operational stops and prioritizes time windows.
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-6">
+              <a href="distribucion_camion.html" class="text-decoration-none">
+                <div class="app-card p-4 h-100">
+                  <span class="section-label">Load module</span>
+                  <h4 class="fw-bold mt-2 text-body">Truck loading recommendation</h4>
+                  <p class="text-muted mb-0">
+                    Suggests pallet zones according to route order, product type and returnables.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4">
+          <div class="app-card p-4 mb-4">
+            <span class="section-label">Recommendation logic</span>
+            <h4 class="fw-bold mt-2 mb-3">AI-supported decision context</h4>
+
+            <div class="border rounded-4 p-3 mb-3">
+              <div class="fw-bold mb-1">Group dense urban clients</div>
+              <p class="text-muted mb-0">
+                One stop can serve several nearby customers if the parking point and delivery window are compatible.
+              </p>
+            </div>
+
+            <div class="border rounded-4 p-3 mb-3">
+              <div class="fw-bold mb-1">Prioritize early accessibility</div>
+              <p class="text-muted mb-0">
+                Products for first stops stay closest to lateral truck access to reduce handling effort.
+              </p>
+            </div>
+
+            <div class="border rounded-4 p-3">
+              <div class="fw-bold mb-1">Reserve returnable space</div>
+              <p class="text-muted mb-0">
+                Empty crates and kegs can come back during the route, so the load plan keeps flexible space available.
+              </p>
+            </div>
+          </div>
+
+          <div class="image-card">
+            <img src="{% static 'img/flaticon.png' %}" alt="Warehouse overview">
+            <div class="image-card-overlay">
+              <span class="section-label">Operational context</span>
+              <h5 class="fw-bold mb-1">Real warehouse conditions</h5>
+              <p class="text-muted mb-0">
+                The MVP is designed around real product handling, route preparation and driver execution.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
