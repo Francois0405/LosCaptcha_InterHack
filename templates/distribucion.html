@@ -1,23 +1,24 @@
+{% load static %}
+
 <!doctype html>
 <html lang="es" data-bs-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Damm Smart Truck | Load Distribution</title>
 
-  <link rel="icon" type="image/png" href="img/damm-logo.png" />
+  <title>Damm Smart Truck | Distribución de carga</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"/>
-
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="{% static 'img/flaticon.png' %}" />
+  <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
 </head>
 
 <body>
   <div class="app-shell">
     <nav class="navbar navbar-expand-lg app-navbar sticky-top">
       <div class="container-fluid px-4">
-        <a class="navbar-brand d-flex align-items-center" href="dashboard.html">
-          <img src="img/damm-logo.png" class="brand-logo-full" alt="Damm logo">
+        <a class="navbar-brand d-flex align-items-center" href="/dashboard">
+          <img src="{% static 'img/damm-logo.png' %}" class="brand-logo-full" alt="Damm logo">
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
@@ -27,16 +28,16 @@
         <div class="collapse navbar-collapse" id="mainNavbar">
           <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
             <li class="nav-item">
-              <a class="nav-link" href="dashboard.html">Dashboard</a>
+              <a class="nav-link" href="/dashboard">Panel</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="mapa.html">Ruta</a>
+              <a class="nav-link" href="/mapa">Ruta</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="distribucion_camion.html">Carga</a>
+              <a class="nav-link active" href="/distribucion">Carga</a>
             </li>
             <li class="nav-item ms-lg-2">
-              <button class="btn btn-soft btn-sm" data-theme-toggle type="button">Dark mode</button>
+              <button class="btn btn-soft btn-sm" data-theme-toggle type="button">Modo oscuro</button>
             </li>
           </ul>
         </div>
@@ -44,181 +45,215 @@
     </nav>
 
     <main class="container-fluid px-4 py-4 py-lg-5">
+      <section class="row g-4 align-items-stretch mb-4">
+        <div class="col-xl-8">
+          <div class="app-card h-100 p-4 p-lg-5">
+            <div class="d-flex flex-wrap justify-content-between align-items-start gap-3 mb-4">
+              <div>
+                <span class="section-label">Distribución de carga</span>
+                <h1 class="page-title mt-3 mb-3">Plan automático de carga del camión</h1>
+                <p class="page-subtitle mb-0">
+                  La herramienta calcula una distribución inicial óptima según orden de ruta, accesibilidad lateral, tipo de producto, peso y reserva para retornables.
+                </p>
+              </div>
 
-      <section class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
-        <div>
-          <span class="section-label">Load distribution</span>
-          <h1 class="fw-bold mt-2 mb-2">Automatic truck loading plan</h1>
-          <p class="text-muted mb-0">
-            Recommended pallet distribution based on delivery order, product type, accessibility and returnable capacity.
-          </p>
+              <span class="status-pill status-success" id="globalPlanStatus">
+                Plan óptimo inicial
+              </span>
+            </div>
+
+            <div class="d-flex flex-wrap gap-2">
+              <button class="btn btn-damm" id="calculateLoadBtn" type="button">Recalcular plan óptimo</button>
+              <button class="btn btn-soft" id="resetOptimalBtn" type="button">Restaurar óptimo</button>
+              <button class="btn btn-soft" id="validateChangesBtn" type="button">Validar cambios</button>
+              <button class="btn btn-soft" id="printLoadBtn" type="button">Imprimir hoja de carga</button>
+            </div>
+          </div>
         </div>
 
-        <div class="d-flex flex-wrap gap-2">
-          <button class="btn btn-damm" id="calculateLoadBtn">Calculate load plan</button>
-          <button class="btn btn-soft">Validate driver changes</button>
-          <button class="btn btn-soft">Export load sheet</button>
+        <div class="col-xl-4">
+          <div class="image-card h-100">
+            <img src="{% static 'img/truck-loaded.jpeg' %}" alt="Camión cargado Damm">
+            <div class="image-card-overlay">
+              <span class="section-label">Contexto real</span>
+              <h5 class="fw-bold mb-1">Acceso lateral y reparto urbano</h5>
+              <p class="mb-0">
+                El objetivo no es llenar al máximo, sino descargar más rápido, con seguridad y coherencia con la ruta.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="row g-4 mb-4">
         <div class="col-md-3">
           <div class="metric-card">
-            <div class="metric-label">Truck</div>
+            <div class="metric-label">Camión</div>
             <div class="metric-value">6P</div>
-            <span class="status-pill">Side access</span>
+            <span class="status-pill">Acceso lateral</span>
           </div>
         </div>
 
         <div class="col-md-3">
           <div class="metric-card">
-            <div class="metric-label">Load usage</div>
+            <div class="metric-label">Ocupación</div>
             <div class="metric-value" id="loadUsageMetric">82%</div>
-            <span class="status-pill">Estimated</span>
+            <span class="status-pill">Estimación</span>
           </div>
         </div>
 
         <div class="col-md-3">
           <div class="metric-card">
-            <div class="metric-label">Accessibility</div>
+            <div class="metric-label">Accesibilidad</div>
             <div class="metric-value" id="accessibilityMetric">91%</div>
-            <span class="status-pill status-success">Early stops</span>
+            <span class="status-pill status-success" id="accessibilityBadge">Primeras paradas</span>
           </div>
         </div>
 
         <div class="col-md-3">
           <div class="metric-card">
-            <div class="metric-label">Returnables</div>
-            <div class="metric-value" id="returnsMetric">58%</div>
-            <span class="status-pill status-warning">Reserved</span>
+            <div class="metric-label">Score global</div>
+            <div class="metric-value" id="globalScoreMetric">89%</div>
+            <span class="status-pill status-success" id="scoreBadge">Óptimo</span>
           </div>
         </div>
       </section>
 
       <section class="row g-4">
-        <div class="col-xl-8">
+        <div class="col-xxl-8">
           <div class="truck-board mb-4">
             <div class="d-flex flex-wrap justify-content-between align-items-start gap-3 mb-4">
               <div>
-                <span class="section-label">Recommended layout</span>
-                <h3 class="fw-bold mt-2 mb-1">Truck 6 pallets · hybrid loading model</h3>
+                <span class="section-label">Layout recomendado</span>
+                <h3 class="fw-bold mt-2 mb-1">Camión de 6 palets · modelo híbrido</h3>
                 <p class="text-muted mb-0">
-                  The initial distribution is calculated automatically. The driver or warehouse team can adjust packages if needed.
+                  El trabajador puede mover paquetes. El sistema recalcula automáticamente el impacto de cada cambio.
                 </p>
               </div>
-              <span class="status-pill status-success">Auto-generated</span>
+
+              <div class="text-lg-end">
+                <div class="status-pill status-success mb-2" id="layoutStatus">
+                  Distribución calculada automáticamente
+                </div>
+                <div class="small text-muted">
+                  Ruta DR-042 · 15 paradas · 22 clientes
+                </div>
+              </div>
             </div>
 
             <div class="truck-frame">
-              <div class="truck-side-label top">Left side access</div>
+              <div class="truck-side-label top">Acceso lateral izquierdo</div>
 
               <div class="truck-grid" id="truckGrid">
                 <div class="pallet-zone zone-early" data-zone="P1">
                   <div class="pallet-title">
                     <div>
-                      <strong>Pallet 1</strong>
-                      <div class="text-muted small">Stops 1-2</div>
+                      <strong>Palet 1</strong>
+                      <div class="text-muted small">Primeras paradas</div>
                     </div>
-                    <span class="status-pill status-success">early</span>
+                    <span class="status-pill status-success">P1</span>
                   </div>
                 </div>
 
                 <div class="pallet-zone zone-early" data-zone="P2">
                   <div class="pallet-title">
                     <div>
-                      <strong>Pallet 2</strong>
-                      <div class="text-muted small">Stops 2-3</div>
+                      <strong>Palet 2</strong>
+                      <div class="text-muted small">Primeras paradas + pesado</div>
                     </div>
-                    <span class="status-pill status-success">early</span>
+                    <span class="status-pill status-success">P2</span>
                   </div>
                 </div>
 
                 <div class="pallet-zone zone-mid" data-zone="P3">
                   <div class="pallet-title">
                     <div>
-                      <strong>Pallet 3</strong>
-                      <div class="text-muted small">Mid route</div>
+                      <strong>Palet 3</strong>
+                      <div class="text-muted small">Ruta media</div>
                     </div>
-                    <span class="status-pill status-warning">mid</span>
+                    <span class="status-pill status-warning">P3</span>
                   </div>
                 </div>
 
                 <div class="pallet-zone zone-reference" data-zone="P4">
                   <div class="pallet-title">
                     <div>
-                      <strong>Pallet 4</strong>
-                      <div class="text-muted small">Grouped by reference</div>
+                      <strong>Palet 4</strong>
+                      <div class="text-muted small">Referencias agrupadas</div>
                     </div>
-                    <span class="status-pill">reference</span>
+                    <span class="status-pill">P4</span>
                   </div>
                 </div>
 
                 <div class="pallet-zone zone-returns" data-zone="P5">
                   <div class="pallet-title">
                     <div>
-                      <strong>Pallet 5</strong>
-                      <div class="text-muted small">Returnable reserve</div>
+                      <strong>Palet 5</strong>
+                      <div class="text-muted small">Reserva retornables</div>
                     </div>
-                    <span class="status-pill">return</span>
+                    <span class="status-pill">P5</span>
                   </div>
                 </div>
 
                 <div class="pallet-zone zone-late" data-zone="P6">
                   <div class="pallet-title">
                     <div>
-                      <strong>Pallet 6</strong>
-                      <div class="text-muted small">Late stops</div>
+                      <strong>Palet 6</strong>
+                      <div class="text-muted small">Últimas paradas</div>
                     </div>
-                    <span class="status-pill">late</span>
+                    <span class="status-pill">P6</span>
                   </div>
                 </div>
               </div>
 
-              <div class="truck-side-label bottom">Right side access</div>
+              <div class="truck-side-label bottom">Acceso lateral derecho</div>
             </div>
 
-            <div class="border rounded-4 p-3 mt-4">
-              <strong>Warehouse instruction:</strong>
-              <span class="text-muted">
-                Load late-stop products first, keep early-stop products close to lateral access, balance heavy products and preserve reserve space for returnables.
-              </span>
+            <div class="impact-alert mt-4" id="moveImpactAlert">
+              <div>
+                <strong>Distribución inicial óptima.</strong>
+                <span class="text-muted">
+                  Los productos de las primeras paradas están en zonas accesibles, los pesados están equilibrados y hay espacio reservado para retornables.
+                </span>
+              </div>
             </div>
           </div>
 
           <div class="app-card p-4">
             <div class="d-flex flex-wrap justify-content-between align-items-start gap-3 mb-4">
               <div>
-                <span class="section-label">Driver operational view</span>
-                <h3 class="fw-bold mt-2 mb-1">Next stop instructions</h3>
+                <span class="section-label">Vista operativa del repartidor</span>
+                <h3 class="fw-bold mt-2 mb-1">Próxima parada e instrucciones</h3>
                 <p class="text-muted mb-0">
-                  Clear instructions for the driver based on the calculated loading plan.
+                  Instrucciones generadas a partir de la distribución actual del camión.
                 </p>
               </div>
-              <button class="btn btn-soft btn-sm" data-chat-open>Ask Gemini</button>
+
+              <button class="btn btn-soft btn-sm" data-chat-open type="button">Preguntar a Gemini</button>
             </div>
 
             <div class="row g-3 mb-4">
               <div class="col-md-4">
                 <div class="driver-panel h-100">
-                  <div class="text-uppercase small opacity-75">Next stop</div>
+                  <div class="text-uppercase small opacity-75">Próxima parada</div>
                   <h3 class="fw-bold mb-1">Plaça Real</h3>
-                  <div class="opacity-75">08:15 · 3 clients</div>
+                  <div class="opacity-75">08:15 · 3 clientes</div>
                 </div>
               </div>
 
               <div class="col-md-4">
                 <div class="metric-card">
-                  <div class="metric-label">Unload from</div>
-                  <div class="metric-value">P1</div>
-                  <span class="status-pill">left side</span>
+                  <div class="metric-label">Descargar desde</div>
+                  <div class="metric-value" id="nextUnloadZone">P1</div>
+                  <span class="status-pill">Lateral izquierdo</span>
                 </div>
               </div>
 
               <div class="col-md-4">
                 <div class="metric-card">
-                  <div class="metric-label">Returns</div>
+                  <div class="metric-label">Retornos previstos</div>
                   <div class="metric-value">6</div>
-                  <span class="status-pill">crates to P5</span>
+                  <span class="status-pill">Cajas a P5</span>
                 </div>
               </div>
             </div>
@@ -227,140 +262,168 @@
               <table class="table align-middle">
                 <thead>
                   <tr>
-                    <th>Client</th>
-                    <th>Product</th>
-                    <th>Quantity</th>
-                    <th>Location</th>
-                    <th>Status</th>
+                    <th>Cliente / grupo</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Ubicación actual</th>
+                    <th>Estado</th>
                   </tr>
                 </thead>
-                <tbody id="driverTableBody">
-                </tbody>
+                <tbody id="driverTableBody"></tbody>
               </table>
             </div>
           </div>
         </div>
 
-        <div class="col-xl-4">
-          <div class="image-card mb-4">
-            <img src="img/truck-loaded.jpeg" alt="Loaded Damm truck">
-            <div class="image-card-overlay">
-              <span class="section-label">Real truck context</span>
-              <h5 class="fw-bold mb-1">Side-access loading</h5>
-              <p class="text-muted mb-0">
-                The layout reflects real loading constraints: pallets, crates, kegs, side access and returnable flow.
-              </p>
+        <div class="col-xxl-4">
+          <div class="app-card p-4 mb-4">
+            <span class="section-label">Evaluación en tiempo real</span>
+            <h4 class="fw-bold mt-2 mb-4">Calidad de la distribución</h4>
+
+            <div class="score-row mb-4">
+              <div class="d-flex justify-content-between mb-2">
+                <span>Accesibilidad primeras paradas</span>
+                <strong id="accessibilityScoreText">91%</strong>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-success" id="accessibilityBar" style="width: 91%"></div>
+              </div>
+            </div>
+
+            <div class="score-row mb-4">
+              <div class="d-flex justify-content-between mb-2">
+                <span>Equilibrio de carga</span>
+                <strong id="balanceScoreText">84%</strong>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-warning" id="balanceBar" style="width: 84%"></div>
+              </div>
+            </div>
+
+            <div class="score-row mb-4">
+              <div class="d-flex justify-content-between mb-2">
+                <span>Ocupación del camión</span>
+                <strong id="occupationScoreText">82%</strong>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-danger" id="occupationBar" style="width: 82%"></div>
+              </div>
+            </div>
+
+            <div class="score-row">
+              <div class="d-flex justify-content-between mb-2">
+                <span>Capacidad para retornables</span>
+                <strong id="returnsScoreText">76%</strong>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-info" id="returnsBar" style="width: 76%"></div>
+              </div>
             </div>
           </div>
 
           <div class="app-card p-4 mb-4">
-            <span class="section-label">Calculation logic</span>
-            <h4 class="fw-bold mt-2 mb-3">How the load is calculated</h4>
+            <span class="section-label">Consecuencias de cambios</span>
+            <h4 class="fw-bold mt-2 mb-3">Alertas operativas</h4>
 
-            <div class="border rounded-4 p-3 mb-3">
-              <strong>1. Route order</strong>
-              <p class="text-muted mb-0">First stops receive the most accessible pallet zones.</p>
-            </div>
-
-            <div class="border rounded-4 p-3 mb-3">
-              <strong>2. Product type</strong>
-              <p class="text-muted mb-0">Heavy items and kegs are placed low and balanced.</p>
-            </div>
-
-            <div class="border rounded-4 p-3 mb-3">
-              <strong>3. Hybrid loading</strong>
-              <p class="text-muted mb-0">Early stops are grouped by customer; high-rotation products remain grouped by reference.</p>
-            </div>
-
-            <div class="border rounded-4 p-3">
-              <strong>4. Returnables</strong>
-              <p class="text-muted mb-0">A flexible pallet area is reserved for empty crates and kegs collected during the route.</p>
+            <div id="warningsList">
+              <div class="warning-item success">
+                <strong>Sin alertas.</strong>
+                <p class="text-muted mb-0">
+                  La distribución actual coincide con el plan óptimo calculado.
+                </p>
+              </div>
             </div>
           </div>
 
-          <div class="app-card p-4">
-            <span class="section-label">Load score</span>
-            <h4 class="fw-bold mt-2 mb-4">Operational quality</h4>
+          <div class="app-card p-4 mb-4">
+            <span class="section-label">Criterios del algoritmo</span>
+            <h4 class="fw-bold mt-2 mb-3">Cómo se calcula la carga</h4>
 
-            <div class="mb-4">
-              <div class="d-flex justify-content-between mb-2">
-                <span>Accessibility</span>
-                <strong>91%</strong>
-              </div>
-              <div class="progress">
-                <div class="progress-bar bg-success" style="width: 91%"></div>
-              </div>
+            <div class="border rounded-4 p-3 mb-3">
+              <strong>1. Orden de ruta</strong>
+              <p class="text-muted mb-0">
+                Las primeras paradas reciben las zonas más accesibles del camión.
+              </p>
             </div>
 
-            <div class="mb-4">
-              <div class="d-flex justify-content-between mb-2">
-                <span>Balance</span>
-                <strong>84%</strong>
-              </div>
-              <div class="progress">
-                <div class="progress-bar bg-warning" style="width: 84%"></div>
-              </div>
+            <div class="border rounded-4 p-3 mb-3">
+              <strong>2. Tipo de producto</strong>
+              <p class="text-muted mb-0">
+                Barriles y productos pesados se colocan abajo y repartidos para evitar desequilibrios.
+              </p>
             </div>
 
-            <div class="mb-4">
-              <div class="d-flex justify-content-between mb-2">
-                <span>Occupation</span>
-                <strong>82%</strong>
-              </div>
-              <div class="progress">
-                <div class="progress-bar bg-danger" style="width: 82%"></div>
-              </div>
+            <div class="border rounded-4 p-3 mb-3">
+              <strong>3. Modelo híbrido</strong>
+              <p class="text-muted mb-0">
+                Se agrupa por cliente/parada al inicio y por referencia en productos de alta rotación.
+              </p>
             </div>
 
-            <div>
-              <div class="d-flex justify-content-between mb-2">
-                <span>Returnable capacity</span>
-                <strong>76%</strong>
-              </div>
-              <div class="progress">
-                <div class="progress-bar bg-info" style="width: 76%"></div>
-              </div>
+            <div class="border rounded-4 p-3">
+              <strong>4. Retornables</strong>
+              <p class="text-muted mb-0">
+                Se reserva una zona flexible para cajas y barriles vacíos que vuelven durante la ruta.
+              </p>
+            </div>
+          </div>
+
+          <div class="image-card">
+            <img src="{% static 'img/warehouse-racks.jpeg' %}" alt="Almacén Damm">
+            <div class="image-card-overlay">
+              <span class="section-label">Contexto almacén</span>
+              <h5 class="fw-bold mb-1">Preparación operativa</h5>
+              <p class="mb-0">
+                La carga debe ser útil para almacén y también para el repartidor en la calle.
+              </p>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <button class="chat-floating-button" data-chat-open>
-      Gemini
+    <button class="chat-floating-button" data-chat-open type="button">
+      <img src="{% static 'img/gemini_logo.png' %}" alt="Gemini" class="chat-floating-icon">
+      <span>Chat</span>
     </button>
 
     <aside class="chat-drawer" id="chatDrawer">
       <div class="chat-drawer-header">
         <div>
           <span class="section-label">Gemini Assistant</span>
-          <h5 class="fw-bold mb-0">Operations assistant</h5>
+          <h5 class="fw-bold mb-0">Asistente operativo</h5>
         </div>
-        <button class="btn btn-soft btn-sm" data-chat-close>Close</button>
+        <button class="btn btn-soft btn-sm" data-chat-close type="button">Cerrar</button>
+      </div>
+
+      <div class="chat-suggestions">
+        <button class="suggestion-chip" data-prompt="Qué pasa si muevo un producto de zona" type="button">Mover producto</button>
+        <button class="suggestion-chip" data-prompt="Explícame la distribución actual de carga" type="button">Distribución actual</button>
+        <button class="suggestion-chip" data-prompt="Cómo afectan los retornables a la carga" type="button">Retornables</button>
       </div>
 
       <div class="chat-messages" id="chatMessages">
         <div class="chat-message assistant">
           <div class="chat-bubble">
-            Ask me why a product is assigned to a pallet, how returnables are handled, or how the loading plan supports the route.
+            Pregúntame por qué un paquete está asignado a un palet, qué pasa si se mueve de zona o cómo afecta la carga a la ruta.
           </div>
         </div>
       </div>
 
       <form id="chatForm" class="chat-form-drawer">
         <input
-          type="text"
           id="chatInput"
           class="form-control"
-          placeholder="Ask about pallets, products, routes or KPIs..."
+          type="text"
+          placeholder="Pregunta sobre palets, productos, ruta o métricas..."
           autocomplete="off"
         />
-        <button class="btn btn-damm" type="submit">Send</button>
+        <button class="btn btn-damm" type="submit">Enviar</button>
       </form>
     </aside>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
 </body>
 </html>

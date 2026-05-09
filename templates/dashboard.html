@@ -4,19 +4,21 @@
 <html lang="es" data-bs-theme="light">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Damm Smart Truck | Panel</title>
+
   <link rel="icon" type="image/png" href="{% static 'img/flaticon.png' %}" />
   <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" />
   <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
-  <title>Damm Smart Truck | Dashboard</title>
 </head>
- 
+
 <body>
   <div class="app-shell">
     <nav class="navbar navbar-expand-lg app-navbar sticky-top">
       <div class="container-fluid px-4">
-        <a class="navbar-brand d-flex align-items-center gap-3" href="dashboard.html">
-          <img src="{% static 'img/flaticon.png' %}" class="brand-icon" alt="Damm icon">
-          <img src="{% static 'img/flaticon.png' %}" class="brand-logo-full" alt="Damm logo">
+        <a class="navbar-brand d-flex align-items-center" href="/dashboard">
+          <img src="{% static 'img/damm-logo.png' %}" class="brand-logo-full" alt="Damm logo">
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
@@ -26,16 +28,16 @@
         <div class="collapse navbar-collapse" id="mainNavbar">
           <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
             <li class="nav-item">
-              <a class="nav-link active" href="dashboard.html">Dashboard</a>
+              <a class="nav-link active" href="/dashboard">Panel</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="mapa.html">Ruta</a>
+              <a class="nav-link" href="/mapa">Ruta</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="distribucion_camion.html">Carga</a>
+              <a class="nav-link" href="/distribucion">Carga</a>
             </li>
             <li class="nav-item ms-lg-2">
-              <button class="btn btn-soft btn-sm" data-theme-toggle type="button">Dark mode</button>
+              <button class="btn btn-soft btn-sm" data-theme-toggle type="button">Modo oscuro</button>
             </li>
           </ul>
         </div>
@@ -44,34 +46,34 @@
 
     <main class="container-fluid px-4 py-4 py-lg-5">
       <section class="row g-4 align-items-stretch mb-4">
-        <div class="col-xl-7">
+        <div class="col-xl-8">
           <div class="app-card h-100 p-4 p-lg-5 hero-dashboard">
             <span class="section-label">Damm Smart Truck</span>
             <h1 class="page-title mt-3 mb-4">
-              Route and load planning for urban distribution.
+              Planificación conjunta de ruta y carga.
             </h1>
             <p class="page-subtitle mb-4">
-              A decision-support platform for planning truck routes, grouping clients into efficient stops, and optimizing how products are loaded before leaving the warehouse.
+              Herramienta de apoyo para planificar rutas de reparto, agrupar clientes en paradas eficientes y optimizar cómo se carga el camión antes de salir del almacén.
             </p>
 
             <div class="d-flex flex-wrap gap-2 mb-4">
-              <button class="btn btn-damm">Optimize scenario</button>
-              <a href="mapa.html" class="btn btn-soft">Open route module</a>
-              <a href="distribucion_camion.html" class="btn btn-soft">Open load module</a>
+              <a href="/distribucion" class="btn btn-damm">Ver distribución de carga</a>
+              <a href="/mapa" class="btn btn-soft">Ver ruta optimizada</a>
+              <button class="btn btn-soft" data-chat-open type="button">Preguntar a Gemini</button>
             </div>
 
             <div class="row g-3">
               <div class="col-sm-6 col-xl-3">
                 <div class="metric-card">
-                  <div class="metric-label">Clients</div>
+                  <div class="metric-label">Clientes</div>
                   <div class="metric-value">22</div>
-                  <span class="status-pill">DR-042</span>
+                  <span class="status-pill">Ruta DR-042</span>
                 </div>
               </div>
 
               <div class="col-sm-6 col-xl-3">
                 <div class="metric-card">
-                  <div class="metric-label">Optimized stops</div>
+                  <div class="metric-label">Paradas optimizadas</div>
                   <div class="metric-value">15</div>
                   <span class="status-pill status-success">-32%</span>
                 </div>
@@ -79,80 +81,32 @@
 
               <div class="col-sm-6 col-xl-3">
                 <div class="metric-card">
-                  <div class="metric-label">Load usage</div>
+                  <div class="metric-label">Ocupación</div>
                   <div class="metric-value">82%</div>
-                  <span class="status-pill">6 pallets</span>
+                  <span class="status-pill">6 palets</span>
                 </div>
               </div>
 
               <div class="col-sm-6 col-xl-3">
                 <div class="metric-card">
-                  <div class="metric-label">Returnables</div>
+                  <div class="metric-label">Retornables</div>
                   <div class="metric-value">58%</div>
-                  <span class="status-pill status-warning">reserved area</span>
+                  <span class="status-pill status-warning">zona reservada</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-xl-5">
-          <div class="app-card p-0 chat-card h-100" id="assistant-section">
-            <div class="chat-header">
-              <div class="d-flex align-items-center gap-3">
-                <div class="chatbot-avatar-wrap">
-                  <img src="{% static 'img/flaticon.png' %}" alt="Gemini assistant" class="chatbot-avatar">
-                </div>
-                <div>
-                  <h4 class="mb-1 fw-bold">Gemini Operations Assistant</h4>
-                  <p class="mb-0 text-muted">
-                    Ask about routes, load plan, clients, stops, time windows or operational KPIs.
-                  </p>
-                </div>
-              </div>
-              <span class="status-pill status-success">Gemini API</span>
-            </div>
-
-            <div class="chat-suggestions px-4 pt-3">
-              <button class="suggestion-chip" data-prompt="Summarize the optimized route for DR-042">
-                Route summary
-              </button>
-              <button class="suggestion-chip" data-prompt="Which pallets should be most accessible for the first stops?">
-                Load advice
-              </button>
-              <button class="suggestion-chip" data-prompt="What is the main improvement of the MVP compared to current operations?">
-                MVP impact
-              </button>
-              <button class="suggestion-chip" data-prompt="Explain the logic behind grouping multiple clients into one stop">
-                Stop grouping
-              </button>
-            </div>
-
-            <div class="chat-messages px-4" id="chatMessages">
-              <div class="chat-message assistant">
-                <div class="chat-bubble">
-                  Hello! I’m the Gemini assistant for the Damm logistics MVP. I can explain the route plan, truck loading recommendation and estimated operational impact.
-                </div>
-              </div>
-            </div>
-
-            <div class="chat-input-area">
-              <div class="small text-muted mb-2">
-                Example: “Which stop has the strictest time window?” or “How does the truck loading support the route?”
-              </div>
-              <form id="chatForm" class="chat-form">
-                <input
-                  type="text"
-                  id="chatInput"
-                  class="form-control"
-                  placeholder="Ask Gemini about routes, products, pallets, clients or metrics..."
-                  autocomplete="off"
-                />
-                <button type="submit" class="btn btn-damm chat-send-btn">Send</button>
-              </form>
-              <div class="small text-muted mt-2">
-                If Gemini is not connected yet, the assistant will answer using demo project context.
-              </div>
+        <div class="col-xl-4">
+          <div class="image-card h-100">
+            <img src="{% static 'img/warehouse-overview.jpeg' %}" alt="Almacén y producto Damm">
+            <div class="image-card-overlay">
+              <span class="section-label">Contexto real</span>
+              <h5 class="fw-bold mb-1">Operativa de almacén y reparto</h5>
+              <p class="mb-0">
+                El sistema busca equilibrar eficiencia de almacén, facilidad de descarga y realidad del repartidor.
+              </p>
             </div>
           </div>
         </div>
@@ -163,55 +117,55 @@
           <div class="app-card p-4">
             <div class="d-flex flex-wrap justify-content-between align-items-start gap-3 mb-4">
               <div>
-                <span class="section-label">Impact simulation</span>
-                <h3 class="fw-bold mb-1 mt-2">Current operation vs optimized proposal</h3>
+                <span class="section-label">Simulación de impacto</span>
+                <h3 class="fw-bold mb-1 mt-2">Situación actual vs propuesta optimizada</h3>
                 <p class="text-muted mb-0">
-                  Estimated gains based on route grouping, load accessibility and delivery sequence.
+                  Estimación basada en agrupación de paradas, accesibilidad de carga y orden de entrega.
                 </p>
               </div>
-              <span class="status-pill status-success">Optimized scenario</span>
+              <span class="status-pill status-success">Escenario optimizado</span>
             </div>
 
             <div class="table-responsive">
               <table class="table align-middle">
                 <thead>
                   <tr>
-                    <th>Metric</th>
-                    <th>Current</th>
-                    <th>Proposal</th>
-                    <th>Impact</th>
+                    <th>Métrica</th>
+                    <th>Actual</th>
+                    <th>Propuesta</th>
+                    <th>Impacto</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Truck stops</td>
+                    <td>Paradas del camión</td>
                     <td>22</td>
                     <td>15</td>
                     <td><span class="status-pill status-success">-32%</span></td>
                   </tr>
                   <tr>
-                    <td>Estimated search time</td>
+                    <td>Tiempo buscando producto</td>
                     <td>70 min</td>
                     <td>42 min</td>
                     <td><span class="status-pill status-success">-40%</span></td>
                   </tr>
                   <tr>
-                    <td>Time-window compliance</td>
+                    <td>Cumplimiento de franjas</td>
                     <td>82%</td>
                     <td>94%</td>
                     <td><span class="status-pill status-success">+12 pp</span></td>
                   </tr>
                   <tr>
-                    <td>Early-stop accessibility</td>
-                    <td>Medium</td>
-                    <td>High</td>
-                    <td><span class="status-pill status-success">Improved</span></td>
+                    <td>Accesibilidad primeras entregas</td>
+                    <td>Media</td>
+                    <td>Alta</td>
+                    <td><span class="status-pill status-success">Mejora</span></td>
                   </tr>
                   <tr>
-                    <td>Truck occupation</td>
+                    <td>Ocupación del camión</td>
                     <td>84%</td>
                     <td>82%</td>
-                    <td><span class="status-pill status-warning">Accepted trade-off</span></td>
+                    <td><span class="status-pill status-warning">Trade-off aceptable</span></td>
                   </tr>
                 </tbody>
               </table>
@@ -220,24 +174,24 @@
 
           <div class="row g-4 mt-1">
             <div class="col-md-6">
-              <a href="mapa.html" class="text-decoration-none">
+              <a href="/mapa" class="text-decoration-none">
                 <div class="app-card p-4 h-100">
-                  <span class="section-label">Route module</span>
-                  <h4 class="fw-bold mt-2 text-body">Stop grouping and route order</h4>
+                  <span class="section-label">Módulo de ruta</span>
+                  <h4 class="fw-bold mt-2 text-body">Agrupación de paradas</h4>
                   <p class="text-muted mb-0">
-                    Groups nearby clients into operational stops and prioritizes time windows.
+                    Agrupa clientes cercanos y prioriza franjas horarias para reducir movimientos innecesarios.
                   </p>
                 </div>
               </a>
             </div>
 
             <div class="col-md-6">
-              <a href="distribucion_camion.html" class="text-decoration-none">
+              <a href="/distribucion" class="text-decoration-none">
                 <div class="app-card p-4 h-100">
-                  <span class="section-label">Load module</span>
-                  <h4 class="fw-bold mt-2 text-body">Truck loading recommendation</h4>
+                  <span class="section-label">Módulo de carga</span>
+                  <h4 class="fw-bold mt-2 text-body">Distribución del camión</h4>
                   <p class="text-muted mb-0">
-                    Suggests pallet zones according to route order, product type and returnables.
+                    Recomienda palets según ruta, tipo de producto, accesibilidad y retornables.
                   </p>
                 </div>
               </a>
@@ -247,44 +201,82 @@
 
         <div class="col-xl-4">
           <div class="app-card p-4 mb-4">
-            <span class="section-label">Recommendation logic</span>
-            <h4 class="fw-bold mt-2 mb-3">AI-supported decision context</h4>
+            <span class="section-label">Decisión asistida</span>
+            <h4 class="fw-bold mt-2 mb-3">Lógica de recomendación</h4>
 
             <div class="border rounded-4 p-3 mb-3">
-              <div class="fw-bold mb-1">Group dense urban clients</div>
+              <div class="fw-bold mb-1">Agrupar clientes cercanos</div>
               <p class="text-muted mb-0">
-                One stop can serve several nearby customers if the parking point and delivery window are compatible.
+                Una misma parada puede servir a varios clientes si la ubicación y las franjas lo permiten.
               </p>
             </div>
 
             <div class="border rounded-4 p-3 mb-3">
-              <div class="fw-bold mb-1">Prioritize early accessibility</div>
+              <div class="fw-bold mb-1">Priorizar accesibilidad</div>
               <p class="text-muted mb-0">
-                Products for first stops stay closest to lateral truck access to reduce handling effort.
+                Los productos de las primeras paradas quedan cerca del acceso lateral.
               </p>
             </div>
 
             <div class="border rounded-4 p-3">
-              <div class="fw-bold mb-1">Reserve returnable space</div>
+              <div class="fw-bold mb-1">Reservar espacio para retornables</div>
               <p class="text-muted mb-0">
-                Empty crates and kegs can come back during the route, so the load plan keeps flexible space available.
+                El camión también recoge cajas y barriles vacíos durante la ruta.
               </p>
             </div>
           </div>
 
-          <div class="image-card">
-            <img src="{% static 'img/flaticon.png' %}" alt="Warehouse overview">
-            <div class="image-card-overlay">
-              <span class="section-label">Operational context</span>
-              <h5 class="fw-bold mb-1">Real warehouse conditions</h5>
-              <p class="text-muted mb-0">
-                The MVP is designed around real product handling, route preparation and driver execution.
-              </p>
-            </div>
+          <div class="app-card p-4">
+            <span class="section-label">Gemini API</span>
+            <h4 class="fw-bold mt-2 mb-3">Asistente operativo</h4>
+            <p class="text-muted">
+              Gemini se integra como apoyo para explicar decisiones, resumir incidencias y justificar por qué una carga o ruta es más eficiente.
+            </p>
+            <button class="btn btn-damm w-100" data-chat-open type="button">Abrir asistente</button>
           </div>
         </div>
       </section>
     </main>
+
+    <button class="chat-floating-button" data-chat-open type="button">
+      <img src="{% static 'img/gemini_logo.png' %}" alt="Gemini" class="chat-floating-icon">
+      <span>Chat</span>
+    </button>
+
+    <aside class="chat-drawer" id="chatDrawer">
+      <div class="chat-drawer-header">
+        <div>
+          <span class="section-label">Gemini Assistant</span>
+          <h5 class="fw-bold mb-0">Asistente operativo</h5>
+        </div>
+        <button class="btn btn-soft btn-sm" data-chat-close type="button">Cerrar</button>
+      </div>
+
+      <div class="chat-suggestions">
+        <button class="suggestion-chip" data-prompt="Resume la mejora principal del proyecto" type="button">Mejora principal</button>
+        <button class="suggestion-chip" data-prompt="Explícame cómo se agrupan las paradas" type="button">Agrupar paradas</button>
+        <button class="suggestion-chip" data-prompt="Cómo afecta la carga a la ruta" type="button">Carga y ruta</button>
+      </div>
+
+      <div class="chat-messages" id="chatMessages">
+        <div class="chat-message assistant">
+          <div class="chat-bubble">
+            Soy el asistente operativo del MVP. Puedo explicar rutas, carga, palets, retornables, métricas e impacto.
+          </div>
+        </div>
+      </div>
+
+      <form id="chatForm" class="chat-form-drawer">
+        <input
+          id="chatInput"
+          class="form-control"
+          type="text"
+          placeholder="Pregunta sobre ruta, carga o métricas..."
+          autocomplete="off"
+        />
+        <button class="btn btn-damm" type="submit">Enviar</button>
+      </form>
+    </aside>
   </div>
 
   <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
