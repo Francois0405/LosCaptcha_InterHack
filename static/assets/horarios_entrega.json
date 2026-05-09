@@ -12,7 +12,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "23:59:59",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 104047,
@@ -27,7 +27,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "0:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 104047,
@@ -42,7 +42,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "23:59:59",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 104047,
@@ -57,7 +57,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "0:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 104047,
@@ -72,7 +72,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "0:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 122348,
@@ -87,7 +87,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 122348,
@@ -102,7 +102,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 122348,
@@ -117,7 +117,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 122348,
@@ -132,7 +132,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 122348,
@@ -147,7 +147,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 123142,
@@ -162,7 +162,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 123142,
@@ -177,7 +177,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 123142,
@@ -192,7 +192,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 123142,
@@ -207,7 +207,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 123142,
@@ -222,7 +222,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 128061,
@@ -252,7 +252,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:30:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 128915,
@@ -267,7 +267,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:30:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 128915,
@@ -282,7 +282,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:30:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 128915,
@@ -297,7 +297,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:30:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 128915,
@@ -312,7 +312,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:30:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 136720,
@@ -327,7 +327,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 136720,
@@ -342,7 +342,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 136720,
@@ -357,7 +357,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 136720,
@@ -372,7 +372,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 136720,
@@ -387,7 +387,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100040724,
@@ -402,7 +402,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100040724,
@@ -417,7 +417,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100040724,
@@ -432,7 +432,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100040724,
@@ -447,7 +447,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100040724,
@@ -462,7 +462,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100041053,
@@ -477,7 +477,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100041053,
@@ -492,7 +492,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100041053,
@@ -507,7 +507,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100041053,
@@ -522,7 +522,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100041053,
@@ -537,7 +537,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100041442,
@@ -567,7 +567,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100041442,
@@ -582,7 +582,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100041442,
@@ -597,7 +597,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100041442,
@@ -612,7 +612,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100041688,
@@ -627,7 +627,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100041688,
@@ -642,7 +642,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100041688,
@@ -657,7 +657,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100041688,
@@ -672,7 +672,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100041688,
@@ -687,7 +687,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100041762,
@@ -777,7 +777,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100042500,
@@ -792,7 +792,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100042500,
@@ -807,7 +807,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100042500,
@@ -822,7 +822,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100042500,
@@ -837,7 +837,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100042630,
@@ -852,7 +852,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100042630,
@@ -867,7 +867,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100042630,
@@ -882,7 +882,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100042630,
@@ -897,7 +897,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100042630,
@@ -912,7 +912,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100042846,
@@ -927,7 +927,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100042846,
@@ -942,7 +942,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100042846,
@@ -957,7 +957,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100042846,
@@ -972,7 +972,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100042846,
@@ -987,7 +987,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100042930,
@@ -1032,7 +1032,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100042964,
@@ -1047,7 +1047,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100042964,
@@ -1062,7 +1062,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100042964,
@@ -1077,7 +1077,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100042964,
@@ -1092,7 +1092,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100042975,
@@ -1107,7 +1107,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "11:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100042975,
@@ -1122,7 +1122,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "11:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100042975,
@@ -1137,7 +1137,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "11:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100042975,
@@ -1152,7 +1152,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "11:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100042975,
@@ -1167,7 +1167,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "11:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100043035,
@@ -1182,7 +1182,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100043035,
@@ -1197,7 +1197,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100043035,
@@ -1212,7 +1212,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100043035,
@@ -1227,7 +1227,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100043035,
@@ -1242,7 +1242,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100043107,
@@ -1257,7 +1257,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100043107,
@@ -1272,7 +1272,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100043107,
@@ -1287,7 +1287,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100043107,
@@ -1302,7 +1302,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100043107,
@@ -1317,7 +1317,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100043490,
@@ -1332,7 +1332,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100043490,
@@ -1362,7 +1362,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100043490,
@@ -1377,7 +1377,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100043490,
@@ -1392,7 +1392,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100043853,
@@ -1407,7 +1407,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100043853,
@@ -1422,7 +1422,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100043853,
@@ -1437,7 +1437,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100043853,
@@ -1452,7 +1452,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100043853,
@@ -1467,7 +1467,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100044243,
@@ -1482,7 +1482,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100044243,
@@ -1497,7 +1497,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100044243,
@@ -1512,7 +1512,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100044243,
@@ -1527,7 +1527,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100044243,
@@ -1542,7 +1542,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100044479,
@@ -1572,7 +1572,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100054637,
@@ -1587,7 +1587,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100054637,
@@ -1602,7 +1602,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100054637,
@@ -1617,7 +1617,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100054637,
@@ -1632,7 +1632,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100054705,
@@ -1677,7 +1677,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "8:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100054750,
@@ -1707,7 +1707,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "8:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100054750,
@@ -1722,7 +1722,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "8:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100054750,
@@ -1737,7 +1737,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "8:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100054935,
@@ -1752,7 +1752,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "17:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100054935,
@@ -1767,7 +1767,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "17:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100054935,
@@ -1782,7 +1782,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "17:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100054935,
@@ -1797,7 +1797,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "17:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100054935,
@@ -1812,7 +1812,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "17:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055035,
@@ -1827,7 +1827,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055035,
@@ -1842,7 +1842,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055035,
@@ -1872,7 +1872,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055035,
@@ -1887,7 +1887,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055101,
@@ -1902,7 +1902,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "17:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055101,
@@ -1917,7 +1917,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "17:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055101,
@@ -1932,7 +1932,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "17:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055101,
@@ -1947,7 +1947,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "17:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055101,
@@ -1962,7 +1962,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "17:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055108,
@@ -1977,7 +1977,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:30:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055108,
@@ -1992,7 +1992,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:30:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055108,
@@ -2007,7 +2007,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:30:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055108,
@@ -2022,7 +2022,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:30:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055108,
@@ -2037,7 +2037,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:30:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055150,
@@ -2052,7 +2052,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055150,
@@ -2067,7 +2067,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055150,
@@ -2082,7 +2082,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055150,
@@ -2097,7 +2097,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055150,
@@ -2112,7 +2112,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055201,
@@ -2127,7 +2127,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:30:00",
     "horario_termina_a": "17:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055201,
@@ -2142,7 +2142,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:30:00",
     "horario_termina_a": "17:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055201,
@@ -2157,7 +2157,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:30:00",
     "horario_termina_a": "17:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055201,
@@ -2172,7 +2172,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:30:00",
     "horario_termina_a": "17:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055201,
@@ -2187,7 +2187,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:30:00",
     "horario_termina_a": "17:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055221,
@@ -2217,7 +2217,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "9:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055221,
@@ -2232,7 +2232,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "9:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055221,
@@ -2247,7 +2247,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "9:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055221,
@@ -2262,7 +2262,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "9:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055331,
@@ -2277,7 +2277,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055331,
@@ -2292,7 +2292,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055331,
@@ -2307,7 +2307,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055331,
@@ -2322,7 +2322,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055331,
@@ -2337,7 +2337,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055508,
@@ -2352,7 +2352,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "8:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055508,
@@ -2367,7 +2367,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "8:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055508,
@@ -2397,7 +2397,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "8:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055508,
@@ -2412,7 +2412,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "8:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100055620,
@@ -2442,7 +2442,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100056059,
@@ -2457,7 +2457,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100056059,
@@ -2472,7 +2472,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100056059,
@@ -2487,7 +2487,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100056059,
@@ -2502,7 +2502,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100056125,
@@ -2517,7 +2517,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100056125,
@@ -2532,7 +2532,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100056125,
@@ -2547,7 +2547,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100056125,
@@ -2562,7 +2562,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100056125,
@@ -2577,7 +2577,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100056293,
@@ -2592,7 +2592,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "13:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100056293,
@@ -2607,7 +2607,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "13:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100056293,
@@ -2622,7 +2622,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "13:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100056293,
@@ -2637,7 +2637,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "13:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100056293,
@@ -2652,7 +2652,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "13:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100069265,
@@ -2667,7 +2667,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "11:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100069265,
@@ -2682,7 +2682,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "11:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100069265,
@@ -2697,7 +2697,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "11:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100069265,
@@ -2712,7 +2712,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "11:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100069265,
@@ -2727,7 +2727,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "11:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100075744,
@@ -2757,7 +2757,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100076545,
@@ -2772,7 +2772,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100076545,
@@ -2787,7 +2787,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100076545,
@@ -2802,7 +2802,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100076545,
@@ -2817,7 +2817,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100076613,
@@ -2832,7 +2832,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "10:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100076613,
@@ -2847,7 +2847,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "13:00:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100076613,
@@ -2862,7 +2862,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "10:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100076613,
@@ -2877,7 +2877,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "13:00:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100076613,
@@ -2892,7 +2892,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "10:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100076613,
@@ -2907,7 +2907,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "13:00:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100076613,
@@ -2922,7 +2922,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "10:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100076613,
@@ -2937,7 +2937,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "13:00:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100076613,
@@ -2952,7 +2952,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "10:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100076613,
@@ -2967,7 +2967,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "13:00:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100087801,
@@ -2982,7 +2982,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100087801,
@@ -2997,7 +2997,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100087801,
@@ -3012,7 +3012,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:30:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100087801,
@@ -3027,7 +3027,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100087801,
@@ -3042,7 +3042,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100108910,
@@ -3057,7 +3057,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100108910,
@@ -3072,7 +3072,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100108910,
@@ -3087,7 +3087,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100108910,
@@ -3102,7 +3102,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100108910,
@@ -3117,7 +3117,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100108975,
@@ -3132,7 +3132,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100108975,
@@ -3147,7 +3147,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100108975,
@@ -3162,7 +3162,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100108975,
@@ -3177,7 +3177,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100108975,
@@ -3192,7 +3192,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100111065,
@@ -3207,7 +3207,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100111065,
@@ -3222,7 +3222,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100111065,
@@ -3237,7 +3237,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100111065,
@@ -3252,7 +3252,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100111065,
@@ -3267,7 +3267,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100120688,
@@ -3282,7 +3282,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100120688,
@@ -3297,7 +3297,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100120688,
@@ -3312,7 +3312,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100120688,
@@ -3327,7 +3327,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100120688,
@@ -3342,7 +3342,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100121589,
@@ -3357,7 +3357,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100121589,
@@ -3372,7 +3372,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100121589,
@@ -3387,7 +3387,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100121589,
@@ -3402,7 +3402,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100121589,
@@ -3417,7 +3417,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100126939,
@@ -3477,7 +3477,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100151827,
@@ -3492,7 +3492,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100151827,
@@ -3507,7 +3507,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100151827,
@@ -3522,7 +3522,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100151827,
@@ -3537,7 +3537,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100153533,
@@ -3552,7 +3552,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:30:00",
     "horario_termina_a": "9:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100153533,
@@ -3567,7 +3567,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:30:00",
     "horario_termina_a": "9:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100153533,
@@ -3582,7 +3582,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:30:00",
     "horario_termina_a": "9:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100153533,
@@ -3597,7 +3597,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:30:00",
     "horario_termina_a": "9:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100153533,
@@ -3612,7 +3612,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:30:00",
     "horario_termina_a": "9:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100169285,
@@ -3627,7 +3627,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100169285,
@@ -3642,7 +3642,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100169285,
@@ -3657,7 +3657,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100169285,
@@ -3672,7 +3672,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100169285,
@@ -3687,7 +3687,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100190781,
@@ -3717,7 +3717,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100198106,
@@ -3732,7 +3732,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100198106,
@@ -3747,7 +3747,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100198106,
@@ -3762,7 +3762,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100198106,
@@ -3777,7 +3777,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100199329,
@@ -3807,7 +3807,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "20:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100199450,
@@ -3822,7 +3822,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "20:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100199450,
@@ -3837,7 +3837,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "20:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100199450,
@@ -3852,7 +3852,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "20:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100199450,
@@ -3867,7 +3867,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "20:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100218808,
@@ -3882,7 +3882,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:45:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100218808,
@@ -3897,7 +3897,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:45:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100218808,
@@ -3912,7 +3912,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:45:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100218808,
@@ -3927,7 +3927,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:45:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100218808,
@@ -3942,7 +3942,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:45:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100230870,
@@ -3987,7 +3987,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100253034,
@@ -4002,7 +4002,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100253034,
@@ -4017,7 +4017,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100253034,
@@ -4032,7 +4032,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100253034,
@@ -4047,7 +4047,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100264438,
@@ -4107,7 +4107,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "20:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100290959,
@@ -4122,7 +4122,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "20:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100290959,
@@ -4137,7 +4137,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "20:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100290959,
@@ -4152,7 +4152,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "20:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100290959,
@@ -4167,7 +4167,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "20:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100291002,
@@ -4212,7 +4212,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "11:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100296409,
@@ -4227,7 +4227,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "11:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100296409,
@@ -4242,7 +4242,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "11:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100296409,
@@ -4257,7 +4257,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "11:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100296409,
@@ -4272,7 +4272,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "11:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100298616,
@@ -4332,7 +4332,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100309566,
@@ -4347,7 +4347,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100309566,
@@ -4362,7 +4362,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100309566,
@@ -4377,7 +4377,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100309566,
@@ -4392,7 +4392,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100326765,
@@ -4407,7 +4407,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100326765,
@@ -4422,7 +4422,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100326765,
@@ -4437,7 +4437,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100326765,
@@ -4452,7 +4452,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100326765,
@@ -4467,7 +4467,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100331748,
@@ -4482,7 +4482,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100331748,
@@ -4497,7 +4497,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100331748,
@@ -4512,7 +4512,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100331748,
@@ -4527,7 +4527,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100331748,
@@ -4542,7 +4542,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100334970,
@@ -4572,7 +4572,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100341135,
@@ -4587,7 +4587,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100341135,
@@ -4602,7 +4602,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100341135,
@@ -4617,7 +4617,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100341135,
@@ -4632,7 +4632,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100342696,
@@ -4677,7 +4677,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "20:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100364948,
@@ -4692,7 +4692,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "20:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100364948,
@@ -4707,7 +4707,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "20:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100364948,
@@ -4722,7 +4722,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "20:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100364948,
@@ -4737,7 +4737,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "20:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100366736,
@@ -4782,7 +4782,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "9:15:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100373488,
@@ -4797,7 +4797,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "9:15:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100373488,
@@ -4812,7 +4812,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "9:15:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100373488,
@@ -4827,7 +4827,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "9:15:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100373488,
@@ -4842,7 +4842,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "9:15:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100373489,
@@ -4857,7 +4857,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100373489,
@@ -4872,7 +4872,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100373489,
@@ -4887,7 +4887,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100373489,
@@ -4902,7 +4902,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100373489,
@@ -4917,7 +4917,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100373624,
@@ -4932,7 +4932,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100373624,
@@ -4947,7 +4947,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100373624,
@@ -4962,7 +4962,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100373624,
@@ -4977,7 +4977,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100373624,
@@ -4992,7 +4992,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100381733,
@@ -5007,7 +5007,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100381733,
@@ -5022,7 +5022,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100381733,
@@ -5037,7 +5037,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100381733,
@@ -5052,7 +5052,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100381733,
@@ -5067,7 +5067,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100381913,
@@ -5082,7 +5082,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100381913,
@@ -5097,7 +5097,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100381913,
@@ -5112,7 +5112,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100381913,
@@ -5127,7 +5127,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100381913,
@@ -5142,7 +5142,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100386692,
@@ -5157,7 +5157,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "16:30:00",
     "horario_termina_a": "19:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100386692,
@@ -5172,7 +5172,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "16:30:00",
     "horario_termina_a": "19:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100386692,
@@ -5187,7 +5187,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "16:30:00",
     "horario_termina_a": "19:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100386692,
@@ -5202,7 +5202,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "16:30:00",
     "horario_termina_a": "19:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100386692,
@@ -5217,7 +5217,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "16:30:00",
     "horario_termina_a": "19:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100397815,
@@ -5232,7 +5232,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:45:00",
     "horario_termina_a": "7:15:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100397815,
@@ -5247,7 +5247,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:45:00",
     "horario_termina_a": "7:15:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100397815,
@@ -5262,7 +5262,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:45:00",
     "horario_termina_a": "7:15:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100397815,
@@ -5277,7 +5277,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:45:00",
     "horario_termina_a": "7:15:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100397815,
@@ -5292,7 +5292,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:45:00",
     "horario_termina_a": "7:15:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100398390,
@@ -5367,7 +5367,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100403752,
@@ -5382,7 +5382,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100403752,
@@ -5397,7 +5397,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100403752,
@@ -5412,7 +5412,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100403752,
@@ -5427,7 +5427,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100404927,
@@ -5457,7 +5457,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100405022,
@@ -5472,7 +5472,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100405022,
@@ -5487,7 +5487,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100405022,
@@ -5502,7 +5502,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100405022,
@@ -5517,7 +5517,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100412948,
@@ -5547,7 +5547,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100415580,
@@ -5562,7 +5562,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100415580,
@@ -5577,7 +5577,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100415580,
@@ -5592,7 +5592,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100415580,
@@ -5607,7 +5607,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100419295,
@@ -5637,7 +5637,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:30:00",
     "horario_termina_a": "8:30:30",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100420608,
@@ -5652,7 +5652,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:30:00",
     "horario_termina_a": "8:30:30",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100420608,
@@ -5667,7 +5667,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:30:00",
     "horario_termina_a": "8:30:30",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100420608,
@@ -5682,7 +5682,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:30:00",
     "horario_termina_a": "8:30:30",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100420608,
@@ -5697,7 +5697,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:30:00",
     "horario_termina_a": "8:30:30",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100424060,
@@ -5712,7 +5712,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:30:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100424060,
@@ -5727,7 +5727,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:30:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100424060,
@@ -5742,7 +5742,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:30:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100424060,
@@ -5757,7 +5757,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:30:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100424060,
@@ -5772,7 +5772,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:30:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100442788,
@@ -5787,7 +5787,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100442788,
@@ -5802,7 +5802,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100442788,
@@ -5817,7 +5817,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100442788,
@@ -5832,7 +5832,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100442788,
@@ -5847,7 +5847,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100442923,
@@ -5877,7 +5877,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:30:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100445846,
@@ -5892,7 +5892,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:30:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100445846,
@@ -5907,7 +5907,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:30:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100445846,
@@ -5922,7 +5922,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:30:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100445846,
@@ -5937,7 +5937,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:30:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100449523,
@@ -5967,7 +5967,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100453074,
@@ -5982,7 +5982,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100453074,
@@ -5997,7 +5997,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100453074,
@@ -6012,7 +6012,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100453074,
@@ -6027,7 +6027,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100466534,
@@ -6117,7 +6117,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100479079,
@@ -6132,7 +6132,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100479079,
@@ -6147,7 +6147,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100479079,
@@ -6162,7 +6162,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100479079,
@@ -6177,7 +6177,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100480482,
@@ -6192,7 +6192,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100480482,
@@ -6207,7 +6207,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100480482,
@@ -6222,7 +6222,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100480482,
@@ -6237,7 +6237,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100480482,
@@ -6252,7 +6252,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100484329,
@@ -6267,7 +6267,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:30:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100484329,
@@ -6282,7 +6282,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:30:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100484329,
@@ -6297,7 +6297,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:30:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100484329,
@@ -6312,7 +6312,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:30:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100484329,
@@ -6327,7 +6327,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:30:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100486030,
@@ -6342,7 +6342,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "10:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100486030,
@@ -6357,7 +6357,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "10:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100486030,
@@ -6372,7 +6372,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "10:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100486030,
@@ -6387,7 +6387,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "10:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100486030,
@@ -6402,7 +6402,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "10:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100489640,
@@ -6507,7 +6507,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100493598,
@@ -6522,7 +6522,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100493598,
@@ -6537,7 +6537,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100493598,
@@ -6552,7 +6552,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100494087,
@@ -6567,7 +6567,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100494087,
@@ -6582,7 +6582,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100494087,
@@ -6597,7 +6597,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100494087,
@@ -6612,7 +6612,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100494087,
@@ -6627,7 +6627,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100497829,
@@ -6657,7 +6657,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100503002,
@@ -6672,7 +6672,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100503002,
@@ -6687,7 +6687,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100503002,
@@ -6702,7 +6702,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100503002,
@@ -6717,7 +6717,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100503205,
@@ -6747,7 +6747,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100503664,
@@ -6762,7 +6762,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100503664,
@@ -6777,7 +6777,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100503664,
@@ -6792,7 +6792,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100503664,
@@ -6807,7 +6807,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100507051,
@@ -6822,7 +6822,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "17:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100507051,
@@ -6837,7 +6837,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "17:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100507051,
@@ -6852,7 +6852,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "17:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100507051,
@@ -6867,7 +6867,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "17:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100507051,
@@ -6882,7 +6882,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "17:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100511992,
@@ -6897,7 +6897,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100511992,
@@ -6912,7 +6912,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100511992,
@@ -6927,7 +6927,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100511992,
@@ -6942,7 +6942,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100511992,
@@ -6957,7 +6957,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100512193,
@@ -6972,7 +6972,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100512193,
@@ -6987,7 +6987,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100512193,
@@ -7002,7 +7002,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100512193,
@@ -7017,7 +7017,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100512193,
@@ -7032,7 +7032,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100513397,
@@ -7047,7 +7047,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100513397,
@@ -7062,7 +7062,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100513397,
@@ -7077,7 +7077,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100513397,
@@ -7092,7 +7092,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100513397,
@@ -7107,7 +7107,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100517443,
@@ -7122,7 +7122,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100517443,
@@ -7137,7 +7137,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100517443,
@@ -7152,7 +7152,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100517443,
@@ -7167,7 +7167,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100517443,
@@ -7182,7 +7182,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100519944,
@@ -7197,7 +7197,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100519944,
@@ -7212,7 +7212,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100519944,
@@ -7227,7 +7227,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100519944,
@@ -7242,7 +7242,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100519944,
@@ -7257,7 +7257,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100520929,
@@ -7272,7 +7272,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "13:00:00",
     "horario_termina_a": "13:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100520929,
@@ -7287,7 +7287,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "13:00:00",
     "horario_termina_a": "13:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100520929,
@@ -7302,7 +7302,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "13:00:00",
     "horario_termina_a": "13:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100520929,
@@ -7317,7 +7317,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "13:00:00",
     "horario_termina_a": "13:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100520929,
@@ -7332,7 +7332,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "13:00:00",
     "horario_termina_a": "13:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100521678,
@@ -7347,7 +7347,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:00:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100521678,
@@ -7362,7 +7362,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:00:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100521678,
@@ -7377,7 +7377,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:00:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100521678,
@@ -7392,7 +7392,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:00:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100521678,
@@ -7407,7 +7407,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:00:00",
     "horario_termina_a": "11:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100521964,
@@ -7422,7 +7422,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "20:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100521964,
@@ -7437,7 +7437,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "20:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100521964,
@@ -7452,7 +7452,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "20:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100521964,
@@ -7467,7 +7467,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "20:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100521964,
@@ -7482,7 +7482,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "20:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100523980,
@@ -7527,7 +7527,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100528985,
@@ -7542,7 +7542,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100528985,
@@ -7557,7 +7557,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100528985,
@@ -7572,7 +7572,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100528985,
@@ -7587,7 +7587,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100530920,
@@ -7617,7 +7617,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100535566,
@@ -7632,7 +7632,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100535566,
@@ -7647,7 +7647,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100535566,
@@ -7662,7 +7662,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100535566,
@@ -7677,7 +7677,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100537107,
@@ -7722,7 +7722,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100542069,
@@ -7737,7 +7737,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100542069,
@@ -7752,7 +7752,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100542069,
@@ -7767,7 +7767,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100545339,
@@ -7782,7 +7782,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "17:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100545339,
@@ -7797,7 +7797,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "17:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100545339,
@@ -7812,7 +7812,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "17:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100545339,
@@ -7827,7 +7827,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "17:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100545339,
@@ -7842,7 +7842,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "17:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100545628,
@@ -7857,7 +7857,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100545628,
@@ -7872,7 +7872,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100545628,
@@ -7887,7 +7887,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100545628,
@@ -7902,7 +7902,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100545628,
@@ -7917,7 +7917,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100546081,
@@ -7962,7 +7962,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100551431,
@@ -7977,7 +7977,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100551431,
@@ -7992,7 +7992,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100551431,
@@ -8007,7 +8007,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100551431,
@@ -8022,7 +8022,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100553092,
@@ -8037,7 +8037,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100558674,
@@ -8052,7 +8052,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:30:00",
     "horario_termina_a": "22:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100558674,
@@ -8067,7 +8067,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:30:00",
     "horario_termina_a": "22:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100558674,
@@ -8082,7 +8082,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:30:00",
     "horario_termina_a": "22:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100558674,
@@ -8097,7 +8097,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:30:00",
     "horario_termina_a": "22:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100558674,
@@ -8112,7 +8112,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:30:00",
     "horario_termina_a": "22:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100559085,
@@ -8127,7 +8127,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "17:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100559085,
@@ -8142,7 +8142,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "17:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100559085,
@@ -8157,7 +8157,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "17:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100559085,
@@ -8172,7 +8172,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "17:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100559085,
@@ -8187,7 +8187,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "17:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100559291,
@@ -8202,7 +8202,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100559291,
@@ -8217,7 +8217,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100559291,
@@ -8232,7 +8232,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100559291,
@@ -8247,7 +8247,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100559291,
@@ -8262,7 +8262,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "21:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100559590,
@@ -8292,7 +8292,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100560544,
@@ -8307,7 +8307,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100560544,
@@ -8322,7 +8322,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100560544,
@@ -8337,7 +8337,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100560544,
@@ -8352,7 +8352,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100563161,
@@ -8382,7 +8382,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100563722,
@@ -8397,7 +8397,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100563722,
@@ -8412,7 +8412,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100563722,
@@ -8427,7 +8427,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100563722,
@@ -8442,7 +8442,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100565225,
@@ -8457,7 +8457,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:30:00",
     "horario_termina_a": "10:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100565225,
@@ -8472,7 +8472,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:30:00",
     "horario_termina_a": "10:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100565225,
@@ -8487,7 +8487,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:30:00",
     "horario_termina_a": "10:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100565225,
@@ -8502,7 +8502,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:30:00",
     "horario_termina_a": "10:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100565225,
@@ -8517,7 +8517,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:30:00",
     "horario_termina_a": "10:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100565630,
@@ -8547,7 +8547,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "16:30:38",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100568067,
@@ -8562,7 +8562,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100568067,
@@ -8577,7 +8577,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100568067,
@@ -8592,7 +8592,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100568067,
@@ -8607,7 +8607,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100568067,
@@ -8622,7 +8622,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100569006,
@@ -8652,7 +8652,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "22:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100570635,
@@ -8667,7 +8667,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "22:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100570635,
@@ -8682,7 +8682,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "22:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100570635,
@@ -8697,7 +8697,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "22:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100570635,
@@ -8712,7 +8712,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "22:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100574514,
@@ -8742,7 +8742,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:01",
     "horario_termina_a": "0:00:02",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100580344,
@@ -8757,7 +8757,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100580344,
@@ -8772,7 +8772,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100580344,
@@ -8787,7 +8787,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100580344,
@@ -8802,7 +8802,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100580344,
@@ -8817,7 +8817,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100587829,
@@ -8832,7 +8832,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100587829,
@@ -8847,7 +8847,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100587829,
@@ -8862,7 +8862,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100587829,
@@ -8877,7 +8877,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100587829,
@@ -8892,7 +8892,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:30:00",
     "horario_termina_a": "20:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100591127,
@@ -8922,7 +8922,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100601980,
@@ -8937,7 +8937,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100601980,
@@ -8952,7 +8952,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100601980,
@@ -8967,7 +8967,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100601980,
@@ -8982,7 +8982,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100615213,
@@ -8997,7 +8997,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "8:15:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100615213,
@@ -9012,7 +9012,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "8:15:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100615213,
@@ -9027,7 +9027,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "8:15:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100615213,
@@ -9042,7 +9042,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "8:15:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100615213,
@@ -9057,7 +9057,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "8:15:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100620847,
@@ -9072,7 +9072,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100620847,
@@ -9087,7 +9087,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100620847,
@@ -9102,7 +9102,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100620847,
@@ -9117,7 +9117,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100620847,
@@ -9132,7 +9132,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "10:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100621389,
@@ -9147,7 +9147,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "10:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100621389,
@@ -9162,7 +9162,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "10:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100621389,
@@ -9177,7 +9177,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "10:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100621389,
@@ -9192,7 +9192,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "10:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100621389,
@@ -9207,7 +9207,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "10:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100629126,
@@ -9222,7 +9222,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "13:00:00",
     "horario_termina_a": "20:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100629126,
@@ -9237,7 +9237,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "13:00:00",
     "horario_termina_a": "20:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100629126,
@@ -9252,7 +9252,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "13:00:00",
     "horario_termina_a": "20:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100629126,
@@ -9267,7 +9267,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "13:00:00",
     "horario_termina_a": "20:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100629126,
@@ -9282,7 +9282,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "13:00:00",
     "horario_termina_a": "20:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100629788,
@@ -9297,7 +9297,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "13:15:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100629788,
@@ -9312,7 +9312,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "13:15:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100629788,
@@ -9327,7 +9327,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "13:15:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100629788,
@@ -9342,7 +9342,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "13:15:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100629788,
@@ -9357,7 +9357,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "13:15:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100640315,
@@ -9372,7 +9372,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100640315,
@@ -9387,7 +9387,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100640315,
@@ -9402,7 +9402,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100640315,
@@ -9417,7 +9417,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100640315,
@@ -9432,7 +9432,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100642384,
@@ -9447,7 +9447,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100642384,
@@ -9462,7 +9462,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100642384,
@@ -9477,7 +9477,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100642384,
@@ -9492,7 +9492,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100642384,
@@ -9507,7 +9507,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100643487,
@@ -9522,7 +9522,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100643487,
@@ -9537,7 +9537,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100643487,
@@ -9552,7 +9552,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100643487,
@@ -9567,7 +9567,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "7:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100646865,
@@ -9582,7 +9582,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100646865,
@@ -9597,7 +9597,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100646865,
@@ -9612,7 +9612,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100646865,
@@ -9627,7 +9627,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100646865,
@@ -9642,7 +9642,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100646871,
@@ -9657,7 +9657,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100646871,
@@ -9672,7 +9672,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100646871,
@@ -9687,7 +9687,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100646871,
@@ -9702,7 +9702,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100646871,
@@ -9717,7 +9717,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100655372,
@@ -9732,7 +9732,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100655372,
@@ -9747,7 +9747,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100655372,
@@ -9762,7 +9762,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100655372,
@@ -9777,7 +9777,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100655372,
@@ -9792,7 +9792,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100664901,
@@ -9807,7 +9807,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "10:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100664901,
@@ -9822,7 +9822,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100664901,
@@ -9837,7 +9837,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "10:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100664901,
@@ -9852,7 +9852,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100664901,
@@ -9867,7 +9867,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "10:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100664901,
@@ -9882,7 +9882,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100664901,
@@ -9897,7 +9897,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "10:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100664901,
@@ -9912,7 +9912,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100664901,
@@ -9927,7 +9927,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "10:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100664901,
@@ -9942,7 +9942,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100667988,
@@ -9957,7 +9957,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100667988,
@@ -9972,7 +9972,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100667988,
@@ -9987,7 +9987,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100667988,
@@ -10002,7 +10002,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100667988,
@@ -10017,7 +10017,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100667988,
@@ -10047,7 +10047,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100668032,
@@ -10062,7 +10062,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100668032,
@@ -10077,7 +10077,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100668032,
@@ -10092,7 +10092,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100668032,
@@ -10107,7 +10107,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100668032,
@@ -10137,7 +10137,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100668155,
@@ -10152,7 +10152,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100668155,
@@ -10167,7 +10167,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100668155,
@@ -10182,7 +10182,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100668155,
@@ -10197,7 +10197,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100668155,
@@ -10227,7 +10227,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100668322,
@@ -10242,7 +10242,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100668322,
@@ -10257,7 +10257,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100668322,
@@ -10272,7 +10272,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100668322,
@@ -10287,7 +10287,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100668322,
@@ -10317,7 +10317,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100668551,
@@ -10332,7 +10332,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100668551,
@@ -10347,7 +10347,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100668551,
@@ -10362,7 +10362,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100668551,
@@ -10377,7 +10377,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100668551,
@@ -10407,7 +10407,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100669500,
@@ -10422,7 +10422,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100669500,
@@ -10437,7 +10437,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100669500,
@@ -10452,7 +10452,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100669500,
@@ -10467,7 +10467,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100669500,
@@ -10482,7 +10482,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100669529,
@@ -10497,7 +10497,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100669529,
@@ -10512,7 +10512,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100669529,
@@ -10527,7 +10527,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100669529,
@@ -10542,7 +10542,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100669529,
@@ -10557,7 +10557,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100669529,
@@ -10572,7 +10572,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100669904,
@@ -10587,7 +10587,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100669904,
@@ -10602,7 +10602,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100669904,
@@ -10617,7 +10617,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100669904,
@@ -10632,7 +10632,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100669904,
@@ -10647,7 +10647,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100669904,
@@ -10662,7 +10662,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100670399,
@@ -10677,7 +10677,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100670399,
@@ -10692,7 +10692,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100670399,
@@ -10707,7 +10707,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100670399,
@@ -10722,7 +10722,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100670399,
@@ -10737,7 +10737,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100670399,
@@ -10767,7 +10767,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:30:00",
     "horario_termina_a": "14:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100670427,
@@ -10782,7 +10782,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:30:00",
     "horario_termina_a": "14:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100670427,
@@ -10797,7 +10797,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:30:00",
     "horario_termina_a": "14:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100670427,
@@ -10812,7 +10812,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:30:00",
     "horario_termina_a": "14:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100670427,
@@ -10842,7 +10842,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100670561,
@@ -10857,7 +10857,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100670561,
@@ -10872,7 +10872,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100670561,
@@ -10887,7 +10887,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100670561,
@@ -10902,7 +10902,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100670561,
@@ -10917,7 +10917,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100671265,
@@ -10932,7 +10932,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:00:00",
     "horario_termina_a": "13:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100671265,
@@ -10947,7 +10947,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100671265,
@@ -10962,7 +10962,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100671265,
@@ -10977,7 +10977,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100671265,
@@ -10992,7 +10992,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100671265,
@@ -11007,7 +11007,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:30:00",
     "horario_termina_a": "13:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100671524,
@@ -11022,7 +11022,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100671524,
@@ -11037,7 +11037,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100671524,
@@ -11052,7 +11052,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100671524,
@@ -11067,7 +11067,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100671524,
@@ -11082,7 +11082,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100671524,
@@ -11097,7 +11097,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100679516,
@@ -11112,7 +11112,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100679516,
@@ -11127,7 +11127,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100679516,
@@ -11142,7 +11142,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100679516,
@@ -11157,7 +11157,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100679516,
@@ -11172,7 +11172,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "15:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100680026,
@@ -11187,7 +11187,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:15:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100680026,
@@ -11202,7 +11202,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:15:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100680026,
@@ -11217,7 +11217,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:15:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100680026,
@@ -11232,7 +11232,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:15:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100680026,
@@ -11247,7 +11247,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "11:15:00",
     "horario_termina_a": "12:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100681118,
@@ -11262,7 +11262,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100681118,
@@ -11277,7 +11277,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100681118,
@@ -11292,7 +11292,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100681118,
@@ -11307,7 +11307,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100681118,
@@ -11322,7 +11322,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:00:00",
     "horario_termina_a": "13:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100682415,
@@ -11337,7 +11337,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100682415,
@@ -11352,7 +11352,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100682415,
@@ -11367,7 +11367,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100682415,
@@ -11382,7 +11382,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100682415,
@@ -11397,7 +11397,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:00:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685148,
@@ -11412,7 +11412,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685148,
@@ -11427,7 +11427,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685148,
@@ -11442,7 +11442,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685148,
@@ -11457,7 +11457,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685148,
@@ -11472,7 +11472,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685148,
@@ -11487,7 +11487,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685322,
@@ -11502,7 +11502,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685322,
@@ -11517,7 +11517,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685322,
@@ -11532,7 +11532,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685322,
@@ -11547,7 +11547,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685322,
@@ -11562,7 +11562,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685322,
@@ -11577,7 +11577,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685459,
@@ -11592,7 +11592,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685459,
@@ -11607,7 +11607,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685459,
@@ -11622,7 +11622,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685459,
@@ -11637,7 +11637,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685459,
@@ -11652,7 +11652,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685459,
@@ -11667,7 +11667,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685743,
@@ -11682,7 +11682,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685743,
@@ -11697,7 +11697,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685743,
@@ -11712,7 +11712,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685743,
@@ -11727,7 +11727,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685743,
@@ -11742,7 +11742,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685743,
@@ -11757,7 +11757,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685852,
@@ -11772,7 +11772,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685852,
@@ -11787,7 +11787,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685852,
@@ -11802,7 +11802,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685852,
@@ -11817,7 +11817,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685852,
@@ -11832,7 +11832,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100685852,
@@ -11847,7 +11847,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100686343,
@@ -11862,7 +11862,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "9:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100686343,
@@ -11877,7 +11877,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "9:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100686343,
@@ -11892,7 +11892,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "9:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100686343,
@@ -11907,7 +11907,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "9:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100686343,
@@ -11922,7 +11922,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "9:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100686343,
@@ -11937,7 +11937,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "9:30:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100686594,
@@ -11952,7 +11952,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100686594,
@@ -11967,7 +11967,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100686594,
@@ -11982,7 +11982,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100686594,
@@ -11997,7 +11997,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100686594,
@@ -12012,7 +12012,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100686594,
@@ -12027,7 +12027,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100686742,
@@ -12042,7 +12042,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100686742,
@@ -12057,7 +12057,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100686742,
@@ -12072,7 +12072,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100686742,
@@ -12087,7 +12087,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100686742,
@@ -12102,7 +12102,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100686742,
@@ -12117,7 +12117,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100687896,
@@ -12132,7 +12132,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100687896,
@@ -12147,7 +12147,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100687896,
@@ -12162,7 +12162,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100687896,
@@ -12177,7 +12177,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100687896,
@@ -12192,7 +12192,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100687896,
@@ -12207,7 +12207,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100688401,
@@ -12222,7 +12222,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100688401,
@@ -12237,7 +12237,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100688401,
@@ -12252,7 +12252,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100688401,
@@ -12267,7 +12267,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100688401,
@@ -12282,7 +12282,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100688634,
@@ -12297,7 +12297,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100688634,
@@ -12312,7 +12312,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100688634,
@@ -12327,7 +12327,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100688634,
@@ -12342,7 +12342,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100688634,
@@ -12357,7 +12357,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100688668,
@@ -12372,7 +12372,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100688668,
@@ -12387,7 +12387,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100688668,
@@ -12402,7 +12402,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100688668,
@@ -12417,7 +12417,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100688668,
@@ -12432,7 +12432,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100688671,
@@ -12447,7 +12447,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100688671,
@@ -12462,7 +12462,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100688671,
@@ -12477,7 +12477,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100688671,
@@ -12492,7 +12492,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100688671,
@@ -12507,7 +12507,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100691361,
@@ -12522,7 +12522,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "24:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100691361,
@@ -12537,7 +12537,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "24:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100691361,
@@ -12552,7 +12552,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "24:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100691361,
@@ -12567,7 +12567,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "24:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100691361,
@@ -12582,7 +12582,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "24:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100692245,
@@ -12597,7 +12597,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100692245,
@@ -12612,7 +12612,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100692245,
@@ -12627,7 +12627,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100692245,
@@ -12642,7 +12642,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100692245,
@@ -12657,7 +12657,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100694778,
@@ -12672,7 +12672,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100694778,
@@ -12687,7 +12687,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100694778,
@@ -12702,7 +12702,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100694778,
@@ -12717,7 +12717,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100694778,
@@ -12732,7 +12732,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100694798,
@@ -12747,7 +12747,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100694798,
@@ -12762,7 +12762,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100694798,
@@ -12777,7 +12777,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100694798,
@@ -12792,7 +12792,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100694798,
@@ -12807,7 +12807,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100695039,
@@ -12822,7 +12822,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:45:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100695039,
@@ -12837,7 +12837,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:45:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100695039,
@@ -12852,7 +12852,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:45:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100695039,
@@ -12867,7 +12867,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:45:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100695039,
@@ -12882,7 +12882,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "8:45:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100695182,
@@ -12897,7 +12897,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100695182,
@@ -12912,7 +12912,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100695182,
@@ -12927,7 +12927,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100695182,
@@ -12942,7 +12942,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100695182,
@@ -12957,7 +12957,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100695278,
@@ -12972,7 +12972,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100695278,
@@ -12987,7 +12987,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100695278,
@@ -13002,7 +13002,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100695278,
@@ -13017,7 +13017,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100695278,
@@ -13032,7 +13032,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100695810,
@@ -13047,7 +13047,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100695810,
@@ -13062,7 +13062,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100695810,
@@ -13077,7 +13077,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100695810,
@@ -13092,7 +13092,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100695810,
@@ -13107,7 +13107,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100695813,
@@ -13122,7 +13122,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100695813,
@@ -13137,7 +13137,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100695813,
@@ -13152,7 +13152,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100695813,
@@ -13167,7 +13167,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100695813,
@@ -13182,7 +13182,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698323,
@@ -13197,7 +13197,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698323,
@@ -13212,7 +13212,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698323,
@@ -13227,7 +13227,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698323,
@@ -13242,7 +13242,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698323,
@@ -13257,7 +13257,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698329,
@@ -13272,7 +13272,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698329,
@@ -13287,7 +13287,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698329,
@@ -13302,7 +13302,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698329,
@@ -13317,7 +13317,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698329,
@@ -13332,7 +13332,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698420,
@@ -13347,7 +13347,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698420,
@@ -13362,7 +13362,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698420,
@@ -13377,7 +13377,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698420,
@@ -13392,7 +13392,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698420,
@@ -13407,7 +13407,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698575,
@@ -13422,7 +13422,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698575,
@@ -13437,7 +13437,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698575,
@@ -13452,7 +13452,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698575,
@@ -13467,7 +13467,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698575,
@@ -13482,7 +13482,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698744,
@@ -13497,7 +13497,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698744,
@@ -13512,7 +13512,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698744,
@@ -13527,7 +13527,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698744,
@@ -13542,7 +13542,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698744,
@@ -13557,7 +13557,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698748,
@@ -13572,7 +13572,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698748,
@@ -13587,7 +13587,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698748,
@@ -13602,7 +13602,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698748,
@@ -13617,7 +13617,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698748,
@@ -13632,7 +13632,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698912,
@@ -13647,7 +13647,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698912,
@@ -13662,7 +13662,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698912,
@@ -13677,7 +13677,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698912,
@@ -13692,7 +13692,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100698912,
@@ -13707,7 +13707,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100699271,
@@ -13722,7 +13722,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100699271,
@@ -13737,7 +13737,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100699271,
@@ -13752,7 +13752,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100699271,
@@ -13767,7 +13767,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100699271,
@@ -13782,7 +13782,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100699710,
@@ -13797,7 +13797,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100699710,
@@ -13812,7 +13812,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100699710,
@@ -13827,7 +13827,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100699710,
@@ -13842,7 +13842,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100699710,
@@ -13857,7 +13857,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100699983,
@@ -13872,7 +13872,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100699983,
@@ -13887,7 +13887,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100699983,
@@ -13902,7 +13902,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100699983,
@@ -13917,7 +13917,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100699983,
@@ -13932,7 +13932,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100700179,
@@ -13947,7 +13947,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100700179,
@@ -13962,7 +13962,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100700179,
@@ -13977,7 +13977,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100700179,
@@ -13992,7 +13992,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100700179,
@@ -14007,7 +14007,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100700301,
@@ -14022,7 +14022,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100700301,
@@ -14037,7 +14037,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100700301,
@@ -14052,7 +14052,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100700301,
@@ -14067,7 +14067,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100700301,
@@ -14082,7 +14082,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100700812,
@@ -14097,7 +14097,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100700812,
@@ -14112,7 +14112,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100700812,
@@ -14127,7 +14127,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100700812,
@@ -14142,7 +14142,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100700812,
@@ -14157,7 +14157,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100700874,
@@ -14172,7 +14172,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100700874,
@@ -14187,7 +14187,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100700874,
@@ -14202,7 +14202,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100700874,
@@ -14217,7 +14217,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100700874,
@@ -14232,7 +14232,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701008,
@@ -14247,7 +14247,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701008,
@@ -14262,7 +14262,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701008,
@@ -14277,7 +14277,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701008,
@@ -14292,7 +14292,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701008,
@@ -14307,7 +14307,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701103,
@@ -14322,7 +14322,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701103,
@@ -14337,7 +14337,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701103,
@@ -14352,7 +14352,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701103,
@@ -14367,7 +14367,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701103,
@@ -14382,7 +14382,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:00:00",
     "horario_termina_a": "12:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701166,
@@ -14397,7 +14397,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701166,
@@ -14412,7 +14412,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701166,
@@ -14427,7 +14427,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701166,
@@ -14442,7 +14442,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701166,
@@ -14457,7 +14457,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701217,
@@ -14472,7 +14472,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "6:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701217,
@@ -14487,7 +14487,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701217,
@@ -14502,7 +14502,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701217,
@@ -14517,7 +14517,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701217,
@@ -14532,7 +14532,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701291,
@@ -14547,7 +14547,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701291,
@@ -14562,7 +14562,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701291,
@@ -14577,7 +14577,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701291,
@@ -14592,7 +14592,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701291,
@@ -14607,7 +14607,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701839,
@@ -14622,7 +14622,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701839,
@@ -14637,7 +14637,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701839,
@@ -14652,7 +14652,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701839,
@@ -14667,7 +14667,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701839,
@@ -14682,7 +14682,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701840,
@@ -14697,7 +14697,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701840,
@@ -14712,7 +14712,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701840,
@@ -14727,7 +14727,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701840,
@@ -14742,7 +14742,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100701840,
@@ -14757,7 +14757,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100702482,
@@ -14772,7 +14772,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100702482,
@@ -14787,7 +14787,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100702482,
@@ -14802,7 +14802,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100702482,
@@ -14817,7 +14817,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100702482,
@@ -14832,7 +14832,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100702903,
@@ -14847,7 +14847,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100702903,
@@ -14862,7 +14862,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100702903,
@@ -14877,7 +14877,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100702903,
@@ -14892,7 +14892,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100702903,
@@ -14907,7 +14907,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100702913,
@@ -14922,7 +14922,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100702913,
@@ -14937,7 +14937,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100702913,
@@ -14952,7 +14952,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100702913,
@@ -14967,7 +14967,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100702913,
@@ -14982,7 +14982,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100702970,
@@ -14997,7 +14997,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100702970,
@@ -15012,7 +15012,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100702970,
@@ -15027,7 +15027,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100702970,
@@ -15042,7 +15042,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100702970,
@@ -15057,7 +15057,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "0:00:00",
     "horario_termina_a": "18:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100733214,
@@ -15087,7 +15087,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100735762,
@@ -15102,7 +15102,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100735762,
@@ -15117,7 +15117,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100735762,
@@ -15132,7 +15132,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100735762,
@@ -15147,7 +15147,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "12:30:00",
     "horario_termina_a": "16:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100774895,
@@ -15162,7 +15162,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:30:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100774895,
@@ -15177,7 +15177,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:30:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100774895,
@@ -15192,7 +15192,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:30:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100774895,
@@ -15207,7 +15207,7 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:30:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   },
   {
     "deudor": 9100774895,
@@ -15222,6 +15222,6 @@
     "descripcion2": "DDI",
     "horario_inicia_a": "9:30:00",
     "horario_termina_a": "14:00:00",
-    "cierre_si_no": NaN
+    "cierre_si_no": null
   }
 ]
