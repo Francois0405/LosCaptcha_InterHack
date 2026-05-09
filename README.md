@@ -7,6 +7,7 @@ Repository: https://github.com/itsCarlosDev/interhack-2026
 ## Team
 
 - Carlos Morales Artés
+- Franço¡s Liraud Mathieu
 - To be defined during the hackathon.
 
 ## Problem
