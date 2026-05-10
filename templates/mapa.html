@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" href="{% static 'img/flaticon.png' %}" />
 
   <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" />
-  <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
 </head>
 
@@ -287,8 +287,10 @@
     </aside>
   </div>
 
+  {{ route_data|json_script:"route-data" }}
+
   <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-  <script src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="{% static 'js/main.js' %}"></script>
 </body>
 </html>

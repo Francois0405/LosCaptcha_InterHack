@@ -63,38 +63,16 @@
             </div>
 
             <div class="row g-3">
-              <div class="col-sm-6 col-xl-3">
-                <div class="metric-card">
-                  <div class="metric-label">Clientes</div>
-                  <div class="metric-value">22</div>
-                  <span class="status-pill">Ruta DR-042</span>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-xl-3">
-                <div class="metric-card">
-                  <div class="metric-label">Paradas optimizadas</div>
-                  <div class="metric-value">15</div>
-                  <span class="status-pill status-success">-32%</span>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-xl-3">
-                <div class="metric-card">
-                  <div class="metric-label">Ocupación</div>
-                  <div class="metric-value">82%</div>
-                  <span class="status-pill">6 palets</span>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-xl-3">
-                <div class="metric-card">
-                  <div class="metric-label">Retornables</div>
-                  <div class="metric-value">58%</div>
-                  <span class="status-pill status-warning">zona reservada</span>
-                </div>
+            {% for item in dashboard_metrics %}
+            <div class="col-sm-6 col-xl-3">
+              <div class="metric-card">
+                <div class="metric-label">{{ item.label }}</div>
+                <div class="metric-value">{{ item.value }}</div>
+                <span class="status-pill {{ item.pill_class }}">{{ item.pill }}</span>
               </div>
             </div>
+            {% endfor %}
+          </div>
           </div>
         </div>
 
@@ -137,36 +115,14 @@
                   </tr>
                 </thead>
                 <tbody>
+                  {% for row in impact_rows %}
                   <tr>
-                    <td>Paradas del camión</td>
-                    <td>22</td>
-                    <td>15</td>
-                    <td><span class="status-pill status-success">-32%</span></td>
+                    <td>{{ row.metric }}</td>
+                    <td>{{ row.current }}</td>
+                    <td>{{ row.proposal }}</td>
+                    <td><span class="status-pill {{ row.impact_class }}">{{ row.impact }}</span></td>
                   </tr>
-                  <tr>
-                    <td>Tiempo buscando producto</td>
-                    <td>70 min</td>
-                    <td>42 min</td>
-                    <td><span class="status-pill status-success">-40%</span></td>
-                  </tr>
-                  <tr>
-                    <td>Cumplimiento de franjas</td>
-                    <td>82%</td>
-                    <td>94%</td>
-                    <td><span class="status-pill status-success">+12 pp</span></td>
-                  </tr>
-                  <tr>
-                    <td>Accesibilidad primeras entregas</td>
-                    <td>Media</td>
-                    <td>Alta</td>
-                    <td><span class="status-pill status-success">Mejora</span></td>
-                  </tr>
-                  <tr>
-                    <td>Ocupación del camión</td>
-                    <td>84%</td>
-                    <td>82%</td>
-                    <td><span class="status-pill status-warning">Trade-off aceptable</span></td>
-                  </tr>
+                  {% endfor %}
                 </tbody>
               </table>
             </div>
