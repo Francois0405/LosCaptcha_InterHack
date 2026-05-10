@@ -277,7 +277,12 @@
                 <strong id="accessibilityScoreText">{{ load_plan.metrics.accessibility }}%</strong>
               </div>
               <div class="progress">
-                <div class="progress-bar bg-success" id="accessibilityBar" style="width: {{ load_plan.metrics.accessibility }}%"></div>
+                <div
+                  class="progress-bar bg-success"
+                  id="accessibilityBar"
+                  data-progress-value="{{ load_plan.metrics.accessibility }}"
+                  style="width: 0%"
+                ></div>
               </div>
             </div>
 
@@ -287,7 +292,12 @@
                 <strong id="balanceScoreText">{{ load_plan.metrics.balance }}%</strong>
               </div>
               <div class="progress">
-                <div class="progress-bar bg-warning" id="balanceBar" style="width: {{ load_plan.metrics.balance }}%"></div>
+                <div
+                  class="progress-bar bg-warning"
+                  id="balanceBar"
+                  data-progress-value="{{ load_plan.metrics.balance }}"
+                  style="width: 0%"
+                ></div>
               </div>
             </div>
 
@@ -297,7 +307,12 @@
                 <strong id="occupationScoreText">{{ load_plan.metrics.occupation }}%</strong>
               </div>
               <div class="progress">
-                <div class="progress-bar bg-danger" id="occupationBar" style="width: {{ load_plan.metrics.occupation }}%"></div>
+                <div
+                  class="progress-bar bg-danger"
+                  id="occupationBar"
+                  data-progress-value="{{ load_plan.metrics.occupation }}"
+                  style="width: 0%"
+                ></div>
               </div>
             </div>
 
@@ -307,7 +322,12 @@
                 <strong id="returnsScoreText">{{ load_plan.metrics.returnables }}%</strong>
               </div>
               <div class="progress">
-                <div class="progress-bar bg-info" id="returnsBar" style="width: {{ load_plan.metrics.returnables }}%"></div>
+                <div
+                  class="progress-bar bg-info"
+                  id="returnsBar"
+                  data-progress-value="{{ load_plan.metrics.returnables }}"
+                  style="width: 0%"
+                ></div>
               </div>
             </div>
           </div>
