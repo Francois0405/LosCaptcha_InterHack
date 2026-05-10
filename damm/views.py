@@ -5,6 +5,10 @@ import os
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
+import time
+
+from .mapa import build_route_data_for_frontend
+
 from django.shortcuts import render, redirect
 from django.http import JsonResponse
 from django.db import connections
@@ -24,6 +28,13 @@ COLLECTIONS = {
 DEFAULT_ROUTE_ID = "DR-042"
 DEFAULT_DATE = "30/01/2026"
 DEFAULT_DDI = "DDI MOLLET"
+
+ROUTE_CACHE = {
+    "data": None,
+    "timestamp": 0,
+}
+
+CACHE_SECONDS = 600
 
 
 CITY_COORDS = {
@@ -59,15 +70,6 @@ def dashboard(request):
     return render(request, "dashboard.html", context)
 
 
-def mapa(request):
-    db = get_mongo_db()
-    route_data = build_route_data(db)
-
-    return render(request, "mapa.html", {
-        "route_data": route_data,
-    })
-
-
 def distribucion(request):
     db = get_mongo_db()
     load_plan = build_load_plan(db)
@@ -82,9 +84,36 @@ def api_dashboard(request):
     return JsonResponse(build_dashboard_json(db), safe=False)
 
 
+def get_cached_route_data(db):
+    now = time.time()
+
+    try:
+        if ROUTE_CACHE["data"] is None or now - ROUTE_CACHE["timestamp"] > CACHE_SECONDS:
+            calculated_route = build_route_data_for_frontend(db=db)
+
+            if calculated_route:
+                ROUTE_CACHE["data"] = calculated_route
+                ROUTE_CACHE["timestamp"] = now
+
+        return ROUTE_CACHE["data"] or build_route_data(db)
+
+    except Exception as exc:
+        print(f"Error calculando ruta con OR-Tools: {exc}")
+        return build_route_data(db)
+
+
+def mapa(request):
+    db = get_mongo_db()
+    route_data = get_cached_route_data(db)
+
+    return render(request, "mapa.html", {
+        "route_data": route_data,
+    })
+
+
 def api_route(request):
     db = get_mongo_db()
-    return JsonResponse(build_route_data(db), safe=False)
+    return JsonResponse(get_cached_route_data(db), safe=False)
 
 
 def api_load_plan(request):
@@ -410,13 +439,23 @@ def build_route_data(db):
             "note": get_route_note(index),
         })
 
+    warehouse = {
+        "name": "DDI MOLLET",
+        "coords": [41.5402, 2.2135],
+    }
+    route_points = [warehouse["coords"]] + [stop["coords"] for stop in stops] + [warehouse["coords"]]
+
     return {
         "routeId": DEFAULT_ROUTE_ID,
         "scenario": "Barcelona Centro",
         "distributionCenter": DEFAULT_DDI,
-        "warehouse": {
-            "name": "DDI MOLLET",
-            "coords": [41.5402, 2.2135],
+        "warehouse": warehouse,
+        "routePoints": route_points,
+        "returnToWarehouse": {
+            "name": warehouse["name"],
+            "coords": warehouse["coords"],
+            "time": "13:45",
+            "note": "Regreso al almacén para descargar retornables y cerrar la ruta.",
         },
         "summary": {
             "clients": sum(len(clients) for _, clients in selected_groups),
@@ -471,6 +510,8 @@ def get_directions_by_client(db, headers):
 
 
 def build_load_plan(db):
+    route_data = get_cached_route_data(db) or {}
+    route_stops = route_data.get("stops") or []
     headers = get_transport_headers(db)[:12]
     materials = get_materials(db)
 
@@ -483,17 +524,41 @@ def build_load_plan(db):
         {"zone": "P6", "label": "Últimas paradas", "packages": []},
     ]
 
-    for index, header in enumerate(headers, start=1):
-        stop = min(ceil(index / 2), 12)
+    route_packages = []
+
+    for stop in route_stops:
+        clients = stop.get("clients") or [stop.get("name")]
+
+        for client_name in clients:
+            route_packages.append({
+                "customerId": stop.get("customerId"),
+                "client": client_name or stop.get("name") or "Cliente",
+                "stop": stop.get("number") or len(route_packages) + 1,
+                "loadZones": stop.get("loadZones") or [],
+                "routeNote": stop.get("note") or "",
+            })
+
+    if not route_packages:
+        for index, header in enumerate(headers, start=1):
+            route_packages.append({
+                "customerId": header.get("destinatario_mcia"),
+                "client": header.get("destinatario_mcia1") or "Cliente",
+                "stop": min(ceil(index / 2), 12),
+                "loadZones": [],
+                "routeNote": "",
+            })
+
+    for index, route_package in enumerate(route_packages[:12], start=1):
+        stop = route_package["stop"]
         zone = zone_for_stop(stop)
         package_type = type_for_stop(stop)
 
         material = materials[(index - 1) % len(materials)] if materials else {}
 
         package = {
-            "id": f"pkg-{header.get('destinatario_mcia')}-{index}",
-            "customerId": header.get("destinatario_mcia"),
-            "client": header.get("destinatario_mcia1") or "Cliente",
+            "id": f"pkg-{route_package.get('customerId') or stop}-{index}",
+            "customerId": route_package.get("customerId"),
+            "client": route_package.get("client") or "Cliente",
             "product": material.get("numero_de_material") or "Pedido cliente",
             "material": material.get("material"),
             "quantity": "1 CAJ",
@@ -501,7 +566,7 @@ def build_load_plan(db):
             "stop": stop,
             "idealZone": zone,
             "type": package_type,
-            "reason": reason_for_package(stop, zone, header),
+            "reason": reason_for_route_package(stop, zone, route_package),
         }
 
         zone_doc = next(z for z in zones if z["zone"] == zone)
@@ -522,7 +587,18 @@ def build_load_plan(db):
     })
 
     return {
-        "routeId": DEFAULT_ROUTE_ID,
+        "routeId": route_data.get("routeId") or DEFAULT_ROUTE_ID,
+        "basedOnStops": [
+            {
+                "number": stop.get("number"),
+                "name": stop.get("name"),
+                "time": stop.get("time"),
+                "clients": stop.get("clients") or [],
+                "loadZones": stop.get("loadZones") or [],
+            }
+            for stop in route_stops
+        ],
+        "returnToWarehouse": route_data.get("returnToWarehouse"),
         "truck": {
             "id": "TRUCK-06P",
             "type": "Camión urbano de 6 palets",
@@ -694,3 +770,77 @@ def reason_for_package(stop, zone, header):
         return f"{client} se agrupa con referencias de alta rotación para facilitar preparación de almacén."
 
     return f"{client} pertenece a una parada tardía. Puede ocupar zonas menos prioritarias."
+
+
+def reason_for_route_package(stop, zone, route_package):
+    client = route_package.get("client") or "cliente"
+    route_note = route_package.get("routeNote")
+
+    if zone in ["P1", "P2"]:
+        return f"{client} sale en la parada {stop} del mapa. Debe estar en zona accesible para reducir tiempo de descarga."
+
+    if zone == "P3":
+        return f"{client} pertenece a una parada media del mapa. Se prioriza equilibrio y accesibilidad moderada."
+
+    if zone == "P4":
+        return f"{client} pertenece a una parada avanzada del mapa. Se agrupa para no bloquear las primeras entregas."
+
+    if route_note:
+        return route_note
+
+    return f"{client} pertenece a una parada tardía del mapa. Puede ocupar zonas menos prioritarias."
+
+
+def get_fallback_route_groups():
+    return [
+        (
+            "MOLLET",
+            [
+                {
+                    "customerId": "demo-1",
+                    "name": "IBERICUS CENTRAL",
+                    "address": "Mollet del Vallès",
+                    "delivery": "DEMO-001",
+                    "transport": "DR-042",
+                },
+                {
+                    "customerId": "demo-2",
+                    "name": "BAR LA PETRA II",
+                    "address": "Mollet del Vallès",
+                    "delivery": "DEMO-002",
+                    "transport": "DR-042",
+                },
+            ],
+        ),
+        (
+            "GRANOLLERS",
+            [
+                {
+                    "customerId": "demo-3",
+                    "name": "FRANKFURT LEO BOECK GRANOLLERS",
+                    "address": "Granollers",
+                    "delivery": "DEMO-003",
+                    "transport": "DR-042",
+                },
+                {
+                    "customerId": "demo-4",
+                    "name": "SUSHI HE GRANOLLERS",
+                    "address": "Granollers",
+                    "delivery": "DEMO-004",
+                    "transport": "DR-042",
+                },
+            ],
+        ),
+        (
+            "VIC",
+            [
+                {
+                    "customerId": "demo-5",
+                    "name": "CANTINA IES VIC ST TOMAS",
+                    "address": "Vic",
+                    "delivery": "DEMO-005",
+                    "transport": "DR-042",
+                },
+            ],
+        ),
+    ]

@@ -810,17 +810,34 @@ function getProjectContext() {
   const routeData = readJsonScript("route-data");
   const loadPlanData = readJsonScript("load-plan-data");
   const evaluation = typeof evaluateCurrentPlan === "function" ? evaluateCurrentPlan() : null;
+  const routeStops = normalizeRouteStops(routeData?.stops || []);
+  const routeSequence = routeStops.map((stop) => ({
+    number: stop.number,
+    name: stop.name,
+    time: stop.time,
+    clients: stop.clients,
+    load: stop.load,
+    note: stop.note
+  }));
+  const firstStop = routeSequence[0] || null;
+  const lastStop = routeSequence[routeSequence.length - 1] || null;
 
   return {
     projectName: "Damm Smart Truck",
     routeId: routeData?.routeId || loadPlanData?.routeId || "DR-042",
-    area: routeData?.scenario || "Barcelona Centro",
+    area: routeData?.scenario || "Ruta actual",
     distributionCenter: routeData?.distributionCenter || "DDI MOLLET",
-    clients: routeData?.summary?.clients || 22,
-    currentStops: routeData?.summary?.currentStops || 22,
-    optimizedStops: routeData?.summary?.optimizedStops || 15,
-    distanceKm: routeData?.summary?.distanceKm || 24.5,
-    routeTime: routeData?.summary?.estimatedTime || "3h 30m",
+    warehouse: routeData?.warehouse || null,
+    returnToWarehouse: routeData?.returnToWarehouse || null,
+    routeStops,
+    routeSequence,
+    firstStop,
+    lastStop,
+    clients: routeData?.summary?.clients || routeStops.length || 0,
+    currentStops: routeData?.summary?.currentStops || routeStops.length || 0,
+    optimizedStops: routeData?.summary?.optimizedStops || routeStops.length || 0,
+    distanceKm: routeData?.summary?.distanceKm || 0,
+    routeTime: routeData?.summary?.estimatedTime || "--",
     currentSearchTime: "70 min",
     optimizedSearchTime: "42 min",
     currentWindowCompliance: "82%",
@@ -943,9 +960,14 @@ async function getAssistantReply(question) {
 function getDemoReply(question, context = getProjectContext()) {
   const q = question.toLowerCase();
   const evaluation = context.currentEvaluation;
+  const firstStopText = context.firstStop ? `La primera parada es ${context.firstStop.name} a las ${context.firstStop.time}` : "No hay primera parada calculada";
+  const lastStopText = context.lastStop ? `la última entrega es ${context.lastStop.name} a las ${context.lastStop.time}` : "no hay última entrega calculada";
+  const returnText = context.returnToWarehouse?.time
+    ? `Después vuelve a ${context.returnToWarehouse.name || "almacén"} a las ${context.returnToWarehouse.time}.`
+    : "Después vuelve al almacén para cerrar la ruta.";
 
   if (q.includes("ruta") || q.includes("parada")) {
-    return `La ruta ${context.routeId} pasa de ${context.currentStops} paradas a ${context.optimizedStops}. La carga se coordina con esa ruta para que los productos de las primeras paradas estén en P1/P2.`;
+    return `La ruta ${context.routeId} tiene ${context.optimizedStops} paradas en ${context.area}. ${firstStopText}, ${lastStopText}. ${returnText}`;
   }
 
   if (q.includes("palet") || q.includes("carga") || q.includes("camión") || q.includes("camion")) {
@@ -953,7 +975,7 @@ function getDemoReply(question, context = getProjectContext()) {
       return `La distribución actual tiene un score global de ${evaluation.globalScore}%. P1/P2 son zonas accesibles para primeras entregas, P4 mantiene referencias agrupadas y P5 reserva espacio para retornables.`;
     }
 
-    return "El modelo de carga prioriza P1/P2 para primeras entregas, P4 para referencias agrupadas y P5 para retornables.";
+    return `El modelo de carga se basa en las paradas del mapa: P1/P2 para las primeras entregas como ${context.firstStop?.name || "la primera parada"}, P3/P4 para ruta media y P5 reservado para retornables antes de volver al almacén.`;
   }
 
   if (q.includes("movido") || q.includes("mover") || q.includes("cambio")) {
@@ -965,7 +987,7 @@ function getDemoReply(question, context = getProjectContext()) {
   }
 
   if (q.includes("retornable") || q.includes("retorno")) {
-    return "Los retornables se gestionan reservando P5 como zona flexible para cajas y barriles vacíos. Si se ocupa P5 con otros productos, puede reducirse la capacidad de logística inversa durante la ruta.";
+    return `Los retornables se gestionan reservando P5 como zona flexible para cajas y barriles vacíos. ${returnText}`;
   }
 
   if (q.includes("impacto") || q.includes("mejora") || q.includes("score")) {
@@ -973,10 +995,10 @@ function getDemoReply(question, context = getProjectContext()) {
       return `Score actual: ${evaluation.globalScore}%. Accesibilidad: ${evaluation.accessibility}%. Equilibrio: ${evaluation.balance}%. Retornables: ${evaluation.returnCapacity}%. Si el trabajador mueve productos fuera de su zona ideal, estos valores bajan.`;
     }
 
-    return "El impacto estimado se basa en reducción de paradas, menor tiempo buscando producto y mejor accesibilidad de carga.";
+    return `El impacto estimado se calcula sobre las ${context.optimizedStops} paradas del mapa, ${context.distanceKm} km y ${context.routeTime} de ruta, incluyendo el regreso al almacén.`;
   }
 
-  return "Este asistente ayuda a explicar la distribución de carga, los cambios manuales del trabajador, la ruta, los palets, los retornables y el impacto operativo de cada decisión.";
+  return "Este asistente usa las paradas visibles en el mapa para explicar la ruta, la carga, los palets, los retornables y el regreso al almacén.";
 }
 
 /* =========================
@@ -997,7 +1019,16 @@ function initRouteMap() {
   );
 
   const stops = normalizeRouteStops(backendRoute?.stops || getFallbackStops());
-  const routePoints = [warehouse.coords, ...stops.map((stop) => stop.coords)].filter(isValidCoordinate);
+  const returnToWarehouse = normalizeReturnToWarehouse(
+    backendRoute?.returnToWarehouse,
+    warehouse
+  );
+  const backendRoutePoints = ensureRouteReturnsToWarehouse((backendRoute?.routePoints || [])
+    .map(normalizeCoords)
+    .filter(isValidCoordinate), warehouse.coords);
+  const routePoints = backendRoutePoints.length > 1
+    ? backendRoutePoints
+    : [warehouse.coords, ...stops.map((stop) => stop.coords), warehouse.coords].filter(isValidCoordinate);
 
   const map = L.map("routeMap", {
     zoomControl: true,
@@ -1023,8 +1054,28 @@ function initRouteMap() {
       .addTo(map)
       .bindPopup(`
         <div class="route-popup-title">${escapeHTML(warehouse.name || "Almacén")}</div>
-        <div class="route-popup-meta">Inicio de ruta ${escapeHTML(backendRoute?.routeId || "DR-042")}</div>
-        <p class="mb-0">Salida del camión con plan de carga calculado automáticamente.</p>
+        <div class="route-popup-meta">Inicio y fin de ruta ${escapeHTML(backendRoute?.routeId || "DR-042")}</div>
+        <p class="mb-0">Salida del camión y regreso al almacén para descargar retornables.</p>
+      `);
+  }
+
+  if (isValidCoordinate(returnToWarehouse.coords)) {
+    const returnIcon = L.divIcon({
+      className: "",
+      html: `<div class="custom-return-marker">Regreso</div>`,
+      iconSize: [88, 34],
+      iconAnchor: [44, 62]
+    });
+
+    L.marker(returnToWarehouse.coords, {
+      icon: returnIcon,
+      zIndexOffset: 700
+    })
+      .addTo(map)
+      .bindPopup(`
+        <div class="route-popup-title">Regreso · ${escapeHTML(returnToWarehouse.name)}</div>
+        <div class="route-popup-meta">${escapeHTML(returnToWarehouse.time)} · Fin de ruta</div>
+        <p class="mb-0">${escapeHTML(returnToWarehouse.note)}</p>
       `);
   }
 
@@ -1062,6 +1113,17 @@ function normalizeWarehouse(warehouse) {
     name: warehouse.name || "Almacén",
     coords: normalizeCoords(warehouse.coords) || [41.4322, 2.1899],
     type: warehouse.type || "warehouse"
+  };
+}
+
+function normalizeReturnToWarehouse(returnToWarehouse, warehouse) {
+  const fallback = warehouse || {};
+
+  return {
+    name: returnToWarehouse?.name || fallback.name || "Almacén",
+    coords: normalizeCoords(returnToWarehouse?.coords) || fallback.coords || [41.4322, 2.1899],
+    time: returnToWarehouse?.time || "--:--",
+    note: returnToWarehouse?.note || "Regreso al almacén para cerrar la ruta."
   };
 }
 
@@ -1113,8 +1175,36 @@ function isValidCoordinate(coords) {
   );
 }
 
+function ensureRouteReturnsToWarehouse(routePoints, warehouseCoords) {
+  if (!isValidCoordinate(warehouseCoords)) return routePoints;
+
+  const points = routePoints.filter(isValidCoordinate);
+
+  if (!points.length) {
+    return [warehouseCoords];
+  }
+
+  const startsAtWarehouse = sameCoordinate(points[0], warehouseCoords);
+  const endsAtWarehouse = sameCoordinate(points[points.length - 1], warehouseCoords);
+
+  return [
+    ...(startsAtWarehouse ? [] : [warehouseCoords]),
+    ...points,
+    ...(endsAtWarehouse ? [] : [warehouseCoords])
+  ];
+}
+
+function sameCoordinate(first, second) {
+  if (!isValidCoordinate(first) || !isValidCoordinate(second)) return false;
+
+  return (
+    Math.abs(Number(first[0]) - Number(second[0])) < 0.000001 &&
+    Math.abs(Number(first[1]) - Number(second[1])) < 0.000001
+  );
+}
+
 async function drawRoadRoute(map, routePoints) {
-  const limitedRoutePoints = routePoints.slice(0, 25);
+  const limitedRoutePoints = limitRoutePointsForRouting(routePoints, 25);
 
   const osrmCoordinates = limitedRoutePoints
     .map(([lat, lng]) => `${lng},${lat}`)
@@ -1160,6 +1250,15 @@ async function drawRoadRoute(map, routePoints) {
 
   updateRouteMetricsFromOSRM(route);
   setRouteSourceBadge("Ruta real por carretera");
+}
+
+function limitRoutePointsForRouting(routePoints, maxPoints) {
+  if (routePoints.length <= maxPoints) return routePoints;
+
+  return [
+    ...routePoints.slice(0, maxPoints - 1),
+    routePoints[routePoints.length - 1]
+  ];
 }
 
 function drawStraightFallbackRoute(map, routePoints) {

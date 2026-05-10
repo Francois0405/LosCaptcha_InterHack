@@ -65,70 +65,40 @@
       <section class="row g-4">
         <div class="col-xl-4">
           <div class="app-card p-4 mb-4">
-            <span class="section-label">Ruta DR-042</span>
-            <h3 class="fw-bold mt-2 mb-1">15 paradas · 22 clientes</h3>
+            <span class="section-label">Ruta {{ route_data.routeId }}</span>
+            <h3 class="fw-bold mt-2 mb-1">
+              {{ route_data.summary.optimizedStops }} paradas · {{ route_data.summary.clients }} clientes
+            </h3>
             <p class="text-muted mb-4">
-              El sistema agrupa clientes cercanos cuando las ventanas de entrega, la distancia y la descarga son compatibles.
+              Secuencia calculada desde los clientes que aparecen en el mapa, con regreso al almacén al finalizar.
             </p>
 
+            {% for stop in route_data.stops|slice:":6" %}
             <div class="route-stop">
               <div class="d-flex justify-content-between gap-2">
-                <h6 class="fw-bold mb-1">Parada 1 · Plaça Real</h6>
-                <span class="status-pill status-success">08:15</span>
+                <h6 class="fw-bold mb-1">Parada {{ stop.number }} · {{ stop.name }}</h6>
+                <span class="status-pill status-success">{{ stop.time }}</span>
               </div>
-              <p class="text-muted small mb-2">3 clientes agrupados · acceso temprano requerido</p>
+              <p class="text-muted small mb-2">{{ stop.note }}</p>
               <ul class="small mb-0">
-                <li>Bar Sol · 8 cajas</li>
-                <li>Café Centre · 4 cajas</li>
-                <li>Restaurant Mar · 2 barriles</li>
+                {% for client in stop.clients %}
+                <li>{{ client }}</li>
+                {% endfor %}
               </ul>
             </div>
+            {% empty %}
+            <div class="route-stop">
+              <h6 class="fw-bold mb-1">Sin paradas calculadas</h6>
+              <p class="text-muted small mb-0">Revisa la conexión de datos para construir la ruta.</p>
+            </div>
+            {% endfor %}
 
             <div class="route-stop">
               <div class="d-flex justify-content-between gap-2">
-                <h6 class="fw-bold mb-1">Parada 2 · Eixample</h6>
-                <span class="status-pill status-success">09:05</span>
+                <h6 class="fw-bold mb-1">Regreso · {{ route_data.returnToWarehouse.name }}</h6>
+                <span class="status-pill">{{ route_data.returnToWarehouse.time }}</span>
               </div>
-              <p class="text-muted small mb-2">2 clientes agrupados · franja compatible</p>
-              <ul class="small mb-0">
-                <li>Hotel Nord · 6 cajas</li>
-                <li>Bar Provença · 5 cajas</li>
-              </ul>
-            </div>
-
-            <div class="route-stop">
-              <div class="d-flex justify-content-between gap-2">
-                <h6 class="fw-bold mb-1">Parada 3 · Gràcia</h6>
-                <span class="status-pill status-warning">10:10</span>
-              </div>
-              <p class="text-muted small mb-2">Franja estricta · parada prioritaria</p>
-              <ul class="small mb-0">
-                <li>Restaurant Vila · 10 cajas</li>
-              </ul>
-            </div>
-
-            <div class="route-stop">
-              <div class="d-flex justify-content-between gap-2">
-                <h6 class="fw-bold mb-1">Parada 4 · Sant Antoni</h6>
-                <span class="status-pill">11:00</span>
-              </div>
-              <p class="text-muted small mb-2">Recogida prevista de retornables</p>
-              <ul class="small mb-0">
-                <li>Bar Mercat · 7 cajas</li>
-                <li>Cafeteria Ronda · 3 cajas</li>
-              </ul>
-            </div>
-
-            <div class="route-stop">
-              <div class="d-flex justify-content-between gap-2">
-                <h6 class="fw-bold mb-1">Parada 5 · Poblenou</h6>
-                <span class="status-pill">12:20</span>
-              </div>
-              <p class="text-muted small mb-2">Volumen alto · descarga desde P3/P4</p>
-              <ul class="small mb-0">
-                <li>Restaurant Port · 12 cajas</li>
-                <li>Bar Llacuna · referencias mixtas</li>
-              </ul>
+              <p class="text-muted small mb-0">{{ route_data.returnToWarehouse.note }}</p>
             </div>
           </div>
 
@@ -168,9 +138,9 @@
             <div class="d-flex flex-wrap justify-content-between align-items-start gap-3 mb-3">
               <div>
                 <span class="section-label">Mapa operativo</span>
-                <h3 class="fw-bold mt-2 mb-1">Ruta optimizada sobre Barcelona</h3>
+                <h3 class="fw-bold mt-2 mb-1">Ruta optimizada sobre {{ route_data.scenario }}</h3>
                 <p class="text-muted mb-0">
-                  Visualización de paradas agrupadas, orden de reparto y relación con la carga del camión.
+                  Visualización de salida, paradas, orden de reparto y regreso al almacén.
                 </p>
               </div>
               <span class="status-pill status-success" data-route-source>OpenStreetMap + Leaflet</span>
@@ -184,11 +154,11 @@
                   <span class="section-label">Lectura operativa</span>
                   <h5 class="fw-bold mb-1">La ruta se coordina con la carga</h5>
                   <p class="text-muted mb-0">
-                    Las primeras paradas se cargan en P1/P2 para que el repartidor descargue sin buscar producto dentro del camión.
+                    Las paradas del mapa definen qué productos van en P1/P2, ruta media y reserva de retornables para la vuelta.
                   </p>
                 </div>
                 <div class="col-md-4 text-md-end">
-                  <span class="status-pill status-success">94% cumplimiento horario</span>
+                  <span class="status-pill status-success">{{ route_data.summary.windowCompliance }}% cumplimiento horario</span>
                 </div>
               </div>
             </div>
@@ -198,7 +168,7 @@
             <div class="col-md-3">
               <div class="metric-card">
                 <div class="metric-label">Distancia</div>
-                <div class="metric-value">24.5</div>
+                <div class="metric-value" data-route-distance>{{ route_data.summary.distanceKm }}</div>
                 <span class="status-pill">km</span>
               </div>
             </div>
@@ -206,15 +176,15 @@
             <div class="col-md-3">
             <div class="metric-card">
               <div class="metric-label">Tiempo ruta</div>
-              <div class="metric-value" data-route-duration>3h</div>
-              <span class="status-pill" data-route-duration-pill>30m</span>
+              <div class="metric-value" data-route-duration>{{ route_data.summary.estimatedTime }}</div>
+              <span class="status-pill" data-route-duration-pill>total</span>
             </div>
           </div>
 
             <div class="col-md-3">
               <div class="metric-card">
                 <div class="metric-label">Paradas</div>
-                <div class="metric-value">15</div>
+                <div class="metric-value">{{ route_data.summary.optimizedStops }}</div>
                 <span class="status-pill status-success">optimizado</span>
               </div>
             </div>
@@ -222,7 +192,7 @@
             <div class="col-md-3">
               <div class="metric-card">
                 <div class="metric-label">Clientes</div>
-                <div class="metric-value">22</div>
+                <div class="metric-value">{{ route_data.summary.clients }}</div>
                 <span class="status-pill">servidos</span>
               </div>
             </div>
