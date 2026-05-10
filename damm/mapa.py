@@ -293,7 +293,11 @@ def get_data_from_mongo(db=None):
         if nombre_bar in nombres_vistos:
             continue
 
-        cliente_id = pedido_doc.get("cliente") or pedido_doc.get("destinatario_mcia")
+        cliente_id = (
+            pedido_doc.get("cliente")
+            or pedido_doc.get("destinatario_mcia1")
+            or pedido_doc.get("destinatario_mcia")
+        )
 
         if cliente_id is None:
             continue
@@ -320,6 +324,10 @@ def get_data_from_mongo(db=None):
         clientes_procesados.append({
             "id": str(cliente_id),
             "nombre": nombre_bar,
+            "delivery": pedido_doc.get("entrega"),
+            "transport": pedido_doc.get("transporte") or pedido_doc.get("no_transporte"),
+            "routeCode": pedido_doc.get("ruta"),
+            "date": pedido_doc.get("fecha") or pedido_doc.get("creado_el"),
             "n_productos": n_productos,
             "hora_apertura": apertura,
             "hora_cierre": cierre,
@@ -452,6 +460,11 @@ def solve_greedy_fallback(data):
         route.append({
             "orden": len(route),
             "nombre": data["nombres"][next_node],
+            "customer_id": data["clientes"][next_node - 1].get("id"),
+            "delivery": data["clientes"][next_node - 1].get("delivery"),
+            "transport": data["clientes"][next_node - 1].get("transport"),
+            "route_code": data["clientes"][next_node - 1].get("routeCode"),
+            "date": data["clientes"][next_node - 1].get("date"),
             "llegada_minutos": arrival,
             "llegada_formato": min_to_hora(arrival),
             "carga_descargada": demand,
@@ -565,6 +578,11 @@ def solve_vrptw(data):
         ruta_final.append({
             "orden": len(ruta_final),
             "nombre": data["nombres"][node_idx],
+            "customer_id": data["clientes"][node_idx - 1].get("id") if node_idx != 0 else None,
+            "delivery": data["clientes"][node_idx - 1].get("delivery") if node_idx != 0 else None,
+            "transport": data["clientes"][node_idx - 1].get("transport") if node_idx != 0 else None,
+            "route_code": data["clientes"][node_idx - 1].get("routeCode") if node_idx != 0 else None,
+            "date": data["clientes"][node_idx - 1].get("date") if node_idx != 0 else None,
             "llegada_minutos": minutos,
             "llegada_formato": min_to_hora(minutos),
             "carga_descargada": demanda,
@@ -651,6 +669,11 @@ def build_route_data_for_frontend(db=None):
         stops.append({
             "number": order,
             "name": nombre,
+            "customerId": item.get("customer_id"),
+            "delivery": item.get("delivery"),
+            "transport": item.get("transport"),
+            "routeCode": item.get("route_code"),
+            "date": item.get("date"),
             "coords": lonlat_to_latlon(item.get("coordenadas_gps")),
             "time": item.get("llegada_formato", "--:--"),
             "clients": [nombre],

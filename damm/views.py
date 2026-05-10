@@ -28,6 +28,7 @@ COLLECTIONS = {
 DEFAULT_ROUTE_ID = "DR-042"
 DEFAULT_DATE = "30/01/2026"
 DEFAULT_DDI = "DDI MOLLET"
+LOAD_CAPACITY_UNITS = 110
 
 ROUTE_CACHE = {
     "data": None,
@@ -244,33 +245,35 @@ def build_dashboard_context(db):
 
 
 def build_dashboard_json(db):
-    headers = get_transport_headers(db)
+    route_data = get_cached_route_data(db) or build_route_data(db)
+    load_plan = build_load_plan(db)
+    route_summary = route_data.get("summary") or {}
+    load_summary = load_plan.get("summary") or {}
+    load_metrics = load_plan.get("metrics") or {}
 
-    client_ids = {
-        h.get("destinatario_mcia")
-        for h in headers
-        if h.get("destinatario_mcia") is not None
-    }
-
-    clients = len(client_ids)
-
-    if clients == 0:
-        clients = col(db, "direcciones").count_documents({})
-
-    current_stops = clients
-    optimized_stops = max(1, round(current_stops * 0.68)) if current_stops else 0
+    clients = route_summary.get("clients") or load_summary.get("clients") or 0
+    current_stops = route_summary.get("currentStops") or len(route_data.get("stops") or [])
+    optimized_stops = route_summary.get("optimizedStops") or current_stops
 
     stops_reduction = calculate_reduction_label(current_stops, optimized_stops)
 
-    strict_windows = count_strict_delivery_windows(db)
-    time_window_compliance = 94 if strict_windows else 82
+    time_window_compliance = route_summary.get("windowCompliance") or 0
+    load_usage = load_metrics.get("occupation", 0)
+    returnables_capacity = load_metrics.get("returnables", 0)
+    accessibility = load_metrics.get("accessibility", 0)
+    balance = load_metrics.get("balance", 0)
+    global_score = load_metrics.get("globalScore", 0)
+    package_count = load_summary.get("packages") or sum(
+        len(zone.get("packages") or [])
+        for zone in load_plan.get("zones", [])
+    )
 
     data = {
-        "routeId": DEFAULT_ROUTE_ID,
-        "scenario": "Barcelona Centro",
-        "distributionCenter": DEFAULT_DDI,
+        "routeId": route_data.get("routeId") or DEFAULT_ROUTE_ID,
+        "scenario": route_data.get("scenario") or "Ruta actual",
+        "distributionCenter": route_data.get("distributionCenter") or DEFAULT_DDI,
         "date": DEFAULT_DATE,
-        "truck": {
+        "truck": load_plan.get("truck") or {
             "id": "TRUCK-06P",
             "type": "Camión urbano",
             "pallets": 6,
@@ -280,16 +283,15 @@ def build_dashboard_json(db):
             "clients": clients,
             "currentStops": current_stops,
             "optimizedStops": optimized_stops,
-            "loadUsage": 82,
+            "loadUsage": load_usage,
             "timeWindowCompliance": time_window_compliance,
-            "returnablesCapacity": 76,
-            "estimatedSearchTimeBefore": 70,
-            "estimatedSearchTimeAfter": 42,
+            "returnablesCapacity": returnables_capacity,
+            "packages": package_count,
         },
         "impactSummary": {
             "stopsReduction": stops_reduction,
-            "searchTimeReduction": "-40%",
-            "timeWindowImprovement": "+12 pp",
+            "loadTraceability": f"{package_count} líneas",
+            "timeWindowCompliance": f"{time_window_compliance}%",
         },
         "impact": [
             {
@@ -300,41 +302,41 @@ def build_dashboard_json(db):
                 "impact_class": "status-success",
             },
             {
-                "metric": "Tiempo buscando producto",
-                "current": "70 min",
-                "proposal": "42 min",
-                "impact": "-40%",
+                "metric": "Líneas de carga asignadas",
+                "current": package_count,
+                "proposal": "P1-P6",
+                "impact": "Trazable",
                 "impact_class": "status-success",
             },
             {
                 "metric": "Cumplimiento de franjas",
-                "current": "82%",
+                "current": "Calculado en ruta",
                 "proposal": f"{time_window_compliance}%",
-                "impact": "+12 pp",
+                "impact": "Visible",
                 "impact_class": "status-success",
             },
             {
                 "metric": "Accesibilidad primeras entregas",
-                "current": "Media",
-                "proposal": "Alta",
-                "impact": "Mejora",
+                "current": "Carga actual",
+                "proposal": f"{accessibility}%",
+                "impact": "Validado",
                 "impact_class": "status-success",
             },
             {
                 "metric": "Ocupación del camión",
-                "current": "84%",
-                "proposal": "82%",
-                "impact": "Trade-off aceptable",
+                "current": "Carga calculada",
+                "proposal": f"{load_usage}%",
+                "impact": f"Balance {balance}%",
                 "impact_class": "status-warning",
             },
         ],
         "loadStatus": {
-            "status": "optimal",
-            "globalScore": 89,
-            "accessibility": 91,
-            "balance": 84,
-            "occupation": 82,
-            "returnables": 76,
+            "status": load_plan.get("status") or "optimal",
+            "globalScore": global_score,
+            "accessibility": accessibility,
+            "balance": balance,
+            "occupation": load_usage,
+            "returnables": returnables_capacity,
             "manualChanges": 0,
             "warnings": 0,
         },
@@ -512,8 +514,6 @@ def get_directions_by_client(db, headers):
 def build_load_plan(db):
     route_data = get_cached_route_data(db) or {}
     route_stops = route_data.get("stops") or []
-    headers = get_transport_headers(db)[:12]
-    materials = get_materials(db)
 
     zones = [
         {"zone": "P1", "label": "Primeras paradas", "packages": []},
@@ -533,13 +533,17 @@ def build_load_plan(db):
             route_packages.append({
                 "customerId": stop.get("customerId"),
                 "client": client_name or stop.get("name") or "Cliente",
+                "delivery": stop.get("delivery"),
+                "transport": stop.get("transport"),
+                "routeCode": stop.get("routeCode"),
+                "date": stop.get("date"),
                 "stop": stop.get("number") or len(route_packages) + 1,
                 "loadZones": stop.get("loadZones") or [],
                 "routeNote": stop.get("note") or "",
             })
 
     if not route_packages:
-        for index, header in enumerate(headers, start=1):
+        for index, header in enumerate(get_transport_headers(db)[:5], start=1):
             route_packages.append({
                 "customerId": header.get("destinatario_mcia"),
                 "client": header.get("destinatario_mcia1") or "Cliente",
@@ -548,29 +552,23 @@ def build_load_plan(db):
                 "routeNote": "",
             })
 
-    for index, route_package in enumerate(route_packages[:12], start=1):
+    total_products = 0
+
+    for index, route_package in enumerate(route_packages, start=1):
         stop = route_package["stop"]
-        zone = zone_for_stop(stop)
-        package_type = type_for_stop(stop)
+        product_rows = get_route_product_rows(db, route_package)
 
-        material = materials[(index - 1) % len(materials)] if materials else {}
+        for detail_index, detail in enumerate(product_rows, start=1):
+            total_products += 1
+            package = build_package_from_detail(route_package, detail, index, detail_index)
+            zone_doc = next(z for z in zones if z["zone"] == package["idealZone"])
+            zone_doc["packages"].append(package)
 
-        package = {
-            "id": f"pkg-{route_package.get('customerId') or stop}-{index}",
-            "customerId": route_package.get("customerId"),
-            "client": route_package.get("client") or "Cliente",
-            "product": material.get("numero_de_material") or "Pedido cliente",
-            "material": material.get("material"),
-            "quantity": "1 CAJ",
-            "qty": "1 caja",
-            "stop": stop,
-            "idealZone": zone,
-            "type": package_type,
-            "reason": reason_for_route_package(stop, zone, route_package),
-        }
-
-        zone_doc = next(z for z in zones if z["zone"] == zone)
-        zone_doc["packages"].append(package)
+        if not product_rows:
+            package = build_fallback_package_for_route_client(route_package, index)
+            total_products += 1
+            zone_doc = next(z for z in zones if z["zone"] == package["idealZone"])
+            zone_doc["packages"].append(package)
 
     p5 = next(z for z in zones if z["zone"] == "P5")
     p5["packages"].append({
@@ -583,8 +581,16 @@ def build_load_plan(db):
         "stop": 0,
         "idealZone": "P5",
         "type": "return",
+        "loadUnits": 0,
         "reason": "Espacio flexible para cajas vacías recogidas durante la ruta.",
     })
+
+    metrics = calculate_load_metrics(zones)
+    route_clients = len({
+        str(package.get("customerId") or package.get("client"))
+        for package in route_packages
+    })
+    first_stop = next((stop for stop in route_stops if stop.get("number") == 1), None)
 
     return {
         "routeId": route_data.get("routeId") or DEFAULT_ROUTE_ID,
@@ -592,6 +598,11 @@ def build_load_plan(db):
             {
                 "number": stop.get("number"),
                 "name": stop.get("name"),
+                "customerId": stop.get("customerId"),
+                "delivery": stop.get("delivery"),
+                "transport": stop.get("transport"),
+                "routeCode": stop.get("routeCode"),
+                "date": stop.get("date"),
                 "time": stop.get("time"),
                 "clients": stop.get("clients") or [],
                 "loadZones": stop.get("loadZones") or [],
@@ -602,18 +613,306 @@ def build_load_plan(db):
         "truck": {
             "id": "TRUCK-06P",
             "type": "Camión urbano de 6 palets",
+            "pallets": 6,
             "access": "lateral",
         },
         "status": "optimal",
         "zones": zones,
-        "metrics": {
-            "globalScore": 89,
-            "accessibility": 91,
-            "balance": 84,
-            "occupation": 82,
-            "returnables": 76,
+        "summary": {
+            "stops": len(route_stops) or len(route_packages),
+            "clients": route_clients,
+            "packages": total_products,
+            "origin": route_data.get("distributionCenter") or DEFAULT_DDI,
+            "firstStopName": first_stop.get("name") if first_stop else (route_packages[0].get("client") if route_packages else "Primera parada"),
+            "firstStopTime": first_stop.get("time") if first_stop else "--:--",
+            "firstStopClients": len(first_stop.get("clients") or []) if first_stop else 1,
         },
+        "metrics": metrics,
     }
+
+
+def get_route_product_rows(db, route_package, per_client_limit=6):
+    query = build_detail_query_for_route_package(route_package)
+
+    if not query:
+        return []
+
+    projection = {
+        "_id": 0,
+        "entrega": 1,
+        "material": 1,
+        "denominacion": 1,
+        "cantidad_entrega": 1,
+        "unmedida_venta": 1,
+        "destinatario_mcia1": 1,
+        "nombre_1": 1,
+        "ruta": 1,
+        "transporte": 1,
+        "fecha": 1,
+    }
+
+    total_matches = col(db, "detalle").count_documents(query)
+    rows = list(col(db, "detalle").find(query, projection).limit(per_client_limit + 1))
+
+    if not rows:
+        fallback_query = build_detail_query_for_route_package(route_package, include_delivery=False)
+        if fallback_query and fallback_query != query:
+            query = fallback_query
+            total_matches = col(db, "detalle").count_documents(query)
+            rows = list(col(db, "detalle").find(query, projection).limit(per_client_limit + 1))
+
+    if len(rows) <= per_client_limit:
+        return rows
+
+    visible_rows = rows[:per_client_limit]
+    visible_rows.append({
+        "material": "AGRUPADO",
+        "denominacion": f"Otros productos de {route_package.get('client')}",
+        "cantidad_entrega": max(total_matches - per_client_limit, 1),
+        "unmedida_venta": "refs",
+        "nombre_1": route_package.get("client"),
+    })
+    return visible_rows
+
+
+def build_detail_query_for_route_package(route_package, include_delivery=True):
+    conditions = []
+    delivery_conditions = []
+    customer_id = route_package.get("customerId")
+    client_name = route_package.get("client")
+    delivery = route_package.get("delivery")
+    transport = route_package.get("transport")
+
+    if customer_id not in [None, ""]:
+        conditions.append({"destinatario_mcia1": customer_id})
+        conditions.append({"destinatario_mcia1": str(customer_id)})
+
+        try:
+            conditions.append({"destinatario_mcia1": int(customer_id)})
+        except (TypeError, ValueError):
+            pass
+
+    if client_name:
+        conditions.append({"nombre_1": client_name})
+
+    if not conditions:
+        return {}
+
+    for field, value in [("entrega", delivery), ("transporte", transport)]:
+        if value in [None, ""]:
+            continue
+
+        delivery_conditions.append({field: value})
+        delivery_conditions.append({field: str(value)})
+
+        try:
+            delivery_conditions.append({field: int(value)})
+        except (TypeError, ValueError):
+            pass
+
+    if include_delivery and delivery_conditions:
+        return {
+            "$and": [
+                {"$or": conditions},
+                {"$or": delivery_conditions},
+            ]
+        }
+
+    return {"$or": conditions}
+
+
+def build_package_from_detail(route_package, detail, route_index, detail_index):
+    stop = route_package["stop"]
+    package_type = type_for_detail(stop, detail)
+    zone = zone_for_route_product(stop, package_type)
+    product_name = detail.get("denominacion") or detail.get("material") or "Producto de la ruta"
+
+    return {
+        "id": f"pkg-{route_package.get('customerId') or clean_slug(route_package.get('client'))}-{route_index}-{detail_index}",
+        "customerId": route_package.get("customerId") or detail.get("destinatario_mcia1"),
+        "client": route_package.get("client") or detail.get("nombre_1") or "Cliente",
+        "product": product_name,
+        "material": detail.get("material"),
+        "quantity": format_detail_quantity(detail),
+        "qty": format_detail_quantity(detail),
+        "stop": stop,
+        "idealZone": zone,
+        "type": package_type,
+        "loadUnits": quantity_to_units(detail),
+        "reason": reason_for_product_package(stop, zone, route_package, detail),
+    }
+
+
+def build_fallback_package_for_route_client(route_package, route_index):
+    stop = route_package["stop"]
+    package_type = type_for_stop(stop)
+    zone = zone_for_stop(stop)
+
+    return {
+        "id": f"pkg-{route_package.get('customerId') or clean_slug(route_package.get('client'))}-{route_index}",
+        "customerId": route_package.get("customerId"),
+        "client": route_package.get("client") or "Cliente",
+        "product": "Pedido de cliente sin detalle de material",
+        "material": None,
+        "quantity": "1 entrega",
+        "qty": "1 entrega",
+        "stop": stop,
+        "idealZone": zone,
+        "type": package_type,
+        "loadUnits": 1,
+        "reason": reason_for_route_package(stop, zone, route_package),
+    }
+
+
+def calculate_load_metrics(zones):
+    packages = [
+        {
+            **package,
+            "currentZone": zone.get("zone"),
+        }
+        for zone in zones
+        for package in zone.get("packages", [])
+    ]
+
+    delivery_packages = [package for package in packages if package.get("type") != "return"]
+    early_packages = [
+        package for package in delivery_packages
+        if package.get("type") in ["early", "heavy"] or safe_int(package.get("stop")) <= 2
+    ]
+    heavy_packages = [
+        package for package in delivery_packages
+        if package.get("type") == "heavy"
+    ]
+    return_packages = [
+        package for package in packages
+        if package.get("type") == "return"
+    ]
+
+    accessibility = percentage(
+        len([package for package in early_packages if package.get("currentZone") in ["P1", "P2"]]),
+        len(early_packages),
+        default=100,
+    )
+    balance = percentage(
+        len([package for package in heavy_packages if package.get("currentZone") in ["P2", "P3"]]),
+        len(heavy_packages),
+        default=100,
+    )
+    returnables = percentage(
+        len([package for package in return_packages if package.get("currentZone") == "P5"]),
+        len(return_packages),
+        default=100,
+    )
+    occupied_units = sum(
+        quantity
+        for quantity in [package.get("loadUnits", 0) for package in delivery_packages]
+        if isinstance(quantity, (int, float))
+    )
+    occupation = min(100, round((occupied_units / LOAD_CAPACITY_UNITS) * 100)) if occupied_units else 0
+    optimality = percentage(
+        len([package for package in packages if package.get("currentZone") == package.get("idealZone")]),
+        len(packages),
+        default=100,
+    )
+    global_score = round(
+        accessibility * 0.38 +
+        balance * 0.20 +
+        occupation * 0.18 +
+        returnables * 0.14 +
+        optimality * 0.10
+    )
+
+    return {
+        "globalScore": global_score,
+        "accessibility": accessibility,
+        "balance": balance,
+        "occupation": occupation,
+        "returnables": returnables,
+    }
+
+
+def percentage(part, total, default=0):
+    if not total:
+        return default
+
+    return round((part / total) * 100)
+
+
+def quantity_to_units(detail):
+    if detail.get("material") == "AGRUPADO":
+        return 0
+
+    quantity = detail.get("cantidad_entrega")
+
+    try:
+        return max(0, float(quantity))
+    except (TypeError, ValueError):
+        return 1
+
+
+def format_detail_quantity(detail):
+    quantity = detail.get("cantidad_entrega")
+    unit = detail.get("unmedida_venta") or "uds"
+
+    if quantity is None:
+        return unit
+
+    try:
+        numeric = float(quantity)
+        quantity_text = str(int(numeric)) if numeric.is_integer() else str(round(numeric, 2))
+    except (TypeError, ValueError):
+        quantity_text = str(quantity)
+
+    return f"{quantity_text} {unit}"
+
+
+def type_for_detail(stop, detail):
+    product = clean_text(detail.get("denominacion") or detail.get("material"))
+    unit = clean_text(detail.get("unmedida_venta"))
+
+    if "BARRIL" in product or unit == "BRL":
+        return "heavy"
+
+    if stop <= 2:
+        return "early"
+
+    if stop <= 5:
+        return "mid"
+
+    if stop <= 8:
+        return "reference"
+
+    return "late"
+
+
+def zone_for_route_product(stop, package_type):
+    if package_type == "heavy":
+        return "P2" if stop <= 2 else "P3"
+
+    return zone_for_stop(stop)
+
+
+def reason_for_product_package(stop, zone, route_package, detail):
+    product = detail.get("denominacion") or detail.get("material") or "Producto"
+    client = route_package.get("client") or "cliente"
+
+    if detail.get("material") == "AGRUPADO":
+        return f"Resto de referencias reales de {client} agrupadas para mantener la pantalla operativa."
+
+    if zone in ["P1", "P2"]:
+        return f"{product} pertenece a {client}, parada {stop}. Debe ir accesible para la primera descarga."
+
+    if zone == "P3":
+        return f"{product} pertenece a {client}, ruta media. Se coloca en zona equilibrada y accesible."
+
+    if zone == "P4":
+        return f"{product} pertenece a {client}, parada avanzada. Se agrupa para no bloquear primeras entregas."
+
+    return f"{product} pertenece a {client}, última parte de la ruta. Puede ocupar una zona menos prioritaria."
+
+
+def clean_slug(value):
+    return clean_text(value).lower().replace(" ", "-") or "cliente"
 
 
 def get_materials(db):
@@ -660,6 +959,13 @@ def clean_text(value):
         return ""
 
     return str(value).strip().upper()
+
+
+def safe_int(value, default=0):
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return default
 
 
 def format_city_name(city):

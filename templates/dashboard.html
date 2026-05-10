@@ -235,6 +235,7 @@
     </aside>
   </div>
 
+  {{ dashboard_data|json_script:"dashboard-data" }}
   <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
   <script src="{% static 'js/main.js' %}"></script>
 </body>

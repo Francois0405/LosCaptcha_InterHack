@@ -206,7 +206,7 @@ const MOCK_OPTIMAL_LOAD_PLAN = [
   }
 ];
 
-let optimalLoadPlan = normalizeLoadPlan(backendLoadPlan?.zones || MOCK_OPTIMAL_LOAD_PLAN);
+let optimalLoadPlan = normalizeLoadPlan(backendLoadPlan?.zones || []);
 let currentLoadPlan = clonePlan(optimalLoadPlan);
 let lastMovedPackage = null;
 
@@ -293,7 +293,7 @@ function initLoadDistribution() {
       renderLoadPlan(currentLoadPlan);
       renderDriverTable();
       updateEvaluation();
-      appendMessage("assistant", "Se ha recalculado el plan óptimo. Las primeras paradas vuelven a P1/P2, la zona P5 queda reservada para retornables y las referencias de alta rotación permanecen agrupadas en P4.");
+      appendMessage("assistant", `Se ha recalculado el plan óptimo de la ruta ${backendLoadPlan?.routeId || "actual"}. Las primeras paradas vuelven a P1/P2, la zona P5 queda reservada para retornables y solo se usan productos asociados a los clientes de la ruta.`);
       openChatDrawer();
     });
   }
@@ -443,13 +443,14 @@ function evaluateCurrentPlan() {
     ? Math.round((accessibleEarly / earlyPackages.length) * 100)
     : 100;
 
+  const baselineReturnCapacity = backendLoadPlan?.metrics?.returnables || backendLoadPlan?.metrics?.returnCapacity || 76;
   const returnCapacity = returnPackages.length
     ? Math.round((returnsInP5 / returnPackages.length) * 100)
-    : 76;
+    : baselineReturnCapacity;
 
   const balance = heavyPackages.length
     ? Math.round((heavyBalanced / heavyPackages.length) * 100)
-    : 84;
+    : backendLoadPlan?.metrics?.balance || 84;
 
   const occupation = backendLoadPlan?.metrics?.occupation || 82;
   const optimality = Math.round((optimalCount / total) * 100);
@@ -539,6 +540,7 @@ function updateEvaluation() {
 
   setText("accessibilityMetric", `${evaluation.accessibility}%`);
   setText("globalScoreMetric", `${evaluation.globalScore}%`);
+  setText("loadUsageMetric", `${evaluation.occupation}%`);
   setText("accessibilityScoreText", `${evaluation.accessibility}%`);
   setText("balanceScoreText", `${evaluation.balance}%`);
   setText("occupationScoreText", `${evaluation.occupation}%`);
@@ -807,6 +809,7 @@ function initSuggestions() {
 }
 
 function getProjectContext() {
+  const dashboardData = readJsonScript("dashboard-data");
   const routeData = readJsonScript("route-data");
   const loadPlanData = readJsonScript("load-plan-data");
   const evaluation = typeof evaluateCurrentPlan === "function" ? evaluateCurrentPlan() : null;
@@ -824,24 +827,24 @@ function getProjectContext() {
 
   return {
     projectName: "Damm Smart Truck",
-    routeId: routeData?.routeId || loadPlanData?.routeId || "DR-042",
-    area: routeData?.scenario || "Ruta actual",
-    distributionCenter: routeData?.distributionCenter || "DDI MOLLET",
+    routeId: routeData?.routeId || loadPlanData?.routeId || dashboardData?.routeId || "DR-042",
+    area: routeData?.scenario || dashboardData?.scenario || "Ruta actual",
+    distributionCenter: routeData?.distributionCenter || dashboardData?.distributionCenter || "DDI MOLLET",
     warehouse: routeData?.warehouse || null,
     returnToWarehouse: routeData?.returnToWarehouse || null,
     routeStops,
     routeSequence,
     firstStop,
     lastStop,
-    clients: routeData?.summary?.clients || routeStops.length || 0,
-    currentStops: routeData?.summary?.currentStops || routeStops.length || 0,
-    optimizedStops: routeData?.summary?.optimizedStops || routeStops.length || 0,
-    distanceKm: routeData?.summary?.distanceKm || 0,
+    clients: routeData?.summary?.clients || dashboardData?.kpis?.clients || routeStops.length || 0,
+    currentStops: routeData?.summary?.currentStops || dashboardData?.kpis?.currentStops || routeStops.length || 0,
+    optimizedStops: routeData?.summary?.optimizedStops || dashboardData?.kpis?.optimizedStops || routeStops.length || 0,
+    distanceKm: routeData?.summary?.distanceKm || dashboardData?.kpis?.distanceKm || 0,
     routeTime: routeData?.summary?.estimatedTime || "--",
     currentSearchTime: "70 min",
     optimizedSearchTime: "42 min",
     currentWindowCompliance: "82%",
-    optimizedWindowCompliance: `${routeData?.summary?.windowCompliance || 94}%`,
+    optimizedWindowCompliance: `${routeData?.summary?.windowCompliance || dashboardData?.kpis?.timeWindowCompliance || 94}%`,
     currentEvaluation: evaluation,
     currentLoadPlan,
     truck: {

@@ -91,8 +91,8 @@
         <div class="col-6 col-lg-3">
           <div class="app-card p-3 h-100">
             <div class="metric-label">Ruta asignada</div>
-            <strong>DR-042</strong>
-            <div class="small text-muted">Salida urbana</div>
+            <strong>{{ load_plan.routeId }}</strong>
+            <div class="small text-muted">{{ load_plan.summary.stops }} paradas · {{ load_plan.summary.clients }} clientes</div>
           </div>
         </div>
 
@@ -108,14 +108,14 @@
           <div class="app-card p-3 h-100">
             <div class="metric-label">Estado</div>
             <strong>Listo para validar</strong>
-            <div class="small text-muted">Carga editable</div>
+            <div class="small text-muted">{{ load_plan.summary.packages }} líneas de carga</div>
           </div>
         </div>
 
         <div class="col-6 col-lg-3">
           <div class="app-card p-3 h-100">
             <div class="metric-label">Origen</div>
-            <strong>DDI Mollet</strong>
+            <strong>{{ load_plan.summary.origin }}</strong>
             <div class="small text-muted">MongoDB + algoritmo</div>
           </div>
         </div>
@@ -133,7 +133,7 @@
         <div class="col-6 col-lg-3">
           <div class="metric-card">
             <div class="metric-label">Ocupación</div>
-            <div class="metric-value" id="loadUsageMetric">82%</div>
+            <div class="metric-value" id="loadUsageMetric">{{ load_plan.metrics.occupation }}%</div>
             <span class="status-pill">Estimación</span>
           </div>
         </div>
@@ -141,7 +141,7 @@
         <div class="col-6 col-lg-3">
           <div class="metric-card">
             <div class="metric-label">Accesibilidad</div>
-            <div class="metric-value" id="accessibilityMetric">91%</div>
+            <div class="metric-value" id="accessibilityMetric">{{ load_plan.metrics.accessibility }}%</div>
             <span class="status-pill status-success" id="accessibilityBadge">Primeras paradas</span>
           </div>
         </div>
@@ -149,7 +149,7 @@
         <div class="col-6 col-lg-3">
           <div class="metric-card">
             <div class="metric-label">Score global</div>
-            <div class="metric-value" id="globalScoreMetric">89%</div>
+            <div class="metric-value" id="globalScoreMetric">{{ load_plan.metrics.globalScore }}%</div>
             <span class="status-pill status-success" id="scoreBadge">Óptimo</span>
           </div>
         </div>
@@ -173,7 +173,7 @@
                   Distribución calculada automáticamente
                 </div>
                 <div class="small text-muted">
-                  Ruta DR-042 · 15 paradas · 22 clientes
+                  Ruta {{ load_plan.routeId }} · {{ load_plan.summary.stops }} paradas · {{ load_plan.summary.clients }} clientes
                 </div>
               </div>
             </div>
@@ -259,6 +259,7 @@
                 <strong>Distribución inicial óptima.</strong>
                 <span class="text-muted">
                   Los productos de las primeras paradas están en zonas accesibles, los pesados están equilibrados y hay espacio reservado para retornables.
+                  La carga se ha generado solo con clientes y productos de la ruta {{ load_plan.routeId }}.
                 </span>
               </div>
             </div>
@@ -273,40 +274,40 @@
             <div class="score-row mb-4">
               <div class="d-flex justify-content-between mb-2">
                 <span>Accesibilidad primeras paradas</span>
-                <strong id="accessibilityScoreText">91%</strong>
+                <strong id="accessibilityScoreText">{{ load_plan.metrics.accessibility }}%</strong>
               </div>
               <div class="progress">
-                <div class="progress-bar bg-success" id="accessibilityBar" style="width: 91%"></div>
+                <div class="progress-bar bg-success" id="accessibilityBar" style="width: {{ load_plan.metrics.accessibility }}%"></div>
               </div>
             </div>
 
             <div class="score-row mb-4">
               <div class="d-flex justify-content-between mb-2">
                 <span>Equilibrio de carga</span>
-                <strong id="balanceScoreText">84%</strong>
+                <strong id="balanceScoreText">{{ load_plan.metrics.balance }}%</strong>
               </div>
               <div class="progress">
-                <div class="progress-bar bg-warning" id="balanceBar" style="width: 84%"></div>
+                <div class="progress-bar bg-warning" id="balanceBar" style="width: {{ load_plan.metrics.balance }}%"></div>
               </div>
             </div>
 
             <div class="score-row mb-4">
               <div class="d-flex justify-content-between mb-2">
                 <span>Ocupación del camión</span>
-                <strong id="occupationScoreText">82%</strong>
+                <strong id="occupationScoreText">{{ load_plan.metrics.occupation }}%</strong>
               </div>
               <div class="progress">
-                <div class="progress-bar bg-danger" id="occupationBar" style="width: 82%"></div>
+                <div class="progress-bar bg-danger" id="occupationBar" style="width: {{ load_plan.metrics.occupation }}%"></div>
               </div>
             </div>
 
             <div class="score-row">
               <div class="d-flex justify-content-between mb-2">
                 <span>Capacidad para retornables</span>
-                <strong id="returnsScoreText">76%</strong>
+                <strong id="returnsScoreText">{{ load_plan.metrics.returnables }}%</strong>
               </div>
               <div class="progress">
-                <div class="progress-bar bg-info" id="returnsBar" style="width: 76%"></div>
+                <div class="progress-bar bg-info" id="returnsBar" style="width: {{ load_plan.metrics.returnables }}%"></div>
               </div>
             </div>
           </div>
@@ -390,8 +391,8 @@
               <div class="col-12 col-lg-4">
                 <div class="driver-panel h-100">
                   <div class="text-uppercase small opacity-75">Próxima parada</div>
-                  <h3 class="fw-bold mb-1">Primera parada agrupada</h3>
-                  <div class="opacity-75">08:15 · 3 clientes · descarga desde P1</div>
+                  <h3 class="fw-bold mb-1">{{ load_plan.summary.firstStopName }}</h3>
+                  <div class="opacity-75">{{ load_plan.summary.firstStopTime }} · {{ load_plan.summary.firstStopClients }} clientes · descarga desde P1</div>
                 </div>
               </div>
 
@@ -406,7 +407,7 @@
               <div class="col-6 col-lg-4">
                 <div class="metric-card">
                   <div class="metric-label">Retornos previstos</div>
-                  <div class="metric-value">6</div>
+                  <div class="metric-value">{{ load_plan.metrics.returnables }}%</div>
                   <span class="status-pill">Cajas a P5</span>
                 </div>
               </div>
