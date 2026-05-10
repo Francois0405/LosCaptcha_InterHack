@@ -980,7 +980,7 @@ function getDemoReply(question, context = getProjectContext()) {
 }
 
 /* =========================
-   REAL ROUTE MAP - LEAFLET
+   REAL ROUTE MAP - LEAFLET + OSRM
 ========================= */
 function initRouteMap() {
   const mapElement = document.getElementById("routeMap");
@@ -988,20 +988,21 @@ function initRouteMap() {
 
   const backendRoute = readJsonScript("route-data");
 
-  const warehouse = backendRoute?.warehouse || {
-    name: "Almacén / centro de salida",
-    coords: [41.4322, 2.1899],
-    type: "warehouse"
-  };
+  const warehouse = normalizeWarehouse(
+    backendRoute?.warehouse || {
+      name: "Almacén / centro de salida",
+      coords: [41.4322, 2.1899],
+      type: "warehouse"
+    }
+  );
 
   const stops = normalizeRouteStops(backendRoute?.stops || getFallbackStops());
+  const routePoints = [warehouse.coords, ...stops.map((stop) => stop.coords)].filter(isValidCoordinate);
 
   const map = L.map("routeMap", {
     zoomControl: true,
     scrollWheelZoom: true
   });
-
-  const routePoints = [warehouse.coords, ...stops.map((stop) => stop.coords)];
 
   map.setView(warehouse.coords || [41.3925, 2.1769], 11);
 
@@ -1017,15 +1018,19 @@ function initRouteMap() {
     iconAnchor: [42, 19]
   });
 
-  L.marker(warehouse.coords, { icon: warehouseIcon })
-    .addTo(map)
-    .bindPopup(`
-      <div class="route-popup-title">${escapeHTML(warehouse.name || "Almacén")}</div>
-      <div class="route-popup-meta">Inicio de ruta ${escapeHTML(backendRoute?.routeId || "DR-042")}</div>
-      <p class="mb-0">Salida del camión con plan de carga calculado automáticamente.</p>
-    `);
+  if (isValidCoordinate(warehouse.coords)) {
+    L.marker(warehouse.coords, { icon: warehouseIcon })
+      .addTo(map)
+      .bindPopup(`
+        <div class="route-popup-title">${escapeHTML(warehouse.name || "Almacén")}</div>
+        <div class="route-popup-meta">Inicio de ruta ${escapeHTML(backendRoute?.routeId || "DR-042")}</div>
+        <p class="mb-0">Salida del camión con plan de carga calculado automáticamente.</p>
+      `);
+  }
 
   stops.forEach((stop) => {
+    if (!isValidCoordinate(stop.coords)) return;
+
     const markerIcon = L.divIcon({
       className: "",
       html: `<div class="custom-route-marker">${stop.number}</div>`,
@@ -1046,25 +1051,18 @@ function initRouteMap() {
   });
 
   if (routePoints.length > 1) {
-    const routeShadow = L.polyline(routePoints, {
-      color: "#ffffff",
-      weight: 9,
-      opacity: 0.35,
-      lineJoin: "round"
-    }).addTo(map);
-
-    const routeLine = L.polyline(routePoints, {
-      color: "#d8141c",
-      weight: 5,
-      opacity: 0.85,
-      lineJoin: "round"
-    }).addTo(map);
-
-    routeLine.bringToFront();
-    map.fitBounds(routeLine.getBounds(), {
-      padding: [40, 40]
+    drawRoadRoute(map, routePoints).catch(() => {
+      drawStraightFallbackRoute(map, routePoints);
     });
   }
+}
+
+function normalizeWarehouse(warehouse) {
+  return {
+    name: warehouse.name || "Almacén",
+    coords: normalizeCoords(warehouse.coords) || [41.4322, 2.1899],
+    type: warehouse.type || "warehouse"
+  };
 }
 
 function normalizeRouteStops(stops) {
@@ -1079,13 +1077,148 @@ function normalizeRouteStops(stops) {
     return {
       number: stop.number || index + 1,
       name: stop.name || `Parada ${index + 1}`,
-      coords: stop.coords || [41.3925, 2.1769],
+      coords: normalizeCoords(stop.coords) || [41.3925, 2.1769],
       time: stop.time || "--:--",
       clients,
       load,
       note: stop.note || "Parada generada desde datos de MongoDB."
     };
   });
+}
+
+function normalizeCoords(coords) {
+  if (!Array.isArray(coords) || coords.length < 2) return null;
+
+  const lat = Number(coords[0]);
+  const lng = Number(coords[1]);
+
+  if (!Number.isFinite(lat) || !Number.isFinite(lng)) return null;
+
+  return [lat, lng];
+}
+
+function isValidCoordinate(coords) {
+  if (!Array.isArray(coords) || coords.length < 2) return false;
+
+  const lat = Number(coords[0]);
+  const lng = Number(coords[1]);
+
+  return (
+    Number.isFinite(lat) &&
+    Number.isFinite(lng) &&
+    lat >= -90 &&
+    lat <= 90 &&
+    lng >= -180 &&
+    lng <= 180
+  );
+}
+
+async function drawRoadRoute(map, routePoints) {
+  const limitedRoutePoints = routePoints.slice(0, 25);
+
+  const osrmCoordinates = limitedRoutePoints
+    .map(([lat, lng]) => `${lng},${lat}`)
+    .join(";");
+
+  const url = `https://router.project-osrm.org/route/v1/driving/${osrmCoordinates}?overview=full&geometries=geojson&steps=false`;
+
+  const response = await fetch(url);
+
+  if (!response.ok) {
+    throw new Error("OSRM route request failed");
+  }
+
+  const data = await response.json();
+
+  if (!data.routes || !data.routes.length || !data.routes[0].geometry) {
+    throw new Error("OSRM did not return a valid route");
+  }
+
+  const route = data.routes[0];
+
+  const roadCoordinates = route.geometry.coordinates.map(([lng, lat]) => [lat, lng]);
+
+  L.polyline(roadCoordinates, {
+    color: "#ffffff",
+    weight: 10,
+    opacity: 0.45,
+    lineJoin: "round"
+  }).addTo(map);
+
+  const routeLine = L.polyline(roadCoordinates, {
+    color: "#d8141c",
+    weight: 5,
+    opacity: 0.9,
+    lineJoin: "round"
+  }).addTo(map);
+
+  routeLine.bringToFront();
+
+  map.fitBounds(routeLine.getBounds(), {
+    padding: [40, 40]
+  });
+
+  updateRouteMetricsFromOSRM(route);
+  setRouteSourceBadge("Ruta real por carretera");
+}
+
+function drawStraightFallbackRoute(map, routePoints) {
+  L.polyline(routePoints, {
+    color: "#ffffff",
+    weight: 9,
+    opacity: 0.35,
+    lineJoin: "round"
+  }).addTo(map);
+
+  const routeLine = L.polyline(routePoints, {
+    color: "#d8141c",
+    weight: 5,
+    opacity: 0.85,
+    lineJoin: "round",
+    dashArray: "10, 8"
+  }).addTo(map);
+
+  routeLine.bringToFront();
+
+  map.fitBounds(routeLine.getBounds(), {
+    padding: [40, 40]
+  });
+
+  setRouteSourceBadge("Ruta aproximada");
+  console.warn("OSRM no ha respondido. Mostrando ruta visual aproximada.");
+}
+
+function updateRouteMetricsFromOSRM(route) {
+  const distanceKm = route.distance ? (route.distance / 1000).toFixed(1) : null;
+  const durationMinutes = route.duration ? Math.round(route.duration / 60) : null;
+
+  const distanceElement = document.querySelector("[data-route-distance]");
+  const durationElement = document.querySelector("[data-route-duration]");
+  const durationPill = document.querySelector("[data-route-duration-pill]");
+
+  if (distanceElement && distanceKm) {
+    distanceElement.textContent = distanceKm;
+  }
+
+  if (durationElement && durationMinutes !== null) {
+    const hours = Math.floor(durationMinutes / 60);
+    const minutes = durationMinutes % 60;
+
+    if (hours > 0) {
+      durationElement.textContent = `${hours}h`;
+      if (durationPill) durationPill.textContent = `${minutes}m`;
+    } else {
+      durationElement.textContent = `${durationMinutes}`;
+      if (durationPill) durationPill.textContent = "min";
+    }
+  }
+}
+
+function setRouteSourceBadge(text) {
+  const badge = document.querySelector("[data-route-source]");
+  if (badge) {
+    badge.textContent = text;
+  }
 }
 
 function getFallbackStops() {

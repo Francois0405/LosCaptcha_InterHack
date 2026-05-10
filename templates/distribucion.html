@@ -45,15 +45,17 @@
     </nav>
 
     <main class="container-fluid px-4 py-4 py-lg-5">
+
       <section class="row g-4 align-items-stretch mb-4">
-        <div class="col-xl-8">
+        <div class="col-12 col-xl-8">
           <div class="app-card h-100 p-4 p-lg-5">
             <div class="d-flex flex-wrap justify-content-between align-items-start gap-3 mb-4">
               <div>
-                <span class="section-label">Distribución de carga</span>
-                <h1 class="page-title mt-3 mb-3">Plan automático de carga del camión</h1>
+                <span class="section-label">Preparación de salida</span>
+                <h1 class="page-title mt-3 mb-3">Carga inteligente antes de iniciar la ruta</h1>
                 <p class="page-subtitle mb-0">
-                  La herramienta calcula una distribución inicial óptima según orden de ruta, accesibilidad lateral, tipo de producto, peso y reserva para retornables.
+                  El sistema propone una distribución inicial del camión conectada con la ruta, las primeras paradas,
+                  la accesibilidad lateral, los productos pesados y el espacio reservado para retornables.
                 </p>
               </div>
 
@@ -71,7 +73,7 @@
           </div>
         </div>
 
-        <div class="col-xl-4">
+        <div class="col-12 col-xl-4">
           <div class="image-card h-100">
             <img src="{% static 'img/truck-loaded.jpeg' %}" alt="Camión cargado Damm">
             <div class="image-card-overlay">
@@ -85,8 +87,42 @@
         </div>
       </section>
 
+      <section class="row g-3 mb-4">
+        <div class="col-6 col-lg-3">
+          <div class="app-card p-3 h-100">
+            <div class="metric-label">Ruta asignada</div>
+            <strong>DR-042</strong>
+            <div class="small text-muted">Salida urbana</div>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <div class="app-card p-3 h-100">
+            <div class="metric-label">Conductor</div>
+            <strong>Repartidor asignado</strong>
+            <div class="small text-muted">Vista operativa</div>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <div class="app-card p-3 h-100">
+            <div class="metric-label">Estado</div>
+            <strong>Listo para validar</strong>
+            <div class="small text-muted">Carga editable</div>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <div class="app-card p-3 h-100">
+            <div class="metric-label">Origen</div>
+            <strong>DDI Mollet</strong>
+            <div class="small text-muted">MongoDB + algoritmo</div>
+          </div>
+        </div>
+      </section>
+
       <section class="row g-4 mb-4">
-        <div class="col-md-3">
+        <div class="col-6 col-lg-3">
           <div class="metric-card">
             <div class="metric-label">Camión</div>
             <div class="metric-value">6P</div>
@@ -94,7 +130,7 @@
           </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-6 col-lg-3">
           <div class="metric-card">
             <div class="metric-label">Ocupación</div>
             <div class="metric-value" id="loadUsageMetric">82%</div>
@@ -102,7 +138,7 @@
           </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-6 col-lg-3">
           <div class="metric-card">
             <div class="metric-label">Accesibilidad</div>
             <div class="metric-value" id="accessibilityMetric">91%</div>
@@ -110,7 +146,7 @@
           </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-6 col-lg-3">
           <div class="metric-card">
             <div class="metric-label">Score global</div>
             <div class="metric-value" id="globalScoreMetric">89%</div>
@@ -119,15 +155,16 @@
         </div>
       </section>
 
-      <section class="row g-4">
-        <div class="col-xxl-8">
+      <section class="row g-4 align-items-start">
+        <div class="col-12 col-xxl-8">
           <div class="truck-board mb-4">
             <div class="d-flex flex-wrap justify-content-between align-items-start gap-3 mb-4">
               <div>
                 <span class="section-label">Layout recomendado</span>
-                <h3 class="fw-bold mt-2 mb-1">Camión de 6 palets · modelo híbrido</h3>
+                <h3 class="fw-bold mt-2 mb-1">Distribución recomendada por secuencia de descarga</h3>
                 <p class="text-muted mb-0">
-                  El trabajador puede mover paquetes. El sistema recalcula automáticamente el impacto de cada cambio.
+                  Los productos se colocan según la parada en la ruta. Si el trabajador mueve un paquete,
+                  el sistema recalcula accesibilidad, equilibrio y riesgo operativo.
                 </p>
               </div>
 
@@ -139,6 +176,14 @@
                   Ruta DR-042 · 15 paradas · 22 clientes
                 </div>
               </div>
+            </div>
+
+            <div class="d-flex flex-wrap gap-2 mb-4">
+              <span class="status-pill status-success">P1/P2 · primeras paradas</span>
+              <span class="status-pill status-warning">P3 · ruta media</span>
+              <span class="status-pill">P4 · referencias</span>
+              <span class="status-pill">P5 · retornables</span>
+              <span class="status-pill">P6 · últimas paradas</span>
             </div>
 
             <div class="truck-frame">
@@ -218,64 +263,9 @@
               </div>
             </div>
           </div>
-
-          <div class="app-card p-4">
-            <div class="d-flex flex-wrap justify-content-between align-items-start gap-3 mb-4">
-              <div>
-                <span class="section-label">Vista operativa del repartidor</span>
-                <h3 class="fw-bold mt-2 mb-1">Próxima parada e instrucciones</h3>
-                <p class="text-muted mb-0">
-                  Instrucciones generadas a partir de la distribución actual del camión.
-                </p>
-              </div>
-
-              <button class="btn btn-soft btn-sm" data-chat-open type="button">Preguntar a Gemini</button>
-            </div>
-
-            <div class="row g-3 mb-4">
-              <div class="col-md-4">
-                <div class="driver-panel h-100">
-                  <div class="text-uppercase small opacity-75">Próxima parada</div>
-                  <h3 class="fw-bold mb-1">Plaça Real</h3>
-                  <div class="opacity-75">08:15 · 3 clientes</div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="metric-card">
-                  <div class="metric-label">Descargar desde</div>
-                  <div class="metric-value" id="nextUnloadZone">P1</div>
-                  <span class="status-pill">Lateral izquierdo</span>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="metric-card">
-                  <div class="metric-label">Retornos previstos</div>
-                  <div class="metric-value">6</div>
-                  <span class="status-pill">Cajas a P5</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="table-responsive">
-              <table class="table align-middle">
-                <thead>
-                  <tr>
-                    <th>Cliente / grupo</th>
-                    <th>Producto</th>
-                    <th>Cantidad</th>
-                    <th>Ubicación actual</th>
-                    <th>Estado</th>
-                  </tr>
-                </thead>
-                <tbody id="driverTableBody"></tbody>
-              </table>
-            </div>
-          </div>
         </div>
 
-        <div class="col-xxl-4">
+        <div class="col-12 col-xxl-4">
           <div class="app-card p-4 mb-4">
             <span class="section-label">Evaluación en tiempo real</span>
             <h4 class="fw-bold mt-2 mb-4">Calidad de la distribución</h4>
@@ -380,6 +370,65 @@
           </div>
         </div>
       </section>
+
+      <section class="row g-4 mt-1">
+        <div class="col-12">
+          <div class="app-card p-4">
+            <div class="d-flex flex-wrap justify-content-between align-items-start gap-3 mb-4">
+              <div>
+                <span class="section-label">Vista operativa del repartidor</span>
+                <h3 class="fw-bold mt-2 mb-1">Próxima parada e instrucciones</h3>
+                <p class="text-muted mb-0">
+                  Instrucciones generadas a partir de la distribución actual del camión.
+                </p>
+              </div>
+
+              <button class="btn btn-soft btn-sm" data-chat-open type="button">Preguntar a Gemini</button>
+            </div>
+
+            <div class="row g-3 mb-4">
+              <div class="col-12 col-lg-4">
+                <div class="driver-panel h-100">
+                  <div class="text-uppercase small opacity-75">Próxima parada</div>
+                  <h3 class="fw-bold mb-1">Primera parada agrupada</h3>
+                  <div class="opacity-75">08:15 · 3 clientes · descarga desde P1</div>
+                </div>
+              </div>
+
+              <div class="col-6 col-lg-4">
+                <div class="metric-card">
+                  <div class="metric-label">Descargar desde</div>
+                  <div class="metric-value" id="nextUnloadZone">P1</div>
+                  <span class="status-pill">Lateral izquierdo</span>
+                </div>
+              </div>
+
+              <div class="col-6 col-lg-4">
+                <div class="metric-card">
+                  <div class="metric-label">Retornos previstos</div>
+                  <div class="metric-value">6</div>
+                  <span class="status-pill">Cajas a P5</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="table-responsive">
+              <table class="table align-middle">
+                <thead>
+                  <tr>
+                    <th>Cliente / grupo</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Ubicación actual</th>
+                    <th>Estado</th>
+                  </tr>
+                </thead>
+                <tbody id="driverTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <button class="chat-floating-button" data-chat-open type="button">
@@ -423,9 +472,7 @@
     </aside>
   </div>
 
-  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
   {{ load_plan|json_script:"load-plan-data" }}
-
   <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
   <script src="{% static 'js/main.js' %}"></script>
 </body>
