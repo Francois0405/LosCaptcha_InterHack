@@ -57,43 +57,66 @@ def get_osrm_time_matrix(coords_list):
     return []
 
 def get_data_from_mongo():
-    # Sustituye con tu SRV de MongoDB Atlas
     uri = "mongodb+srv://Erik:erik123@damm.znsohkl.mongodb.net/?retryWrites=true&w=majority"
     client = MongoClient(uri)
-    db = client['BD_DAMM'] # Nombre de tu DB
+    db = client['BD_DAMM']
 
-    cursor_direcciones = db['direcciones.json'].find({"calle": {"$ne": None}}).limit(5)
+    # PASO 1: Empezamos por la tabla maestra de pedidos agrupados
+    # Cogemos unos 20 de muestra por si algunos fallan en la dirección
+    cursor_pedidos = db['detalles_entrega_nproductos'].find({}).limit(20)
+    
     clientes_procesados = []
+    ids_vistos = set() # 🛡️ Escudo antiduplicados
 
-    for dir_doc in cursor_direcciones:
-        cliente_id = dir_doc.get('cliente')
-        
-        # Horarios
+    for pedido_doc in cursor_pedidos:
+        if len(clientes_procesados) >= 5: 
+            break # Ya tenemos nuestros 5 distintos
+            
+        raw_cliente = pedido_doc.get('cliente')
+        try:
+            cliente_id = int(raw_cliente)
+        except:
+            cliente_id = raw_cliente
+
+        # Si ya hemos procesado a este cliente, lo saltamos
+        if cliente_id in ids_vistos:
+            continue
+
+        n_productos = pedido_doc.get('nProductos', 3)
+
+        # PASO 2: Buscamos su dirección
+        dir_doc = db['direcciones.json'].find_one({"cliente": cliente_id})
+        if not dir_doc or not dir_doc.get('calle'):
+            continue # Sin dirección no podemos ir
+
+        # PASO 3: Buscamos su horario (Si no tiene, ponemos por defecto)
         horario_doc = db['HorariosEntrega'].find_one({"deudor": cliente_id}) or {}
-        apertura = str_hora_a_minutos(horario_doc.get('horario_inicia_a')) or 480
-        cierre = str_hora_a_minutos(horario_doc.get('horario_termina_a')) or 1080
+        apertura = str_hora_a_minutos(horario_doc.get('horario_inicia_a'))
+        cierre = str_hora_a_minutos(horario_doc.get('horario_termina_a'))
         
-        # Productos
-        entregas = list(db['detalle_entrega.json'].find({"cliente": cliente_id}))
-        n_productos = len(entregas) if len(entregas) > 0 else 3
-        
-        # VIP (Si el canal de distribución es 10, es VIP)
-        es_vip = True if horario_doc and horario_doc.get('canal_distribucion') == 10 else False
+        if apertura == 0 and cierre == 0:
+            apertura, cierre = 480, 1080
+        else:
+            apertura = apertura if apertura is not None else 480
+            cierre = cierre if cierre is not None else 1080
 
-        # Mapa
+        # PASO 4: Geocodificamos
         dir_texto = f"{dir_doc.get('calle')}, {dir_doc.get('poblacion')}, Spain"
         coords = geocode_address(dir_texto)
-        time.sleep(1) 
+        time.sleep(1)
 
+        # Lo marcamos como visto y lo guardamos
+        ids_vistos.add(cliente_id)
         clientes_procesados.append({
             'id': str(cliente_id),
             'nombre': dir_doc.get('nombre_1', 'Bar Damm'),
             'n_productos': n_productos,
             'hora_apertura': apertura,
             'hora_cierre': cierre,
-            'es_vip': es_vip,
+            'es_vip': True if horario_doc.get('canal_distribucion') == 10 else False,
             'coords': coords
         })
+    
     return clientes_procesados
 
 
@@ -120,7 +143,8 @@ def create_data_model_from_mongo():
     data['time_windows'] = [(480, 1200)] + [(c['hora_apertura'], c['hora_cierre']) for c in clientes]
     
     # 5. PRIORIDADES
-    data['demands'] = [0] + [100 if c['es_vip'] else 1 for c in clientes]
+    data['vips'] = [False] + [c['es_vip'] for c in clientes]
+    data['nombres'] = ["ALMACÉN"] + [c['nombre'] for c in clientes]
     
     data['num_vehicles'] = 1
     data['depot'] = 0
@@ -189,7 +213,51 @@ def solve_vrptw(data):
         print(" -> Vuelta al ALMACÉN")
     else:
         print("Error: No se pudo resolver la ruta.")
+    
+def min_to_hora(minutos):
+    """Convierte 540 a '09:00' para que los humanos lo entendamos"""
+    return f"{minutos//60:02d}:{minutos%60:02d}"
+
+def imprimir_dashboard_inicial(data):
+    print("\n" + "📦 "*25)
+    print("📋 DATOS EXTRAÍDOS DE MONGODB (SAP) - SIN ORDENAR")
+    print("📦 "*25)
+    
+    total_productos = 0
+    total_tiempo_descarga = 0
+
+    for i in range(len(data['nombres'])):
+        nombre = data['nombres'][i]
         
+        if i == 0:
+            print(f"\n🏠 {nombre} (Origen/Destino)")
+            print(f"   ├─ Apertura del Centro: {min_to_hora(data['time_windows'][i][0])}")
+            print(f"   └─ Cierre del Centro:   {min_to_hora(data['time_windows'][i][1])}")
+        else:
+            prod = data['service_time'][i] // 5 # Recuperamos el número de productos
+            tiempo_descarga = data['service_time'][i]
+            apertura = min_to_hora(data['time_windows'][i][0])
+            cierre = min_to_hora(data['time_windows'][i][1])
+            vip = "⭐ SÍ (-20% Coste)" if data['vips'][i] else "❌ NO"
+            
+            total_productos += prod
+            total_tiempo_descarga += tiempo_descarga
+            
+            print(f"\n🍺 {i}. {nombre}")
+            print(f"   ├─ Demanda:  {prod} productos ({tiempo_descarga} min de descarga)")
+            print(f"   ├─ Horario:  {apertura} - {cierre}")
+            print(f"   └─ Estado:   {vip}")
+            
+    print("\n" + "="*50)
+    print(f"📊 RESUMEN TOTAL: {total_productos} productos | {total_tiempo_descarga} mins de descarga estimados")
+    print("="*50 + "\n")
+
 if __name__ == "__main__":
     modelo = create_data_model_from_mongo()
+    
+    # 1. Imprime todos los datos crudos y pesos
+    imprimir_dashboard_inicial(modelo)
+    
+    print("⏳ Ejecutando motor de Inteligencia Artificial (OR-Tools)...")
+    # 2. Resuelve y devuelve la ruta óptima
     solve_vrptw(modelo)
