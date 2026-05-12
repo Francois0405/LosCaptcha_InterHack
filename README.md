@@ -4,12 +4,12 @@ Pagina web: http://dammlogistics.us/
 
 MVP desarrollado para **INTERHACK BCN 2026**. El proyecto convierte datos operativos de reparto en una experiencia web para planificar rutas, explicar decisiones logísticas y validar la distribución de carga de un camión Damm.
 
-Repositorio: https://github.com/itsCarlosDev/interhack-2026
+Repositorio: https://github.com/Francois0405/LosCaptcha_InterHack
 
 ## Equipo
 
 - Carlos Morales Artés
-- Franço¡s Liraud Mathieu
+- François Liraud Mathieu
 - Ghazal Khitou Khitou 
 - Silvia Monfort Moya
 - Erik Andres Villca Tunari
